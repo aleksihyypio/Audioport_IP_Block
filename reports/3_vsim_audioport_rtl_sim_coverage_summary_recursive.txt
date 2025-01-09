@@ -1,0 +1,13 @@
+Recursive Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE
+=== Design Unit: work.audioport
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        384       141       243    36.71%
+
+
+Total Coverage By Instance (filtered view): 36.71%
+

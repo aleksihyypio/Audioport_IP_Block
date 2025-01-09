@@ -1,0 +1,47 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /audioport_tb/DUT_INSTANCE
+=== Design Unit: work.audioport
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        384       141       243    36.71%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /audioport_tb/DUT_INSTANCE --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                      PRDATA[0-31]           0           0           0           0           0           0           3        0.00 
+                                            PREADY           0           0           0           0           0           0           3        0.00 
+                                           PSLVERR           0           0           0           0           0           0           3        0.00 
+                                           irq_out           0           0           0           0           0           0           3        0.00 
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+                                        scan_en_in           0           1           0           0           0           0           3       16.66 
+                                           sck_out           0           0           0           0           0           0           3        0.00 
+                                           sdo_out           0           0           0           0           0           0           3        0.00 
+                                      test_mode_in           0           1           0           0           0           0           3       16.66 
+                                            ws_out           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =        110 
+Toggled Node Count   =         69 
+Untoggled Node Count =         41 
+
+Toggle Coverage      =      36.71% (141 of 384 bins)
+
+
+Total Coverage By Instance (filtered view): 36.71%
+
