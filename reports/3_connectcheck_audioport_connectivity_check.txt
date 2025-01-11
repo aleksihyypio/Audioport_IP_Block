@@ -1,0 +1,347 @@
+-------------------------------------------------------------------------------
+Questa PropCheck Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+-------------------------------------------------------------------------------
+Report Generated               : Thu Jan  9 22:30:27 2025
+-------------------------------------------------------------------------------
+
+Executing Command : formal verify -exclude_cover -group connectcheck  
+-------------------------------------------------------------------------------
+
+Clock Relationships
+-------------------------------------------------------------------------------
+\$global_clock           : -
+
+
+Using user-specified initialization sequence:
+
+---------------- BEGIN RESET SEQUENCE --------------
+$default_input_value 0
+rst_n = 0
+##
+## 2
+rst_n = 1
+
+---------------- END RESET SEQUENCE ----------------
+
+
+Port Constraints
+-------------------------------------------------------------------------------
+Category            Value       Directive   Port      
+-------------------------------------------------------------------------------
+<empty>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions (1)
+-------------------------------------------------------------------------------
+qcon_stable_enable_cutpoint_concatAll (netlist property)
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Active Targets (62)
+-------------------------------------------------------------------------------
+LINE_10_CHECK_connect (netlist property)
+LINE_11_CHECK_connect (netlist property)
+LINE_12_CHECK_connect (netlist property)
+LINE_13_CHECK_connect (netlist property)
+LINE_14_CHECK_connect (netlist property)
+LINE_15_CHECK_connect (netlist property)
+LINE_16_CHECK_connect (netlist property)
+LINE_17_CHECK_connect (netlist property)
+LINE_18_CHECK_connect (netlist property)
+LINE_19_CHECK_connect (netlist property)
+LINE_20_CHECK_connect (netlist property)
+LINE_21_CHECK_connect (netlist property)
+LINE_22_CHECK_connect (netlist property)
+LINE_23_CHECK_connect (netlist property)
+LINE_24_CHECK_connect (netlist property)
+LINE_25_CHECK_connect (netlist property)
+LINE_26_CHECK_connect (netlist property)
+LINE_27_CHECK_connect (netlist property)
+LINE_28_CHECK_connect (netlist property)
+LINE_29_CHECK_connect (netlist property)
+LINE_2_CHECK_connect (netlist property)
+LINE_30_CHECK_connect (netlist property)
+LINE_31_CHECK_connect (netlist property)
+LINE_32_CHECK_connect (netlist property)
+LINE_33_CHECK_connect (netlist property)
+LINE_34_CHECK_connect (netlist property)
+LINE_35_CHECK_connect (netlist property)
+LINE_36_CHECK_connect (netlist property)
+LINE_37_CHECK_connect (netlist property)
+LINE_38_CHECK_connect (netlist property)
+LINE_39_CHECK_connect (netlist property)
+LINE_3_CHECK_connect (netlist property)
+LINE_40_CHECK_connect (netlist property)
+LINE_41_CHECK_connect (netlist property)
+LINE_42_CHECK_connect (netlist property)
+LINE_43_CHECK_connect (netlist property)
+LINE_44_CHECK_connect (netlist property)
+LINE_45_CHECK_connect (netlist property)
+LINE_46_CHECK_connect (netlist property)
+LINE_47_CHECK_connect (netlist property)
+LINE_48_CHECK_connect (netlist property)
+LINE_49_CHECK_connect (netlist property)
+LINE_4_CHECK_connect (netlist property)
+LINE_50_CHECK_connect (netlist property)
+LINE_51_CHECK_connect (netlist property)
+LINE_52_CHECK_connect (netlist property)
+LINE_53_CHECK_connect (netlist property)
+LINE_54_CHECK_connect (netlist property)
+LINE_55_CHECK_connect (netlist property)
+LINE_56_CHECK_connect (netlist property)
+LINE_57_CHECK_connect (netlist property)
+LINE_58_CHECK_connect (netlist property)
+LINE_59_CHECK_connect (netlist property)
+LINE_5_CHECK_connect (netlist property)
+LINE_60_CHECK_connect (netlist property)
+LINE_61_CHECK_connect (netlist property)
+LINE_62_CHECK_connect (netlist property)
+LINE_63_CHECK_connect (netlist property)
+LINE_6_CHECK_connect (netlist property)
+LINE_7_CHECK_connect (netlist property)
+LINE_8_CHECK_connect (netlist property)
+LINE_9_CHECK_connect (netlist property)
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+X Registers at Completion of Initialization Sequence
+-------------------------------------------------------------------------------
+  0 registers (100.0% of 0 in sequential fanin of properties)
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Z Registers at Completion of Initialization Sequence
+-------------------------------------------------------------------------------
+  0 registers (100.0% of 0 in sequential fanin of properties)
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+Formal Netlist Statistics         Count
+---------------------------------------
+Control Point Bits                   58
+  DUT Input Bits                      0
+  Cut Point Bits                      0
+  Black Box Output Bits               0
+  Undriven Wire Bits                 58
+  Modeling Bits                       0
+State Bits                           58
+  Counter State Bits                  0
+  RAM State Bits                      0
+  Register State Bits                 0
+  Property State Bits                58
+Logic Gates                        1881
+  Design Gates                        0
+  Property Gates                   1881
+---------------------------------------
+
+
+-------------------------------------------------------------------------------
+Targets Proven (62)
+-------------------------------------------------------------------------------
+LINE_10_CHECK_connect (netlist property)
+LINE_11_CHECK_connect (netlist property)
+LINE_12_CHECK_connect (netlist property)
+LINE_13_CHECK_connect (netlist property)
+LINE_14_CHECK_connect (netlist property)
+LINE_15_CHECK_connect (netlist property)
+LINE_16_CHECK_connect (netlist property)
+LINE_17_CHECK_connect (netlist property)
+LINE_18_CHECK_connect (netlist property)
+LINE_19_CHECK_connect (netlist property)
+LINE_20_CHECK_connect (netlist property)
+LINE_21_CHECK_connect (netlist property)
+LINE_22_CHECK_connect (netlist property)
+LINE_23_CHECK_connect (netlist property)
+LINE_24_CHECK_connect (netlist property)
+LINE_25_CHECK_connect (netlist property)
+LINE_26_CHECK_connect (netlist property)
+LINE_27_CHECK_connect (netlist property)
+LINE_28_CHECK_connect (netlist property)
+LINE_29_CHECK_connect (netlist property)
+LINE_2_CHECK_connect (netlist property)
+LINE_30_CHECK_connect (netlist property)
+LINE_31_CHECK_connect (netlist property)
+LINE_32_CHECK_connect (netlist property)
+LINE_33_CHECK_connect (netlist property)
+LINE_34_CHECK_connect (netlist property)
+LINE_35_CHECK_connect (netlist property)
+LINE_36_CHECK_connect (netlist property)
+LINE_37_CHECK_connect (netlist property)
+LINE_38_CHECK_connect (netlist property)
+LINE_39_CHECK_connect (netlist property)
+LINE_3_CHECK_connect (netlist property)
+LINE_40_CHECK_connect (netlist property)
+LINE_41_CHECK_connect (netlist property)
+LINE_42_CHECK_connect (netlist property)
+LINE_43_CHECK_connect (netlist property)
+LINE_44_CHECK_connect (netlist property)
+LINE_45_CHECK_connect (netlist property)
+LINE_46_CHECK_connect (netlist property)
+LINE_47_CHECK_connect (netlist property)
+LINE_48_CHECK_connect (netlist property)
+LINE_49_CHECK_connect (netlist property)
+LINE_4_CHECK_connect (netlist property)
+LINE_50_CHECK_connect (netlist property)
+LINE_51_CHECK_connect (netlist property)
+LINE_52_CHECK_connect (netlist property)
+LINE_53_CHECK_connect (netlist property)
+LINE_54_CHECK_connect (netlist property)
+LINE_55_CHECK_connect (netlist property)
+LINE_56_CHECK_connect (netlist property)
+LINE_57_CHECK_connect (netlist property)
+LINE_58_CHECK_connect (netlist property)
+LINE_59_CHECK_connect (netlist property)
+LINE_5_CHECK_connect (netlist property)
+LINE_60_CHECK_connect (netlist property)
+LINE_61_CHECK_connect (netlist property)
+LINE_62_CHECK_connect (netlist property)
+LINE_63_CHECK_connect (netlist property)
+LINE_6_CHECK_connect (netlist property)
+LINE_7_CHECK_connect (netlist property)
+LINE_8_CHECK_connect (netlist property)
+LINE_9_CHECK_connect (netlist property)
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Proofs
+-------------------------------------------------------------------------------
+<no assumptions used in proofs>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Bounded Proofs
+-------------------------------------------------------------------------------
+<no assumptions used in bounded proofs>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Unsatisfiable Sanity Checks
+-------------------------------------------------------------------------------
+<no assumptions used in unsatisfiable sanity checks>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Assumptions Used in Bounded Unsatisfiable Sanity Checks
+-------------------------------------------------------------------------------
+<no assumptions used in bounded unsatisfiable sanity checks>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Target Waveforms (0)
+-------------------------------------------------------------------------------
+  TB Time(ns) Dist  Target
+-------------------------------------------------------------------------------
+<no target firings>
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+Target Waveforms Summary by Distance
+---------------------------------------
+Distance                          Count
+---------------------------------------
+<no target waveforms>
+---------------------------------------
+Total                                 0
+---------------------------------------
+
+
+-------------------------------------------------------------------------------
+Proof Radius Summary by Target
+-------------------------------------------------------------------------------
+<all targets either proven or fired>
+-------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------
+Engine Performance
+---------------------- Proofs -------------------------- Waveforms ------------
+   Engine |  Safety Liveness Vacuity  Sanity |  Safety Liveness Vacuity  Sanity
+-------------------------------------------------------------------------------
+        0 |      41        0       0       0 |       0        0       0       0
+        7 |      21        0       0       0 |       0        0      28       0
+       10 |       0        0       0       0 |       0        0      34       0
+-------------------------------------------------------------------------------
+
+
+
+--------- Process Statistics ----------
+Elapsed Time                       1 s
+Total CPU Time                     2 s
+Total Peak Memory                2.1 GB
+---------- Engine Processes -----------
+Average CPU Time                   0 s
+Minimum CPU Utilization            0 %
+Average Peak Memory              0.2 GB
+Maximum Peak Memory              0.4 GB
+Peak Cores                         8
+Distinct Machines                  1
+Launch Failures                    0
+Unexpected Process Terminations    0
+Successful Re-connections          0
+---------------------------------------
+
+
+
+----- Detailed Process Statistics -----
+Elapsed Time                       1 s 
+-------- Orchestration Process --------
+----- lehmus-cn7.oulu.fi:1342650 ------
+CPU Time                           1 s 
+Peak Memory                      0.4 GB
+---------- Engine Processes -----------
+----- lehmus-cn7.oulu.fi:1342780 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342791 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342773 ------
+CPU Time                           1 s 
+Peak Memory                      0.4 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342787 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342793 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342792 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342794 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+----- lehmus-cn7.oulu.fi:1342803 ------
+CPU Time                           0 s 
+Peak Memory                      0.2 GB
+CPU Utilization                    0 % 
+---------------------------------------
+
+
+========================================
+Property Summary                   Count
+========================================
+Assumes                                1
+========================================
+Asserts                               62
+----------------------------------------
+Proven                                62
+========================================

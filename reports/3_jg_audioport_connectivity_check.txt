@@ -1,0 +1,92 @@
+
+==============================================================
+    Jasper Verification Results
+==============================================================
+    2022.09p002 64 bits for Linux64 3.10.0-1160.21.1.el7.x86_64
+    Host Name: lehmus-cn7.oulu.fi
+    User Name: ahyypio20
+    Printed on: Thursday, Jan 9, 2025 10:22:48 PM EET
+    Working Directory: /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir
+
+
+==============================================================
+RESULTS
+==============================================================
+
+-------------------------------------------------------------------------------------------------------------
+       Name                                                 |    Result    |  Engine  |  Bound  |  Time    
+-------------------------------------------------------------------------------------------------------------
+
+---[ Connectivity ]--------------------------------------------------------------------------------------------
+[1]   conn:_clk_to_control_unit_1_clk                           proven          PRE    Infinite    0.000 s      
+[2]   conn:_rst_n_to_control_unit_1_rst_n                       proven          PRE    Infinite    0.000 s      
+[3]   conn:_PSEL_to_control_unit_1_PSEL                         proven          PRE    Infinite    0.000 s      
+[4]   conn:_PENABLE_to_control_unit_1_PENABLE                   proven          PRE    Infinite    0.000 s      
+[5]   conn:_PWRITE_to_control_unit_1_PWRITE                     proven          PRE    Infinite    0.000 s      
+[6]   conn:_PADDR_to_control_unit_1_PADDR                       proven          PRE    Infinite    0.000 s      
+[7]   conn:_PWDATA_to_control_unit_1_PWDATA                     proven          PRE    Infinite    0.000 s      
+[8]   conn:_req_to_control_unit_1_req_in                        proven          PRE    Infinite    0.000 s      
+[9]   conn:control_unit_1_PRDATA_to__PRDATA                     proven          PRE    Infinite    0.000 s      
+[10]  conn:control_unit_1_PSLVERR_to__PSLVERR                   proven          PRE    Infinite    0.000 s      
+[11]  conn:control_unit_1_PREADY_to__PREADY                     proven          PRE    Infinite    0.000 s      
+[12]  conn:control_unit_1_irq_out_to__irq_out                   proven          PRE    Infinite    0.000 s      
+[13]  conn:control_unit_1_cfg_reg_out_to__cfg_reg               proven          PRE    Infinite    0.000 s      
+[14]  conn:control_unit_1_level_reg_out_to__level_reg           proven          PRE    Infinite    0.000 s      
+[15]  conn:control_unit_1_dsp_regs_out_to__dsp_regs             proven          PRE    Infinite    0.000 s      
+[16]  conn:control_unit_1_cfg_out_to__cfg                       proven          PRE    Infinite    0.000 s      
+[17]  conn:control_unit_1_clr_out_to__clr                       proven          PRE    Infinite    0.000 s      
+[18]  conn:control_unit_1_level_out_to__level                   proven          PRE    Infinite    0.000 s      
+[19]  conn:control_unit_1_tick_out_to__tick                     proven          PRE    Infinite    0.000 s      
+[20]  conn:control_unit_1_audio0_out_to__audio0                 proven          PRE    Infinite    0.000 s      
+[21]  conn:control_unit_1_audio1_out_to__audio1                 proven          PRE    Infinite    0.000 s      
+[22]  conn:control_unit_1_play_out_to__play                     proven          PRE    Infinite    0.000 s      
+[23]  conn:_clk_to_dsp_unit_1_clk                               proven          PRE    Infinite    0.000 s      
+[24]  conn:_rst_n_to_dsp_unit_1_rst_n                           proven          PRE    Infinite    0.000 s      
+[25]  conn:_audio0_to_dsp_unit_1_audio0_in                      proven          PRE    Infinite    0.000 s      
+[26]  conn:_audio1_to_dsp_unit_1_audio1_in                      proven          PRE    Infinite    0.000 s      
+[27]  conn:_tick_to_dsp_unit_1_tick_in                          proven          PRE    Infinite    0.000 s      
+[28]  conn:_cfg_to_dsp_unit_1_cfg_in                            proven          PRE    Infinite    0.000 s      
+[29]  conn:_cfg_reg_to_dsp_unit_1_cfg_reg_in                    proven          PRE    Infinite    0.000 s      
+[30]  conn:_dsp_regs_to_dsp_unit_1_dsp_regs_in                  proven          PRE    Infinite    0.000 s      
+[31]  conn:_level_to_dsp_unit_1_level_in                        proven          PRE    Infinite    0.000 s      
+[32]  conn:_level_reg_to_dsp_unit_1_level_reg_in                proven          PRE    Infinite    0.000 s      
+[33]  conn:_clr_to_dsp_unit_1_clr_in                            proven          PRE    Infinite    0.000 s      
+[34]  conn:dsp_unit_1_audio0_out_to__daudio0                    proven          PRE    Infinite    0.000 s      
+[35]  conn:dsp_unit_1_audio1_out_to__daudio1                    proven          PRE    Infinite    0.000 s      
+[36]  conn:dsp_unit_1_tick_out_to__dtick                        proven          PRE    Infinite    0.000 s      
+[37]  conn:_clk_to_cdc_unit_1_clk                               proven          PRE    Infinite    0.000 s      
+[38]  conn:_rst_n_to_cdc_unit_1_rst_n                           proven          PRE    Infinite    0.000 s      
+[39]  conn:_daudio0_to_cdc_unit_1_audio0_in                     proven          PRE    Infinite    0.000 s      
+[40]  conn:_daudio1_to_cdc_unit_1_audio1_in                     proven          PRE    Infinite    0.000 s      
+[41]  conn:_dtick_to_cdc_unit_1_tick_in                         proven          PRE    Infinite    0.000 s      
+[42]  conn:_play_to_cdc_unit_1_play_in                          proven          PRE    Infinite    0.000 s      
+[43]  conn:_mclk_to_cdc_unit_1_mclk                             proven          PRE    Infinite    0.000 s      
+[44]  conn:_mreq_to_cdc_unit_1_req_in                           proven          PRE    Infinite    0.000 s      
+[45]  conn:_test_mode_in_to_cdc_unit_1_test_mode_in             proven          PRE    Infinite    0.000 s      
+[46]  conn:cdc_unit_1_muxclk_out_to__muxclk                     proven          PRE    Infinite    0.000 s      
+[47]  conn:cdc_unit_1_muxrst_n_out_to__muxrst_n                 proven          PRE    Infinite    0.000 s      
+[48]  conn:cdc_unit_1_audio0_out_to__maudio0                    proven          PRE    Infinite    0.000 s      
+[49]  conn:cdc_unit_1_audio1_out_to__maudio1                    proven          PRE    Infinite    0.000 s      
+[50]  conn:cdc_unit_1_tick_out_to__mtick                        proven          PRE    Infinite    0.000 s      
+[51]  conn:cdc_unit_1_play_out_to__mplay                        proven          PRE    Infinite    0.000 s      
+[52]  conn:cdc_unit_1_req_out_to__req                           proven          PRE    Infinite    0.000 s      
+[53]  conn:_muxclk_to_i2s_unit_1_clk                            proven          PRE    Infinite    0.000 s      
+[54]  conn:_muxrst_n_to_i2s_unit_1_rst_n                        proven          PRE    Infinite    0.000 s      
+[55]  conn:_mplay_to_i2s_unit_1_play_in                         proven          PRE    Infinite    0.000 s      
+[56]  conn:_maudio0_to_i2s_unit_1_audio0_in                     proven          PRE    Infinite    0.000 s      
+[57]  conn:_maudio1_to_i2s_unit_1_audio1_in                     proven          PRE    Infinite    0.000 s      
+[58]  conn:_mtick_to_i2s_unit_1_tick_in                         proven          PRE    Infinite    0.000 s      
+[59]  conn:i2s_unit_1_req_out_to__mreq                          proven          PRE    Infinite    0.000 s      
+[60]  conn:i2s_unit_1_sck_out_to__sck_out                       proven          PRE    Infinite    0.000 s      
+[61]  conn:i2s_unit_1_ws_out_to__ws_out                         proven          PRE    Infinite    0.000 s      
+[62]  conn:i2s_unit_1_sdo_out_to__sdo_out                       proven          PRE    Infinite    0.000 s      
+
+---[ <embedded> ]--------------------------------------------------------------------------------------------
+
+==============================================================
+ASSUMPTIONS
+==============================================================
+
+-------------------------------------------------------------------------------
+       Name    |  Expression  |  Location     |  Status      |  Dependencies                  
+-------------------------------------------------------------------------------

@@ -1,0 +1,405 @@
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# 
+# This material contains trade secrets or otherwise
+# confidential information owned by
+# Siemens Industry Software Inc. or its affiliates
+# (collectively, "SISW"), or its licensors. Access
+# to and use of this information is strictly limited
+# as set forth in the customer's applicable
+# agreements with SISW.
+# 
+# Unpublished work. Copyright 2024 Siemens
+# 
+# do scripts/connectcheck.tcl
+# Command : vlib connectcheck_work
+# Command : vmap work connectcheck_work
+# QuestaSim-64 vmap 2024.3_2 Lib Mapping Utility 2024.11 Nov 25 2024
+# vmap work connectcheck_work 
+# Modifying modelsim.ini
+# Command : vcom -mixedsvvh -work work input/i2s_unit.vhd
+# QuestaSim-64 vcom 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 22:29:59 on Jan 09,2025
+# vcom -mixedsvvh -work work input/i2s_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity i2s_unit
+# -- Compiling architecture RTL of i2s_unit
+# End time: 22:29:59 on Jan 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Command : vlog +define+design_top_is_audioport +define+RTL_VERIF +incdir+input -cuname audioport_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/control_unit.sv input/dsp_unit.sv input/cdc_unit.sv input/audioport.sv
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 22:29:59 on Jan 09,2025
+# vlog "+define+design_top_is_audioport" "+define+RTL_VERIF" "+incdir+input" -cuname audioport_sva_bind_pkg -mfcu input/apb_pkg.sv input/audioport_pkg.sv input/audioport_util_pkg.sv input/control_unit.sv input/dsp_unit.sv input/cdc_unit.sv input/audioport.sv 
+# -- Compiling package apb_pkg
+# -- Compiling package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling package audioport_util_pkg
+# -- Importing package audioport_pkg
+# -- Compiling package audioport_sva_bind_pkg
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling module control_unit
+# -- Compiling module dsp_unit
+# -- Compiling module cdc_unit
+# -- Compiling module audioport
+# 
+# Top level modules:
+# 	audioport
+# End time: 22:29:59 on Jan 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Command : connectcheck elaborate -d audioport
+# Command : netlist create -d audioport -tool propcheck
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Thu Jan  9 22:29:59 2025 by ahyypio20 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : netlist create -d audioport -tool propcheck
+# File: /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/scripts/connectcheck.tcl, Line: 63
+# 
+### Starting Step: netlist elaborate ### 
+# 
+## Elaborating Design...
+# Reading MTI mapping for library mapping
+# Writing all MTI mappings to vmap output ...
+# 
+# Top level modules:
+# 	audioport
+# 
+# Analyzing design...
+# -- Loading module z0in_work.audioport
+# -- Loading module z0in_work.control_unit
+# -- Loading module z0in_work.dsp_unit
+# -- Loading module z0in_work.cdc_unit
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity i2s_unit
+# -- Loading architecture RTL of i2s_unit
+# Optimizing 8 design-units (inlining 0/4 module instances, 0/1 architecture instances):
+# -- Optimizing package z0in_work.apb_pkg(fast)
+# -- Optimizing package z0in_work.audioport_pkg(fast)
+# -- Optimizing package z0in_work.audioport_sva_bind_pkg(fast)
+# -- Optimizing module z0in_work.control_unit(fast)
+# -- Optimizing module z0in_work.dsp_unit(fast)
+# -- Optimizing module z0in_work.cdc_unit(fast)
+# -- Optimizing architecture RTL of i2s_unit
+# -- Optimizing module z0in_work.audioport(fast)
+# Optimized design name is zi_opt_csl_1613460295_1
+# 
+### Starting Step: netlist create ### 
+# 
+## Synthesizing netlist...
+# Processing module 'control_unit'
+# Elaborating module 'control_unit'.
+# Processing module 'dsp_unit'
+# Elaborating module 'dsp_unit'.
+# Processing module 'cdc_unit'
+# Elaborating module 'cdc_unit'.
+# Processing module 'i2s_unit(rtl)'
+# Elaborating module 'i2s_unit(rtl)'.
+# Processing module 'audioport'
+# Elaborating module 'audioport'.
+# 
+##Time Taken (Synthesis) = 62491.000000 ticks = 0.062491 secs
+# Final Process Statistics: Max memory 434MB, CPU time 0s, Total time 6s
+# 
+# End of log Thu Jan  9 22:30:06 2025
+# 
+# INFO: Processing 62 connectivity specification...
+# Command : connectcheck compile
+# Reading design database from /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/audioport_connectcheck/propcheck.db/FORMAL/CACHE...completed (0.001815 (s)).
+# Command : formal compile
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Thu Jan  9 22:30:07 2025 by ahyypio20 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : formal compile
+# File: /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/scripts/connectcheck.tcl, Line: 70
+# 
+### Starting Step: formal compile ### 
+# 
+## Processing Formal Logic...
+# Processing module 'control_unit'
+# Restoring module 'control_unit'.
+# Processing module 'dsp_unit'
+# Restoring module 'dsp_unit'.
+# Processing module 'cdc_unit'
+# Restoring module 'cdc_unit'.
+# Processing module 'i2s_unit(rtl)'
+# Restoring module 'i2s_unit(rtl)'.
+# Processing module 'audioport'
+# Restoring module 'audioport'.
+# Flattening design 'control_unit'.
+# Flattening design 'dsp_unit'.
+# Flattening design 'cdc_unit'.
+# Flattening design 'i2s_unit(rtl)'.
+# Flattening design 'audioport'.
+# 
+# Clocks
+# ------------------------------------------------------------------------------
+# Port                                   Period         Waveform
+# ------------------------------------------------------------------------------
+# \$global_clock           [inferred]       100             0 50 
+# ------------------------------------------------------------------------------
+# 
+# Blackboxes
+# ------------------------------------------------------------------------------
+# Module name                                                Reason
+# ------------------------------------------------------------------------------
+# <no blackboxed modules>
+# ------------------------------------------------------------------------------
+# 
+# Inferred directives
+# ------------------------------------------------------------------------------
+# netlist clock \$global_clock  -period 100 -waveform 0 50
+# ------------------------------------------------------------------------------
+# 
+# Formal model has been created.  Design 'audioport'.
+# 
+# Property Summary
+# -------------------------------------------------------------------------------
+# Total  Directives :0
+# Assert Directives :0
+# Assume Directives :0
+# Cover  Directives :0
+# -------------------------------------------------------------------------------
+# 
+# Design Checks Summary
+# -------------------------------------------------------------------------------
+# Check                              Found
+# -------------------------------------------------------------------------------
+# DECLARATION_UNDRIVEN                    1
+# -------------------------------------------------------------------------------
+# Total                                  1
+# -------------------------------------------------------------------------------
+# 
+# 
+# To see results in the GUI run:
+# qverify /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/audioport_connectcheck/propcheck.db
+# 
+# 
+# Final Process Statistics: Max memory 482MB, CPU time 0s, Total time 1s
+# 
+# End of log Thu Jan  9 22:30:09 2025
+# 
+# Command : connectcheck verify -exclude_cover
+# Reading design database from /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/audioport_connectcheck/propcheck.db/FORMAL/CACHE...completed (0.001569 (s)).
+# Command : find properties -assume
+# 
+# Compiling incremental directives ...
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Thu Jan  9 22:30:10 2025 by ahyypio20 on lehmus-cn7.oulu.fi
+# 
+# Compiling incremental directives ...
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Thu Jan  9 22:30:19 2025 by ahyypio20 on lehmus-cn7.oulu.fi
+# Command : find properties -assert -cover
+# INFO: Generating ConnectCheck property report...
+# Command : report output directory
+# Current Output Directory : output/audioport_connectcheck
+# Command : find properties -group connectcheck -assume
+# Command : find properties -group connectcheck -assert -cover
+# Command : formal verify -exclude_cover -group connectcheck
+# 
+# Questa Static Verification System
+# Version 2024.3_2 5905218 linux_x86_64 04-Dec-2024
+# log created Thu Jan  9 22:30:27 2025 by ahyypio20 on lehmus-cn7.oulu.fi
+# 
+# Executing Command : formal verify -exclude_cover -group connectcheck  
+# File: /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/scripts/connectcheck.tcl, Line: 72
+# 
+# Info    : Using initialization sequence file to initialize design state.  File '/study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/input/rst.questa_init'.  [formal-205]
+# Info	: Warning(line 4): no $default_clock declared, using \$global_clock 
+# Applying synthesis semantics to design: audioport
+# [00:00:00] Target Status: Done 0/62, Update 0/62, Proof radius min=0, avg=0.00
+# [00:00:00] Check Status: Vacuity 0/62
+# [00:00:00] Engine Process Status: 0 running, 0 pending, 0 terminated, Mem=0GB
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342780, Id 1, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342773, Id 3, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342794, Id 7, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342792, Id 6, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342787, Id 4, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342791, Id 2, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342793, Id 5, Time [00:00:00].  [formal-385]
+# Info    : Established connection with engine process.  Hostname 'lehmus-cn7.oulu.fi', PID 1342803, Id 8, Time [00:00:00].  [formal-385]
+# [00:00:00] Proven: LINE_33_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_2_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_50_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_14_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_26_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_38_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_51_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_34_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_15_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_27_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_3_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_39_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_35_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_4_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_52_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_16_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_40_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_28_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_36_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_5_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_37_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_53_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_17_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_6_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_41_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_29_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_7_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_42_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_18_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_54_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_30_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_43_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_8_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_19_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_44_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_9_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_31_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_45_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_10_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_20_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Parallel execution of engine 7 activated
+# [00:00:00] Proven: LINE_46_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_55_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_32_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_11_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_47_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_12_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_56_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_21_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_48_CHECK_connect (engine:7, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_57_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_13_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_60_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_49_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_58_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_23_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_59_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_61_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_62_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_24_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_22_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_63_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Proven: LINE_25_CHECK_connect (engine:0, vacuity check:inconclusive)
+# [00:00:00] Vacuity Check Passed: LINE_33_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_14_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_50_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_26_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_2_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_24_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_38_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_34_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_3_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_25_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_39_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_51_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_15_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_27_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_35_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_4_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_36_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_52_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_16_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_40_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_5_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_28_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_37_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_41_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_6_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_17_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_53_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_29_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_42_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_7_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_18_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_43_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_8_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_30_CHECK_connect (engine:10, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_44_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_9_CHECK_connect (engine:7, radius:1)
+# [00:00:00] Vacuity Check Passed: LINE_19_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_54_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_45_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_31_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_10_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_46_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_11_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_20_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_55_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_32_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_47_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_62_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_12_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_59_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_48_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_57_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_22_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_13_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_49_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_60_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_58_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_23_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_21_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_56_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_61_CHECK_connect (engine:7, radius:1)
+# [00:00:01] Vacuity Check Passed: LINE_63_CHECK_connect (engine:10, radius:1)
+# [00:00:01] Target Status: Done 62/62, Update 62/62, Proof radius min=N/A, avg=N/A
+# [00:00:01] Check Status: Vacuity 62/62
+# [00:00:01] Engine Process Status: 0 running, 0 pending, 8 terminated, Mem=2GB
+# 
+# 
+# --------- Process Statistics ----------
+# Elapsed Time                       1 s
+# Total CPU Time                     2 s
+# Total Peak Memory                2.1 GB
+# ---------- Engine Processes -----------
+# Average CPU Time                   0 s
+# Minimum CPU Utilization            0 %
+# Average Peak Memory              0.2 GB
+# Maximum Peak Memory              0.4 GB
+# Peak Cores                         8
+# Distinct Machines                  1
+# Launch Failures                    0
+# Unexpected Process Terminations    0
+# Successful Re-connections          0
+# ---------------------------------------
+# 
+# 
+# ========================================
+# Property Summary                   Count
+# ========================================
+# Assumes                                1
+# ========================================
+# Asserts                               62
+# ----------------------------------------
+# Proven                                62
+# ========================================
+# 
+# Message Summary
+# ---------------------------------------------------------------------------
+# Count  Type     Message ID         Summary
+# ---------------------------------------------------------------------------
+#     1  Info     formal-205         Using initialization sequence file to initialize design state.
+#     8  Info     formal-385         Established connection with engine process.
+# 
+# Final Process Statistics: Peak Memory 0.38GB, Cumulative CPU Time 2s, Elapsed Time 1s
+# 
+# To see results in the GUI run:
+# qverify /study/2025/521406S/personal/ahyypio20/DT3_2025/project/workdir/output/audioport_connectcheck/propcheck.db
+# 
+# 

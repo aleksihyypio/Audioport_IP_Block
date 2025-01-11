@@ -1,0 +1,49 @@
+-----------------------------------------------------------------------------------------------
+DT3 PROJECT: SIMULATION PARAMATER VALUES:
+-----------------------------------------------------------------------------------------------
+Clock periods:
+        clk                     10.000000 ns
+        mclk                    54.253472 ns
+DESIGN PARAMETERS:
+        FILTER_TAPS                    53
+        AUDIO_FIFO_SIZE                60
+REGISTERS:
+        DSP_REGISTERS                 106
+        AUDIOPORT_REGISTERS           111
+INTERNAL REGISTER INDICES (DECIMAL):
+        CMD_REG_INDEX                   0
+        STATUS_REG_INDEX                1
+        LEVEL_REG_INDEX                 2
+        CFG_REG_INDEX                   3
+        DSP_REGS_START_INDEX            4
+        DSP_REGS_END_INDEX            110
+        LEFT_FIFO_INDEX               111
+        RIGHT_FIFO_INDEX              171
+REGISTER APB ADDRESSES (HEX):
+        AUDIOPORT_START_ADDRESS  8c000000
+        AUDIOPORT_END_ADDRESS    8c0003a0
+        CMD_REG_ADDRESS          8c000000
+        STATUS_REG_ADDRESS       8c000004
+        LEVEL_REG_ADDRESS        8c000008
+        CFG_REG_ADDRESS          8c00000c
+        DSP_REGS_START_ADDRESS   8c000010
+        DSP_REGS_END_ADDRESS     8c0001b8
+        LEFT_FIFO_ADDRESS        8c0001bc
+        RIGHT_FIFO_ADDRESS       8c0002ac
+ APB CONFIGURATION (HEX):
+        DUT_START_ADDRESS        8c000000
+        DUT_END_ADDRESS          8c0003a0
+        APB_START_ADDRESS        8c000000
+        APB_END_ADDRESS          8c000800
+ clk CYCLES PER SAMPLE:
+        CLK_DIV_48000                2084
+ CDC PARAREMETRS (INT):
+        CDC_DATASYNC_INTERVAL          42
+        CDC_DATASYNC_LATENCY           24
+        CDC_BITSYNC_INTERVAL            6
+        CDC_BITYNC_LATENCY              2
+        CDC_PULSESYNC_INTERVAL          1
+        CDC_PULSESYNC_LATENCY           8
+ dsp_unit PARAREMETERS:
+        DSP_UNIT_MAX_LATENCY          131
+-----------------------------------------------------------------------------------------------
