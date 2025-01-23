@@ -35,26 +35,26 @@
 # -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/control_unit_rtl.dbg -sclib output/control_unit_questasim_work -L output/control_unit_questasim_work
 # 1
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:55 on Jan 23,2025
+# Start time: 17:13:12 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/apb_pkg.sv 
 # -- Compiling package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:13:55 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:12 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:55 on Jan 23,2025
+# Start time: 17:13:12 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/audioport_pkg.sv 
 # -- Compiling package audioport_pkg
 # -- Importing package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:13:55 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:55 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/audioport_util_pkg.sv 
 # -- Compiling package audioport_util_pkg
 # -- Importing package apb_pkg
@@ -62,10 +62,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:13:55 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:55 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/control_unit_svamod.sv 
 # -- Compiling package control_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -75,10 +75,10 @@
 # 
 # Top level modules:
 # 	control_unit_svamod
-# End time: 14:13:55 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:55 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/apb_if.sv 
 # -- Compiling package apb_if_sv_unit
 # -- Importing package audioport_pkg
@@ -87,10 +87,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:13:55 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:55 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/irq_out_if.sv 
 # -- Compiling package irq_out_if_sv_unit
 # -- Importing package audioport_pkg
@@ -99,10 +99,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:13:56 on Jan 23,2025, Elapsed time: 0:00:01
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:56 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/control_unit_test.sv 
 # -- Compiling package control_unit_test_sv_unit
 # -- Importing package audioport_pkg
@@ -112,10 +112,10 @@
 # 
 # Top level modules:
 # 	control_unit_test
-# End time: 14:13:56 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:13:56 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+SYSTEMC_DUT" "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -work work -sv input/control_unit_tb.sv 
 # -- Compiling package control_unit_tb_sv_unit
 # -- Importing package apb_pkg
@@ -125,26 +125,26 @@
 # 
 # Top level modules:
 # 	control_unit_tb
-# End time: 14:13:56 on Jan 23,2025, Elapsed time: 0:00:00
+# End time: 17:13:13 on Jan 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # sccom -reportprogress -verbose -g -I input -work output/control_unit_questasim_work -verbose input/control_unit.cpp 
-# Start time: 14:13:56 on Jan 23,2025
+# Start time: 17:13:13 on Jan 23,2025
 # 
 # QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
 # 
 # -- Compiling module control_unit
 # Exported modules:
 # 	control_unit
-# End time: 14:13:59 on Jan 23,2025, Elapsed time: 0:00:03
+# End time: 17:13:16 on Jan 23,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # sccom -reportprogress -g -I input -work output/control_unit_questasim_work -verbose -link 
-# Start time: 14:13:59 on Jan 23,2025
+# Start time: 17:13:16 on Jan 23,2025
 # 
 # QuestaSim-64 sccom 2024.3_2 compiler 2024.11 Nov 25 2024
-# End time: 14:14:02 on Jan 23,2025, Elapsed time: 0:00:03
+# End time: 17:13:19 on Jan 23,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 14:14:02 on Jan 23,2025
+# Start time: 17:13:19 on Jan 23,2025
 # vopt -reportprogress 300 "+acc" -suppress 10587 -debugdb -noincr -sclib output/control_unit_questasim_work -L output/control_unit_questasim_work work.control_unit_tb -o control_unit_rtl_vopt 
 # 
 # Top level modules:
@@ -173,10 +173,10 @@
 # -- Optimizing interface irq_out_if(fast)
 # -- Optimizing interface apb_if(fast)
 # Optimized design name is control_unit_rtl_vopt
-# End time: 14:14:03 on Jan 23,2025, Elapsed time: 0:00:01
+# End time: 17:13:20 on Jan 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0, Suppressed Warnings: 1
 # vsim control_unit_rtl_vopt -assertdebug -msgmode both -classdebug -uvmcontrol=all -debugDB=output/control_unit_rtl.dbg -sclib output/control_unit_questasim_work -L output/control_unit_questasim_work 
-# Start time: 14:14:03 on Jan 23,2025
+# Start time: 17:13:20 on Jan 23,2025
 # Loading sv_std.std
 # Loading work.apb_pkg(fast)
 # Loading work.audioport_pkg(fast)
@@ -197,240 +197,21 @@
 #    Time: 50 ns  Scope: control_unit_tb.TEST.apb_test File: input/control_unit_test_tasks.svh Line: 20
 # ** Info: address_decoding_test
 #    Time: 305 ns  Scope: control_unit_tb.TEST.address_decoding_test File: input/control_unit_test_tasks.svh Line: 51
-# ** Error: ia_address_decoding_test1
-#    Time: 395 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 455 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 515 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 575 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 635 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 695 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 755 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 815 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 875 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 935 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 995 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1055 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1115 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1175 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1235 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1295 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1355 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1415 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1475 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1535 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1595 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1655 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1715 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1775 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1835 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1895 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 1955 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2015 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2075 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2135 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2195 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2255 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2315 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2375 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2435 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2495 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2555 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2615 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2675 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2735 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2795 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2855 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2915 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 2975 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3035 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3095 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3155 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3215 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3275 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3335 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3395 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3455 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3515 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3575 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3635 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3695 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3755 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3815 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3875 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3935 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 3995 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4055 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4115 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4175 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4235 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4295 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4355 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4415 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4475 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4535 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4595 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4655 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4715 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4775 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4835 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4895 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 4955 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5015 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5075 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5135 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5195 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5255 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5315 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5375 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5435 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5495 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5555 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5615 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5675 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5735 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5795 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5855 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5915 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 5975 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6035 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6095 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6155 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6215 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6275 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6335 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6395 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6455 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6515 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6575 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6635 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6695 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6755 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6815 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6875 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test1
-#    Time: 6935 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
-# ** Error: ia_address_decoding_test2
-#    Time: 7115 ns  Scope: audioport_util_pkg.assert_error File: input/audioport_util_pkg.sv Line: 30
+# ** Info: register_test
+#    Time: 7115 ns  Scope: control_unit_tb.TEST.register_test File: input/control_unit_test_tasks.svh Line: 76
 #####################################################################################################
-# control_unit_test results: PASSED:           1 / FAILED:           1
+# control_unit_test results: PASSED:           3 / FAILED:           0
 #####################################################################################################
 # ** Note: $finish    : input/control_unit_test.sv(84)
-#    Time: 7115 ns  Iteration: 2  Instance: /control_unit_tb/TEST
+#    Time: 13895 ns  Iteration: 2  Instance: /control_unit_tb/TEST
 # 1
 # Break in Module control_unit_test at input/control_unit_test.sv line 84
 # ** Note: (vsim-17388) No matching coverage data found.
 # ** Note: (vsim-17388) No matching coverage data found.
 # ** Note: (vsim-17388) No matching coverage data found.
 # .main_pane.msgviewer.interior.cs.body.tree
+# UVM Details: design does not contain any  UVM components, UVM debugging is disabled, or an  unknown questa_uvm_pkg has been loaded.
 quit
 # Saving coverage database on exit...
-# End time: 14:15:41 on Jan 23,2025, Elapsed time: 0:01:38
-# Errors: 111, Warnings: 0
+# End time: 17:33:56 on Jan 23,2025, Elapsed time: 0:20:36
+# Errors: 0, Warnings: 0

@@ -52,7 +52,7 @@ program control_unit_test
 	      reset_test;
 	      apb_test;
               address_decoding_test;
-//	        register_test;
+              register_test;
 //	        fifo_bus_test;
 //	        prdata_off_test;
 //	        cmd_start_stop_test;

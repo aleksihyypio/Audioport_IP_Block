@@ -49,7 +49,7 @@ module control_unit_tb;
    assign PADDR = apb.paddr;
    assign PWDATA = apb.pwdata;
    assign apb.prdata = PRDATA;
-   assign apb.pready =  ((PADDR >= DUT_START_ADDRESS && PADDR <= DUT_END_ADDRESS ) ? PREADY : 1'b1);
+   assign apb.pready = ((PADDR >= DUT_START_ADDRESS && PADDR <= DUT_END_ADDRESS ) ? PREADY : 1'b1);
    assign apb.pslverr = ((PADDR >= DUT_START_ADDRESS && PADDR <= DUT_END_ADDRESS)  ? PSLVERR : 1'b0);
 
    assign irq.irq_out = irq_out;   

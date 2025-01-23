@@ -6,7 +6,7 @@ set STUDENT_NUMBER    "172320"
 set CLK_PERIOD        10.0
 set MCLK_PERIOD       54.25347222
 set FILTER_TAPS       53.0
-set AUDIO_FIFO_SIZE   2.0
+set AUDIO_FIFO_SIZE   60.0
 
 ###################################################################
 # 2. Top-module selection (uncomment only one!)

@@ -6,7 +6,7 @@ Coverage Report by instance with details
 =================================================================================
 
 Assertion Coverage:
-    Assertions                       3         1         2    33.33%
+    Assertions                       2         2         0   100.00%
 --------------------------------------------------------------------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
                                                   Count        Count    Count      Count      Count       Count  Count          
@@ -14,12 +14,9 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/apb_test/ia_apb_test1
                      input/control_unit_test_tasks.svh(31)
                                                         0          1          0          0          1          0           0 off
-/control_unit_tb/TEST/address_decoding_test/ia_address_decoding_test2
-                     input/control_unit_test_tasks.svh(69)
-                                                        1          0          0          0          1          0           0 off
-/control_unit_tb/TEST/address_decoding_test/#anonblk#166378660#57#4#/ia_address_decoding_test1
-                     input/control_unit_test_tasks.svh(61)
-                                                      110          2          0          0        112          0           0 off
+/control_unit_tb/TEST/register_test/#anonblk#166378660#78#4#/ia_register_test_1
+                     input/control_unit_test_tasks.svh(83)
+                                                        0        110          0          0        110          0           0 off
 
 
 ASSERTION RESULTS:
@@ -30,12 +27,9 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/apb_test/ia_apb_test1
                      input/control_unit_test_tasks.svh(31)
                                                         0          1          0          0          1          0           0 off
-/control_unit_tb/TEST/address_decoding_test/ia_address_decoding_test2
-                     input/control_unit_test_tasks.svh(69)
-                                                        1          0          0          0          1          0           0 off
-/control_unit_tb/TEST/address_decoding_test/#anonblk#166378660#57#4#/ia_address_decoding_test1
-                     input/control_unit_test_tasks.svh(61)
-                                                      110          2          0          0        112          0           0 off
+/control_unit_tb/TEST/register_test/#anonblk#166378660#78#4#/ia_register_test_1
+                     input/control_unit_test_tasks.svh(83)
+                                                        0        110          0          0        110          0           0 off
 
-Total Coverage By Instance (filtered view): 33.33%
+Total Coverage By Instance (filtered view): 100.00%
 

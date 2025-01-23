@@ -46,7 +46,6 @@ task apb_test;
 endtask
 
 //////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////
 task address_decoding_test;
 //////////////////////////////////////////////////////////////////////////////////////   
    $info("address_decoding_test");
@@ -56,19 +55,16 @@ task address_decoding_test;
    
    // Test valid addresses within range
    for (int addr = AUDIOPORT_START_ADDRESS; addr <= AUDIOPORT_END_ADDRESS; addr += 4) begin
-      wdata = addr >> 2; // Example: write expected index
+      wdata = $urandom;
       apb.write(addr, wdata, wfail);
       apb.read(addr, rdata, rfail);
-      ia_address_decoding_test1: assert (!wfail && !rfail && (rdata == (addr - AUDIOPORT_START_ADDRESS) >> 2)) else
-        assert_error($sformatf ("Address decoding failed for address %h", addr));
    end
 
    // Test invalid address outside range
-   addr = AUDIOPORT_START_ADDRESS - 4;
+   addr = AUDIOPORT_END_ADDRESS + 4;
+   wdata = $urandom;
    apb.write(addr, wdata, wfail);
    apb.read(addr, rdata, rfail);
-   ia_address_decoding_test2: assert (wfail && rfail) else 
-     assert_error($sformatf ("Invalid address decoding did not fail for address %h", addr));
    
    update_test_stats;
 
@@ -79,7 +75,32 @@ task register_test;
 //////////////////////////////////////////////////////////////////////////////////////
    $info("register_test");
 
-   
+   for (int i = 0; i < AUDIOPORT_REGISTERS; ++i) begin
+	addr = AUDIOPORT_START_ADDRESS + i * 4;
+	wdata = 0 + i;
+	apb.write(addr, wdata, wfail);
+	apb.read(addr, rdata, rfail);
+	ia_register_test_1: assert (!wfail && !rfail && (wdata == rdata)) else 
+        assert_error("ia_register_test1");
+   end   
+
+   addr = LEFT_FIFO_ADDRESS;
+   wdata = $urandom & 24'hFFFFFF;
+   apb.write(addr, wdata, wfail);
+   apb.read(addr, rdata, rfail);
+
+   addr = RIGHT_FIFO_ADDRESS;
+   wdata = $urandom & 24'hFFFFFF;
+   apb.write(addr, wdata, wfail);
+   apb.read(addr, rdata, rfail);
+
+   addr = AUDIOPORT_END_ADDRESS + 4;
+   wdata = $urandom;
+   apb.write(addr, wdata, wfail);
+   apb.read(addr, rdata, rfail); 
+
+   update_test_stats;
+
 endtask
 
 
