@@ -53,14 +53,12 @@ task address_decoding_test;
    reset_test;
    req_in = '0;
    
-   // Test valid addresses within range
    for (int addr = AUDIOPORT_START_ADDRESS; addr <= AUDIOPORT_END_ADDRESS; addr += 4) begin
       wdata = $urandom;
       apb.write(addr, wdata, wfail);
       apb.read(addr, rdata, rfail);
    end
 
-   // Test invalid address outside range
    addr = AUDIOPORT_END_ADDRESS + 4;
    wdata = $urandom;
    apb.write(addr, wdata, wfail);
@@ -137,6 +135,29 @@ task cmd_clr_test;
 //////////////////////////////////////////////////////////////////////////////////////      
    $info("cmd_clr_test");
 
+   reset_test;
+   req_in = '0;
+   
+   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
+	wdata = 320;
+	apb.write(LEFT_FIFO_ADDRESS, wdata, wfail);
+	apb.write(RIGHT_FIFO_ADDRESS, wdata, wfail);
+   end
+
+   addr = CMD_REG_ADDRESS;
+   wdata = CMD_CLR;
+   apb.write(addr, wdata, wfail);
+
+   for (int i = 0; i < AUDIO_FIFO_SIZE; ++i) begin
+	apb.read(LEFT_FIFO_ADDRESS, rdata, rfail);
+	ia_cmd_clr_test_1: assert (rdata == 0) else 
+         assert_error("ia_cmd_clr_test_1");
+
+	apb.read(RIGHT_FIFO_ADDRESS, rdata, rfail);
+	ia_cmd_clr_test2: assert (rdata == 0) else
+	 assert_error("ia_cmd_clr_test2");
+   end
+
 endtask
 
 
@@ -145,6 +166,16 @@ task cmd_cfg_test;
 //////////////////////////////////////////////////////////////////////////////////////   
    $info("cmd_cfg_test");
 
+   reset_test;
+   req_in = '0;
+
+   addr = CMD_REG_ADDRESS;
+   wdata = CMD_CFG;
+   apb.write(addr, wdata, wfail);
+
+   repeat(10)
+	@posedge(clk);
+
 endtask
 
 
@@ -152,6 +183,16 @@ endtask
 task cmd_level_test;
 //////////////////////////////////////////////////////////////////////////////////////   
    $info("cmd_level_test");
+
+   reset_test;
+   req_in = '0;
+
+   addr = CMD_REG_ADDRESS;
+   wdata = CMD_LEVEL;
+   apb.write(addr, wdata, wfail);
+
+   repeat(10)
+	@posedge(clk);
 
 endtask
 

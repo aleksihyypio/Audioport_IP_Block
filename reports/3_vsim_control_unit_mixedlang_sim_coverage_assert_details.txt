@@ -6,7 +6,7 @@ Coverage Report by instance with details
 =================================================================================
 
 Assertion Coverage:
-    Assertions                       2         2         0   100.00%
+    Assertions                       4         4         0   100.00%
 --------------------------------------------------------------------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
                                                   Count        Count    Count      Count      Count       Count  Count          
@@ -17,6 +17,12 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/register_test/#anonblk#166378660#78#4#/ia_register_test_1
                      input/control_unit_test_tasks.svh(83)
                                                         0        110          0          0        110          0           0 off
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#153#4#/ia_cmd_clr_test_1
+                     input/control_unit_test_tasks.svh(155)
+                                                        0         60          0          0         60          0           0 off
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#153#4#/ia_cmd_clr_test2
+                     input/control_unit_test_tasks.svh(159)
+                                                        0         60          0          0         60          0           0 off
 
 
 ASSERTION RESULTS:
@@ -30,6 +36,12 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/TEST/register_test/#anonblk#166378660#78#4#/ia_register_test_1
                      input/control_unit_test_tasks.svh(83)
                                                         0        110          0          0        110          0           0 off
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#153#4#/ia_cmd_clr_test_1
+                     input/control_unit_test_tasks.svh(155)
+                                                        0         60          0          0         60          0           0 off
+/control_unit_tb/TEST/cmd_clr_test/#anonblk#166378660#153#4#/ia_cmd_clr_test2
+                     input/control_unit_test_tasks.svh(159)
+                                                        0         60          0          0         60          0           0 off
 
 Total Coverage By Instance (filtered view): 100.00%
 
