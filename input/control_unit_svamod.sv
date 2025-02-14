@@ -420,6 +420,42 @@ module control_unit_svamod
 
 `ifndef SYSTEMC_DUT
 
+   covergroup cg_rbwrites @(posedge clk);
+    option.per_instance = 1;
+
+    addresses: coverpoint PADDR[31:2] {
+      bins cmd_reg    = {CMD_REG_ADDRESS[31:2]};
+      bins cfg_reg    = {CFG_REG_ADDRESS[31:2]};
+      bins level_reg  = {LEVEL_REG_ADDRESS[31:2]};
+      bins dsp_regs[] = {DSP_REGS_START_ADDRESS[31:2], DSP_REGS_END_ADDRESS[31:2]};
+      bins illegal[]  = default; // Captures illegal/undefined register accesses
+    }
+   endgroup
+
+   covergroup cg_commands @(posedge clk);
+    option.per_instance = 1;
+
+    commands: coverpoint PWDATA {
+      bins start_cmd   = {CMD_START};
+      bins stop_cmd    = {CMD_STOP};
+      bins level_cmd   = {CMD_LEVEL};
+      bins irqack_cmd  = {CMD_IRQACK};
+      bins clr_cmd     = {CMD_CLR};
+      bins cfg_cmd     = {CMD_CFG};
+      bins illegal_cmd[] = default;  // Captures illegal/undefined command codes
+    }
+
+   modes: coverpoint play_out {
+      bins standby = {0};  // When play_out is 0
+      bins playing = {1};  // When play_out is 1
+   }
+
+   command_modes: cross commands, modes;
+   endgroup
+
+   // Instantiate covergroups
+   cg_rbwrites rbwrites_cg = new;
+   cg_commands commands_cg = new;
 
    
 `endif //  `ifndef SYSTEMC_DUT

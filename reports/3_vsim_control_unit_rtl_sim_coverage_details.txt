@@ -6,7 +6,7 @@ Coverage Report by instance with details
 =================================================================================
 
 Assertion Coverage:
-    Assertions                     248       246         2    99.19%
+    Assertions                     273       270         3    98.90%
 --------------------------------------------------------------------------------------------------------------------------------
 Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
                                                   Count        Count    Count      Count      Count       Count  Count          
@@ -256,179 +256,254 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_index_range
                      input/control_unit_wba.svh(48)
                                                         0     378811          0         21     378832          0           1 off
-/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rbank_r_write
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_apbwrite_on
                      input/control_unit_wba.svh(58)
+                                                        0        955     377856         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_apbwrite_off
+                     input/control_unit_wba.svh(68)
+                                                        0     377856        955         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_apbread_on
+                     input/control_unit_wba.svh(78)
+                                                        0        463     378348         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_apbread_off
+                     input/control_unit_wba.svh(88)
+                                                        0     378348        463         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rbank_r_write
+                     input/control_unit_wba.svh(98)
                                                         0        232     378578         21     378831          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_status_reg_play
-                     input/control_unit_wba.svh(68)
+                     input/control_unit_wba.svh(108)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_status_reg_standby
-                     input/control_unit_wba.svh(78)
+                     input/control_unit_wba.svh(118)
                                                         0          2     378808         21     378831          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rbank_r_stable
-                     input/control_unit_wba.svh(88)
+                     input/control_unit_wba.svh(128)
                                                         0     378568        233         31     378832          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_cfg_reg_out
-                     input/control_unit_wba.svh(98)
+                     input/control_unit_wba.svh(138)
                                                         0     378811          0         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_level_reg_out
-                     input/control_unit_wba.svh(108)
+                     input/control_unit_wba.svh(148)
                                                         0     378811          0         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_dsp_regs_out
-                     input/control_unit_wba.svh(118)
+                     input/control_unit_wba.svh(158)
                                                         0     378811          0         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ldata_r_write
-                     input/control_unit_wba.svh(128)
+                     input/control_unit_wba.svh(169)
                                                         0        361     378450         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ldata_r_failed_write
-                     input/control_unit_wba.svh(138)
+                     input/control_unit_wba.svh(179)
                                                         0          0     378811         21     378832          0           0 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ldata_r_stable
-                     input/control_unit_wba.svh(148)
+                     input/control_unit_wba.svh(189)
                                                         0     378438        362         31     378831          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lhead_r_inc
-                     input/control_unit_wba.svh(158)
+                     input/control_unit_wba.svh(199)
                                                         0        355     378456         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lhead_r_loop
-                     input/control_unit_wba.svh(168)
+                     input/control_unit_wba.svh(209)
                                                         0          6     378805         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lhead_r_stable
-                     input/control_unit_wba.svh(178)
+                     input/control_unit_wba.svh(219)
                                                         0     378438        362         31     378831          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_llooped_r_on
-                     input/control_unit_wba.svh(188)
+                     input/control_unit_wba.svh(229)
                                                         0          6     378805         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_llooped_r_off_1
-                     input/control_unit_wba.svh(198)
+                     input/control_unit_wba.svh(239)
                                                         0          1     378810         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_llooped_r_off_2
-                     input/control_unit_wba.svh(208)
+                     input/control_unit_wba.svh(249)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_llooped_r_stable
-                     input/control_unit_wba.svh(218)
+                     input/control_unit_wba.svh(259)
                                                         0     378197        603         31     378831          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ltail_r_inc_1
-                     input/control_unit_wba.svh(228)
+                     input/control_unit_wba.svh(269)
                                                         0         60     378751         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ltail_r_inc_2
-                     input/control_unit_wba.svh(238)
+                     input/control_unit_wba.svh(279)
                                                         0        177     378634         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ltail_r_loop_1
-                     input/control_unit_wba.svh(248)
+                     input/control_unit_wba.svh(289)
                                                         0          1     378810         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ltail_r_loop_2
-                     input/control_unit_wba.svh(258)
+                     input/control_unit_wba.svh(299)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_ltail_r_stable
-                     input/control_unit_wba.svh(269)
+                     input/control_unit_wba.svh(310)
                                                         0     378558        242         31     378831          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lempty_on
-                     input/control_unit_wba.svh(279)
+                     input/control_unit_wba.svh(320)
                                                         0       2434     376377         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lempty_of
-                     input/control_unit_wba.svh(289)
+                     input/control_unit_wba.svh(330)
                                                         0     376377       2434         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lfull_on
-                     input/control_unit_wba.svh(299)
+                     input/control_unit_wba.svh(340)
                                                         0       5556     373255         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lfull_off
-                     input/control_unit_wba.svh(309)
+                     input/control_unit_wba.svh(350)
                                                         0     373255       5556         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lfifo_output_on
-                     input/control_unit_wba.svh(319)
+                     input/control_unit_wba.svh(360)
                                                         0     376377       2434         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_lfifo_output_off
-                     input/control_unit_wba.svh(329)
+                     input/control_unit_wba.svh(370)
                                                         0       2434     376377         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rdata_r_write
+                     input/control_unit_wba.svh(382)
+                                                        0        361     378450         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rdata_r_failed_write
+                     input/control_unit_wba.svh(392)
+                                                        0          0     378811         21     378832          0           0 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rdata_r_stable
+                     input/control_unit_wba.svh(402)
+                                                        0     378438        362         31     378831          0           2 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rhead_r_inc
+                     input/control_unit_wba.svh(412)
+                                                        0        355     378456         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rhead_r_loop
+                     input/control_unit_wba.svh(422)
+                                                        0          6     378805         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rhead_r_stable
+                     input/control_unit_wba.svh(432)
+                                                        0     378438        362         31     378831          0           2 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rlooped_r_on
+                     input/control_unit_wba.svh(442)
+                                                        0          6     378805         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rlooped_r_off_1
+                     input/control_unit_wba.svh(452)
+                                                        0          1     378810         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rlooped_r_off_2
+                     input/control_unit_wba.svh(462)
+                                                        0          3     378808         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rlooped_r_stable
+                     input/control_unit_wba.svh(472)
+                                                        0     378197        603         31     378831          0           2 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rtail_r_inc_1
+                     input/control_unit_wba.svh(482)
+                                                        0         60     378751         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rtail_r_inc_2
+                     input/control_unit_wba.svh(492)
+                                                        0        177     378634         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rtail_r_loop_1
+                     input/control_unit_wba.svh(502)
+                                                        0          1     378810         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rtail_r_loop_2
+                     input/control_unit_wba.svh(512)
+                                                        0          3     378808         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rtail_r_stable
+                     input/control_unit_wba.svh(523)
+                                                        0     378558        242         31     378831          0           2 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rempty_on
+                     input/control_unit_wba.svh(533)
+                                                        0       2449     376362         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rempty_of
+                     input/control_unit_wba.svh(543)
+                                                        0     376362       2449         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rfull_on
+                     input/control_unit_wba.svh(553)
+                                                        0       5541     373270         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rfull_off
+                     input/control_unit_wba.svh(563)
+                                                        0     373270       5541         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rfifo_output_on
+                     input/control_unit_wba.svh(573)
+                                                        0     376362       2449         21     378832          0           1 off
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_rfifo_output_off
+                     input/control_unit_wba.svh(583)
+                                                        0       2449     376362         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_prdata_rbank
-                     input/control_unit_wba.svh(339)
+                     input/control_unit_wba.svh(596)
                                                         0        908     377903         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_prdata_lfifo
-                     input/control_unit_wba.svh(349)
+                     input/control_unit_wba.svh(606)
                                                         0        964     377847         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_prdata_rfifo
-                     input/control_unit_wba.svh(359)
+                     input/control_unit_wba.svh(616)
                                                         0        964     377847         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_prdata_off
-                     input/control_unit_wba.svh(369)
+                     input/control_unit_wba.svh(626)
                                                         0     375975       2836         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_play_r_rise
-                     input/control_unit_wba.svh(379)
+                     input/control_unit_wba.svh(636)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_play_r_fall
-                     input/control_unit_wba.svh(389)
+                     input/control_unit_wba.svh(646)
                                                         0          2     378808         21     378831          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_play_r_stable
-                     input/control_unit_wba.svh(399)
+                     input/control_unit_wba.svh(656)
                                                         0     378795          6         31     378832          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_play_out_state
-                     input/control_unit_wba.svh(409)
+                     input/control_unit_wba.svh(666)
                                                         0     378811          0         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_clr_on
-                     input/control_unit_wba.svh(419)
+                     input/control_unit_wba.svh(676)
                                                         0          1     378810         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_clr_off
-                     input/control_unit_wba.svh(429)
+                     input/control_unit_wba.svh(686)
                                                         0     378810          1         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_clr_out
-                     input/control_unit_wba.svh(439)
+                     input/control_unit_wba.svh(696)
                                                         0     378811          0         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_cfg_out_on
-                     input/control_unit_wba.svh(449)
+                     input/control_unit_wba.svh(706)
                                                         0          1     378810         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_cfg_out_off
-                     input/control_unit_wba.svh(459)
+                     input/control_unit_wba.svh(716)
                                                         0     378810          1         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_start_on
-                     input/control_unit_wba.svh(469)
+                     input/control_unit_wba.svh(726)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_start_off
-                     input/control_unit_wba.svh(479)
+                     input/control_unit_wba.svh(736)
                                                         0     378808          3         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_stop_on
-                     input/control_unit_wba.svh(489)
+                     input/control_unit_wba.svh(746)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_stop_off
-                     input/control_unit_wba.svh(499)
+                     input/control_unit_wba.svh(756)
                                                         0     378808          3         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_level_out_on
-                     input/control_unit_wba.svh(509)
+                     input/control_unit_wba.svh(766)
                                                         0          1     378810         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_level_out_off
-                     input/control_unit_wba.svh(519)
+                     input/control_unit_wba.svh(776)
                                                         0     378810          1         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irqack_on
-                     input/control_unit_wba.svh(529)
+                     input/control_unit_wba.svh(786)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irqack_off
-                     input/control_unit_wba.svh(539)
+                     input/control_unit_wba.svh(796)
                                                         0     378808          3         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_tick_out_on
-                     input/control_unit_wba.svh(549)
+                     input/control_unit_wba.svh(806)
                                                         0       3266     375545         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_tick_out_of
-                     input/control_unit_wba.svh(559)
+                     input/control_unit_wba.svh(816)
                                                         0     375545       3266         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_req_r_on
-                     input/control_unit_wba.svh(569)
+                     input/control_unit_wba.svh(826)
                                                         0     375544       3266         21     378831          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_req_r_off
-                     input/control_unit_wba.svh(579)
+                     input/control_unit_wba.svh(836)
                                                         0       3256     375545         31     378832          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irq_r_rise
-                     input/control_unit_wba.svh(589)
+                     input/control_unit_wba.svh(846)
                                                         0         69     378742         21     378832          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irq_r_fall_stop
-                     input/control_unit_wba.svh(599)
+                     input/control_unit_wba.svh(856)
                                                         0          2     378808         21     378831          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irq_r_fall_irqack
-                     input/control_unit_wba.svh(609)
+                     input/control_unit_wba.svh(866)
                                                         0          3     378808         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irq_r_stable
-                     input/control_unit_wba.svh(619)
+                     input/control_unit_wba.svh(876)
                                                         0     378726         75         31     378832          0           2 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/ar_irq_out
-                     input/control_unit_wba.svh(629)
+                     input/control_unit_wba.svh(886)
                                                         0     378811          0         21     378832          0           1 off
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/af_dsp_regs_drv
                      input/control_unit_svamod.sv(402)
@@ -749,8 +824,795 @@ Name                 File(Line)                   Failure      Pass     Vacuous 
                      input/control_unit_svamod.sv(402)
                                                         0          2     378809         21     378832          0           1 off
 
+Covergroup Coverage:
+    Covergroups                      2        na        na    95.83%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins         25        22         3    88.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cg_rbwrites 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint addresses                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/rbwrites_cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     5          5          -                      
+    missing/total bins:                                     0          5          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint addresses                              100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin cmd_reg                                        36          1          -    Covered              
+        bin cfg_reg                                         8          1          -    Covered              
+        bin level_reg                                       8          1          -    Covered              
+        bin dsp_regs[587202564]                             8          1          -    Covered              
+        bin dsp_regs[587202669]                             8          1          -    Covered              
+        default bin illegal[0]                         375984                     -    Occurred             
+        default bin illegal[587202559]                      4                     -    Occurred             
+        default bin illegal[587202561]                      8                     -    Occurred             
+        default bin illegal[587202565]                      8                     -    Occurred             
+        default bin illegal[587202566]                      8                     -    Occurred             
+        default bin illegal[587202567]                      8                     -    Occurred             
+        default bin illegal[587202568]                      8                     -    Occurred             
+        default bin illegal[587202569]                      8                     -    Occurred             
+        default bin illegal[587202570]                      8                     -    Occurred             
+        default bin illegal[587202571]                      8                     -    Occurred             
+        default bin illegal[587202572]                      8                     -    Occurred             
+        default bin illegal[587202573]                      8                     -    Occurred             
+        default bin illegal[587202574]                      8                     -    Occurred             
+        default bin illegal[587202575]                      8                     -    Occurred             
+        default bin illegal[587202576]                      8                     -    Occurred             
+        default bin illegal[587202577]                      8                     -    Occurred             
+        default bin illegal[587202578]                      8                     -    Occurred             
+        default bin illegal[587202579]                      8                     -    Occurred             
+        default bin illegal[587202580]                      8                     -    Occurred             
+        default bin illegal[587202581]                      8                     -    Occurred             
+        default bin illegal[587202582]                      8                     -    Occurred             
+        default bin illegal[587202583]                      8                     -    Occurred             
+        default bin illegal[587202584]                      8                     -    Occurred             
+        default bin illegal[587202585]                      8                     -    Occurred             
+        default bin illegal[587202586]                      8                     -    Occurred             
+        default bin illegal[587202587]                      8                     -    Occurred             
+        default bin illegal[587202588]                      8                     -    Occurred             
+        default bin illegal[587202589]                      8                     -    Occurred             
+        default bin illegal[587202590]                      8                     -    Occurred             
+        default bin illegal[587202591]                      8                     -    Occurred             
+        default bin illegal[587202592]                      8                     -    Occurred             
+        default bin illegal[587202593]                      8                     -    Occurred             
+        default bin illegal[587202594]                      8                     -    Occurred             
+        default bin illegal[587202595]                      8                     -    Occurred             
+        default bin illegal[587202596]                      8                     -    Occurred             
+        default bin illegal[587202597]                      8                     -    Occurred             
+        default bin illegal[587202598]                      8                     -    Occurred             
+        default bin illegal[587202599]                      8                     -    Occurred             
+        default bin illegal[587202600]                      8                     -    Occurred             
+        default bin illegal[587202601]                      8                     -    Occurred             
+        default bin illegal[587202602]                      8                     -    Occurred             
+        default bin illegal[587202603]                      8                     -    Occurred             
+        default bin illegal[587202604]                      8                     -    Occurred             
+        default bin illegal[587202605]                      8                     -    Occurred             
+        default bin illegal[587202606]                      8                     -    Occurred             
+        default bin illegal[587202607]                      8                     -    Occurred             
+        default bin illegal[587202608]                      8                     -    Occurred             
+        default bin illegal[587202609]                      8                     -    Occurred             
+        default bin illegal[587202610]                      8                     -    Occurred             
+        default bin illegal[587202611]                      8                     -    Occurred             
+        default bin illegal[587202612]                      8                     -    Occurred             
+        default bin illegal[587202613]                      8                     -    Occurred             
+        default bin illegal[587202614]                      8                     -    Occurred             
+        default bin illegal[587202615]                      8                     -    Occurred             
+        default bin illegal[587202616]                      8                     -    Occurred             
+        default bin illegal[587202617]                      8                     -    Occurred             
+        default bin illegal[587202618]                      8                     -    Occurred             
+        default bin illegal[587202619]                      8                     -    Occurred             
+        default bin illegal[587202620]                      8                     -    Occurred             
+        default bin illegal[587202621]                      8                     -    Occurred             
+        default bin illegal[587202622]                      8                     -    Occurred             
+        default bin illegal[587202623]                      8                     -    Occurred             
+        default bin illegal[587202624]                      8                     -    Occurred             
+        default bin illegal[587202625]                      8                     -    Occurred             
+        default bin illegal[587202626]                      8                     -    Occurred             
+        default bin illegal[587202627]                      8                     -    Occurred             
+        default bin illegal[587202628]                      8                     -    Occurred             
+        default bin illegal[587202629]                      8                     -    Occurred             
+        default bin illegal[587202630]                      8                     -    Occurred             
+        default bin illegal[587202631]                      8                     -    Occurred             
+        default bin illegal[587202632]                      8                     -    Occurred             
+        default bin illegal[587202633]                      8                     -    Occurred             
+        default bin illegal[587202634]                      8                     -    Occurred             
+        default bin illegal[587202635]                      8                     -    Occurred             
+        default bin illegal[587202636]                      8                     -    Occurred             
+        default bin illegal[587202637]                      8                     -    Occurred             
+        default bin illegal[587202638]                      8                     -    Occurred             
+        default bin illegal[587202639]                      8                     -    Occurred             
+        default bin illegal[587202640]                      8                     -    Occurred             
+        default bin illegal[587202641]                      8                     -    Occurred             
+        default bin illegal[587202642]                      8                     -    Occurred             
+        default bin illegal[587202643]                      8                     -    Occurred             
+        default bin illegal[587202644]                      8                     -    Occurred             
+        default bin illegal[587202645]                      8                     -    Occurred             
+        default bin illegal[587202646]                      8                     -    Occurred             
+        default bin illegal[587202647]                      8                     -    Occurred             
+        default bin illegal[587202648]                      8                     -    Occurred             
+        default bin illegal[587202649]                      8                     -    Occurred             
+        default bin illegal[587202650]                      8                     -    Occurred             
+        default bin illegal[587202651]                      8                     -    Occurred             
+        default bin illegal[587202652]                      8                     -    Occurred             
+        default bin illegal[587202653]                      8                     -    Occurred             
+        default bin illegal[587202654]                      8                     -    Occurred             
+        default bin illegal[587202655]                      8                     -    Occurred             
+        default bin illegal[587202656]                      8                     -    Occurred             
+        default bin illegal[587202657]                      8                     -    Occurred             
+        default bin illegal[587202658]                      8                     -    Occurred             
+        default bin illegal[587202659]                      8                     -    Occurred             
+        default bin illegal[587202660]                      8                     -    Occurred             
+        default bin illegal[587202661]                      8                     -    Occurred             
+        default bin illegal[587202662]                      8                     -    Occurred             
+        default bin illegal[587202663]                      8                     -    Occurred             
+        default bin illegal[587202664]                      8                     -    Occurred             
+        default bin illegal[587202665]                      8                     -    Occurred             
+        default bin illegal[587202666]                      8                     -    Occurred             
+        default bin illegal[587202667]                      8                     -    Occurred             
+        default bin illegal[587202668]                      8                     -    Occurred             
+        default bin illegal[587202670]                    964                     -    Occurred             
+        default bin illegal[587202671]                    964                     -    Occurred             
+        default bin illegal[587202672]                      8                     -    Occurred             
+ TYPE /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cg_commands 
+                                                       91.66%        100          -    Uncovered            
+    covered/total bins:                                    17         20          -                      
+    missing/total bins:                                     3         20          -                      
+    % Hit:                                             85.00%        100          -                      
+    Coverpoint commands                               100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint modes                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Cross command_modes                                75.00%        100          -    Uncovered            
+        covered/total bins:                                 9         12          -                      
+        missing/total bins:                                 3         12          -                      
+        % Hit:                                         75.00%        100          -                      
+ Covergroup instance \/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/commands_cg  
+                                                       91.66%        100          -    Uncovered            
+    covered/total bins:                                    17         20          -                      
+    missing/total bins:                                     3         20          -                      
+    % Hit:                                             85.00%        100          -                      
+    Coverpoint commands                               100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin start_cmd                                  125123          1          -    Covered              
+        bin stop_cmd                                       77          1          -    Covered              
+        bin level_cmd                                      33          1          -    Covered              
+        bin irqack_cmd                                 249384          1          -    Covered              
+        bin clr_cmd                                       377          1          -    Covered              
+        bin cfg_cmd                                        33          1          -    Covered              
+        default bin illegal_cmd[0]                         70                     -    Occurred             
+        default bin illegal_cmd[3]                         21                     -    Occurred             
+        default bin illegal_cmd[5]                         21                     -    Occurred             
+        default bin illegal_cmd[6]                         21                     -    Occurred             
+        default bin illegal_cmd[7]                         21                     -    Occurred             
+        default bin illegal_cmd[9]                         21                     -    Occurred             
+        default bin illegal_cmd[10]                        21                     -    Occurred             
+        default bin illegal_cmd[11]                        21                     -    Occurred             
+        default bin illegal_cmd[12]                        21                     -    Occurred             
+        default bin illegal_cmd[13]                        21                     -    Occurred             
+        default bin illegal_cmd[14]                        21                     -    Occurred             
+        default bin illegal_cmd[15]                        21                     -    Occurred             
+        default bin illegal_cmd[17]                        21                     -    Occurred             
+        default bin illegal_cmd[18]                        21                     -    Occurred             
+        default bin illegal_cmd[19]                        21                     -    Occurred             
+        default bin illegal_cmd[20]                        21                     -    Occurred             
+        default bin illegal_cmd[21]                        21                     -    Occurred             
+        default bin illegal_cmd[22]                        21                     -    Occurred             
+        default bin illegal_cmd[23]                        21                     -    Occurred             
+        default bin illegal_cmd[24]                        21                     -    Occurred             
+        default bin illegal_cmd[25]                        21                     -    Occurred             
+        default bin illegal_cmd[26]                        21                     -    Occurred             
+        default bin illegal_cmd[27]                        21                     -    Occurred             
+        default bin illegal_cmd[28]                        21                     -    Occurred             
+        default bin illegal_cmd[29]                        21                     -    Occurred             
+        default bin illegal_cmd[30]                        21                     -    Occurred             
+        default bin illegal_cmd[31]                        21                     -    Occurred             
+        default bin illegal_cmd[33]                        21                     -    Occurred             
+        default bin illegal_cmd[34]                        21                     -    Occurred             
+        default bin illegal_cmd[35]                        21                     -    Occurred             
+        default bin illegal_cmd[36]                        21                     -    Occurred             
+        default bin illegal_cmd[37]                        21                     -    Occurred             
+        default bin illegal_cmd[38]                        21                     -    Occurred             
+        default bin illegal_cmd[39]                        21                     -    Occurred             
+        default bin illegal_cmd[40]                        21                     -    Occurred             
+        default bin illegal_cmd[41]                        21                     -    Occurred             
+        default bin illegal_cmd[42]                        21                     -    Occurred             
+        default bin illegal_cmd[43]                        21                     -    Occurred             
+        default bin illegal_cmd[44]                        21                     -    Occurred             
+        default bin illegal_cmd[45]                        21                     -    Occurred             
+        default bin illegal_cmd[46]                        21                     -    Occurred             
+        default bin illegal_cmd[47]                        21                     -    Occurred             
+        default bin illegal_cmd[48]                        21                     -    Occurred             
+        default bin illegal_cmd[49]                        21                     -    Occurred             
+        default bin illegal_cmd[50]                        21                     -    Occurred             
+        default bin illegal_cmd[51]                        21                     -    Occurred             
+        default bin illegal_cmd[52]                        21                     -    Occurred             
+        default bin illegal_cmd[53]                        21                     -    Occurred             
+        default bin illegal_cmd[54]                        21                     -    Occurred             
+        default bin illegal_cmd[55]                        21                     -    Occurred             
+        default bin illegal_cmd[56]                        21                     -    Occurred             
+        default bin illegal_cmd[57]                        21                     -    Occurred             
+        default bin illegal_cmd[58]                        21                     -    Occurred             
+        default bin illegal_cmd[59]                        21                     -    Occurred             
+        default bin illegal_cmd[60]                        15                     -    Occurred             
+        default bin illegal_cmd[61]                        14                     -    Occurred             
+        default bin illegal_cmd[62]                         9                     -    Occurred             
+        default bin illegal_cmd[63]                         9                     -    Occurred             
+        default bin illegal_cmd[64]                         9                     -    Occurred             
+        default bin illegal_cmd[65]                         9                     -    Occurred             
+        default bin illegal_cmd[66]                         9                     -    Occurred             
+        default bin illegal_cmd[67]                         9                     -    Occurred             
+        default bin illegal_cmd[68]                         9                     -    Occurred             
+        default bin illegal_cmd[69]                         9                     -    Occurred             
+        default bin illegal_cmd[70]                         9                     -    Occurred             
+        default bin illegal_cmd[71]                         9                     -    Occurred             
+        default bin illegal_cmd[72]                         9                     -    Occurred             
+        default bin illegal_cmd[73]                         9                     -    Occurred             
+        default bin illegal_cmd[74]                         9                     -    Occurred             
+        default bin illegal_cmd[75]                         9                     -    Occurred             
+        default bin illegal_cmd[76]                         9                     -    Occurred             
+        default bin illegal_cmd[77]                         9                     -    Occurred             
+        default bin illegal_cmd[78]                         9                     -    Occurred             
+        default bin illegal_cmd[79]                         9                     -    Occurred             
+        default bin illegal_cmd[80]                         9                     -    Occurred             
+        default bin illegal_cmd[81]                         9                     -    Occurred             
+        default bin illegal_cmd[82]                         9                     -    Occurred             
+        default bin illegal_cmd[83]                         9                     -    Occurred             
+        default bin illegal_cmd[84]                         9                     -    Occurred             
+        default bin illegal_cmd[85]                         9                     -    Occurred             
+        default bin illegal_cmd[86]                         9                     -    Occurred             
+        default bin illegal_cmd[87]                         9                     -    Occurred             
+        default bin illegal_cmd[88]                         9                     -    Occurred             
+        default bin illegal_cmd[89]                         9                     -    Occurred             
+        default bin illegal_cmd[90]                         9                     -    Occurred             
+        default bin illegal_cmd[91]                         9                     -    Occurred             
+        default bin illegal_cmd[92]                         9                     -    Occurred             
+        default bin illegal_cmd[93]                         9                     -    Occurred             
+        default bin illegal_cmd[94]                         9                     -    Occurred             
+        default bin illegal_cmd[95]                         9                     -    Occurred             
+        default bin illegal_cmd[96]                         9                     -    Occurred             
+        default bin illegal_cmd[97]                         9                     -    Occurred             
+        default bin illegal_cmd[98]                         9                     -    Occurred             
+        default bin illegal_cmd[99]                         9                     -    Occurred             
+        default bin illegal_cmd[100]                        9                     -    Occurred             
+        default bin illegal_cmd[101]                        9                     -    Occurred             
+        default bin illegal_cmd[102]                        9                     -    Occurred             
+        default bin illegal_cmd[103]                        9                     -    Occurred             
+        default bin illegal_cmd[104]                        9                     -    Occurred             
+        default bin illegal_cmd[105]                        9                     -    Occurred             
+        default bin illegal_cmd[106]                        9                     -    Occurred             
+        default bin illegal_cmd[107]                        9                     -    Occurred             
+        default bin illegal_cmd[108]                        9                     -    Occurred             
+        default bin illegal_cmd[109]                        9                     -    Occurred             
+        default bin illegal_cmd[110]                        3                     -    Occurred             
+        default bin illegal_cmd[111]                        3                     -    Occurred             
+        default bin illegal_cmd[112]                        3                     -    Occurred             
+        default bin illegal_cmd[113]                        3                     -    Occurred             
+        default bin illegal_cmd[114]                        3                     -    Occurred             
+        default bin illegal_cmd[115]                        3                     -    Occurred             
+        default bin illegal_cmd[116]                        3                     -    Occurred             
+        default bin illegal_cmd[117]                        3                     -    Occurred             
+        default bin illegal_cmd[118]                        3                     -    Occurred             
+        default bin illegal_cmd[119]                        3                     -    Occurred             
+        default bin illegal_cmd[120]                        3                     -    Occurred             
+        default bin illegal_cmd[121]                        3                     -    Occurred             
+        default bin illegal_cmd[122]                        3                     -    Occurred             
+        default bin illegal_cmd[123]                        3                     -    Occurred             
+        default bin illegal_cmd[124]                        3                     -    Occurred             
+        default bin illegal_cmd[125]                        3                     -    Occurred             
+        default bin illegal_cmd[126]                        3                     -    Occurred             
+        default bin illegal_cmd[127]                        3                     -    Occurred             
+        default bin illegal_cmd[128]                        3                     -    Occurred             
+        default bin illegal_cmd[129]                        3                     -    Occurred             
+        default bin illegal_cmd[130]                        3                     -    Occurred             
+        default bin illegal_cmd[131]                        3                     -    Occurred             
+        default bin illegal_cmd[132]                        3                     -    Occurred             
+        default bin illegal_cmd[133]                        3                     -    Occurred             
+        default bin illegal_cmd[134]                        3                     -    Occurred             
+        default bin illegal_cmd[135]                        3                     -    Occurred             
+        default bin illegal_cmd[136]                        3                     -    Occurred             
+        default bin illegal_cmd[137]                        3                     -    Occurred             
+        default bin illegal_cmd[138]                        3                     -    Occurred             
+        default bin illegal_cmd[139]                        3                     -    Occurred             
+        default bin illegal_cmd[140]                        3                     -    Occurred             
+        default bin illegal_cmd[141]                        3                     -    Occurred             
+        default bin illegal_cmd[142]                        3                     -    Occurred             
+        default bin illegal_cmd[143]                        3                     -    Occurred             
+        default bin illegal_cmd[144]                        3                     -    Occurred             
+        default bin illegal_cmd[145]                        3                     -    Occurred             
+        default bin illegal_cmd[146]                        3                     -    Occurred             
+        default bin illegal_cmd[147]                        3                     -    Occurred             
+        default bin illegal_cmd[148]                        3                     -    Occurred             
+        default bin illegal_cmd[149]                        3                     -    Occurred             
+        default bin illegal_cmd[150]                        3                     -    Occurred             
+        default bin illegal_cmd[151]                        3                     -    Occurred             
+        default bin illegal_cmd[152]                        3                     -    Occurred             
+        default bin illegal_cmd[153]                        3                     -    Occurred             
+        default bin illegal_cmd[154]                        3                     -    Occurred             
+        default bin illegal_cmd[155]                        3                     -    Occurred             
+        default bin illegal_cmd[156]                        3                     -    Occurred             
+        default bin illegal_cmd[157]                        3                     -    Occurred             
+        default bin illegal_cmd[158]                        3                     -    Occurred             
+        default bin illegal_cmd[159]                        3                     -    Occurred             
+        default bin illegal_cmd[160]                        3                     -    Occurred             
+        default bin illegal_cmd[161]                        3                     -    Occurred             
+        default bin illegal_cmd[162]                        3                     -    Occurred             
+        default bin illegal_cmd[163]                        3                     -    Occurred             
+        default bin illegal_cmd[164]                        3                     -    Occurred             
+        default bin illegal_cmd[165]                        3                     -    Occurred             
+        default bin illegal_cmd[166]                        3                     -    Occurred             
+        default bin illegal_cmd[167]                        3                     -    Occurred             
+        default bin illegal_cmd[168]                        3                     -    Occurred             
+        default bin illegal_cmd[169]                        3                     -    Occurred             
+        default bin illegal_cmd[170]                        3                     -    Occurred             
+        default bin illegal_cmd[171]                        3                     -    Occurred             
+        default bin illegal_cmd[172]                        3                     -    Occurred             
+        default bin illegal_cmd[173]                        3                     -    Occurred             
+        default bin illegal_cmd[174]                        3                     -    Occurred             
+        default bin illegal_cmd[175]                        3                     -    Occurred             
+        default bin illegal_cmd[176]                        3                     -    Occurred             
+        default bin illegal_cmd[177]                        3                     -    Occurred             
+        default bin illegal_cmd[178]                        3                     -    Occurred             
+        default bin illegal_cmd[179]                        3                     -    Occurred             
+        default bin illegal_cmd[180]                        3                     -    Occurred             
+        default bin illegal_cmd[181]                        3                     -    Occurred             
+        default bin illegal_cmd[182]                        3                     -    Occurred             
+        default bin illegal_cmd[183]                        3                     -    Occurred             
+        default bin illegal_cmd[184]                        3                     -    Occurred             
+        default bin illegal_cmd[185]                        3                     -    Occurred             
+        default bin illegal_cmd[186]                        3                     -    Occurred             
+        default bin illegal_cmd[187]                        3                     -    Occurred             
+        default bin illegal_cmd[188]                        3                     -    Occurred             
+        default bin illegal_cmd[189]                        3                     -    Occurred             
+        default bin illegal_cmd[190]                        3                     -    Occurred             
+        default bin illegal_cmd[191]                        3                     -    Occurred             
+        default bin illegal_cmd[192]                        3                     -    Occurred             
+        default bin illegal_cmd[193]                        3                     -    Occurred             
+        default bin illegal_cmd[194]                        3                     -    Occurred             
+        default bin illegal_cmd[195]                        3                     -    Occurred             
+        default bin illegal_cmd[196]                        3                     -    Occurred             
+        default bin illegal_cmd[197]                        3                     -    Occurred             
+        default bin illegal_cmd[198]                        3                     -    Occurred             
+        default bin illegal_cmd[199]                        3                     -    Occurred             
+        default bin illegal_cmd[200]                        3                     -    Occurred             
+        default bin illegal_cmd[201]                        3                     -    Occurred             
+        default bin illegal_cmd[202]                        3                     -    Occurred             
+        default bin illegal_cmd[203]                        3                     -    Occurred             
+        default bin illegal_cmd[204]                        3                     -    Occurred             
+        default bin illegal_cmd[205]                        3                     -    Occurred             
+        default bin illegal_cmd[206]                        3                     -    Occurred             
+        default bin illegal_cmd[207]                        3                     -    Occurred             
+        default bin illegal_cmd[208]                        3                     -    Occurred             
+        default bin illegal_cmd[209]                        3                     -    Occurred             
+        default bin illegal_cmd[210]                        3                     -    Occurred             
+        default bin illegal_cmd[211]                        3                     -    Occurred             
+        default bin illegal_cmd[212]                        3                     -    Occurred             
+        default bin illegal_cmd[213]                        3                     -    Occurred             
+        default bin illegal_cmd[214]                        3                     -    Occurred             
+        default bin illegal_cmd[215]                        3                     -    Occurred             
+        default bin illegal_cmd[216]                        3                     -    Occurred             
+        default bin illegal_cmd[217]                        3                     -    Occurred             
+        default bin illegal_cmd[218]                        3                     -    Occurred             
+        default bin illegal_cmd[219]                        3                     -    Occurred             
+        default bin illegal_cmd[220]                        3                     -    Occurred             
+        default bin illegal_cmd[221]                        3                     -    Occurred             
+        default bin illegal_cmd[222]                        3                     -    Occurred             
+        default bin illegal_cmd[223]                        3                     -    Occurred             
+        default bin illegal_cmd[224]                        3                     -    Occurred             
+        default bin illegal_cmd[225]                        3                     -    Occurred             
+        default bin illegal_cmd[226]                        3                     -    Occurred             
+        default bin illegal_cmd[227]                        3                     -    Occurred             
+        default bin illegal_cmd[228]                        3                     -    Occurred             
+        default bin illegal_cmd[229]                        3                     -    Occurred             
+        default bin illegal_cmd[230]                        3                     -    Occurred             
+        default bin illegal_cmd[231]                        3                     -    Occurred             
+        default bin illegal_cmd[232]                        3                     -    Occurred             
+        default bin illegal_cmd[233]                        3                     -    Occurred             
+        default bin illegal_cmd[234]                        3                     -    Occurred             
+        default bin illegal_cmd[235]                        3                     -    Occurred             
+        default bin illegal_cmd[236]                        3                     -    Occurred             
+        default bin illegal_cmd[237]                        3                     -    Occurred             
+        default bin illegal_cmd[238]                        3                     -    Occurred             
+        default bin illegal_cmd[239]                        3                     -    Occurred             
+        default bin illegal_cmd[240]                        3                     -    Occurred             
+        default bin illegal_cmd[241]                        3                     -    Occurred             
+        default bin illegal_cmd[242]                        3                     -    Occurred             
+        default bin illegal_cmd[243]                        3                     -    Occurred             
+        default bin illegal_cmd[244]                        3                     -    Occurred             
+        default bin illegal_cmd[245]                        3                     -    Occurred             
+        default bin illegal_cmd[246]                        3                     -    Occurred             
+        default bin illegal_cmd[247]                        3                     -    Occurred             
+        default bin illegal_cmd[248]                        3                     -    Occurred             
+        default bin illegal_cmd[249]                        3                     -    Occurred             
+        default bin illegal_cmd[250]                        3                     -    Occurred             
+        default bin illegal_cmd[251]                        3                     -    Occurred             
+        default bin illegal_cmd[252]                        3                     -    Occurred             
+        default bin illegal_cmd[253]                        3                     -    Occurred             
+        default bin illegal_cmd[254]                        3                     -    Occurred             
+        default bin illegal_cmd[255]                        3                     -    Occurred             
+        default bin illegal_cmd[256]                        3                     -    Occurred             
+        default bin illegal_cmd[257]                        3                     -    Occurred             
+        default bin illegal_cmd[258]                        3                     -    Occurred             
+        default bin illegal_cmd[259]                        3                     -    Occurred             
+        default bin illegal_cmd[260]                        3                     -    Occurred             
+        default bin illegal_cmd[261]                        3                     -    Occurred             
+        default bin illegal_cmd[262]                        3                     -    Occurred             
+        default bin illegal_cmd[263]                        3                     -    Occurred             
+        default bin illegal_cmd[264]                        3                     -    Occurred             
+        default bin illegal_cmd[265]                        3                     -    Occurred             
+        default bin illegal_cmd[266]                        3                     -    Occurred             
+        default bin illegal_cmd[267]                        3                     -    Occurred             
+        default bin illegal_cmd[268]                        3                     -    Occurred             
+        default bin illegal_cmd[269]                        3                     -    Occurred             
+        default bin illegal_cmd[270]                        3                     -    Occurred             
+        default bin illegal_cmd[271]                        3                     -    Occurred             
+        default bin illegal_cmd[272]                        3                     -    Occurred             
+        default bin illegal_cmd[273]                        3                     -    Occurred             
+        default bin illegal_cmd[274]                        3                     -    Occurred             
+        default bin illegal_cmd[275]                        3                     -    Occurred             
+        default bin illegal_cmd[276]                        3                     -    Occurred             
+        default bin illegal_cmd[277]                        3                     -    Occurred             
+        default bin illegal_cmd[278]                        3                     -    Occurred             
+        default bin illegal_cmd[279]                        3                     -    Occurred             
+        default bin illegal_cmd[280]                        3                     -    Occurred             
+        default bin illegal_cmd[281]                        3                     -    Occurred             
+        default bin illegal_cmd[282]                        3                     -    Occurred             
+        default bin illegal_cmd[283]                        3                     -    Occurred             
+        default bin illegal_cmd[284]                        3                     -    Occurred             
+        default bin illegal_cmd[285]                        3                     -    Occurred             
+        default bin illegal_cmd[286]                        3                     -    Occurred             
+        default bin illegal_cmd[287]                        3                     -    Occurred             
+        default bin illegal_cmd[288]                        3                     -    Occurred             
+        default bin illegal_cmd[289]                        3                     -    Occurred             
+        default bin illegal_cmd[290]                        3                     -    Occurred             
+        default bin illegal_cmd[291]                        3                     -    Occurred             
+        default bin illegal_cmd[292]                        3                     -    Occurred             
+        default bin illegal_cmd[293]                        3                     -    Occurred             
+        default bin illegal_cmd[294]                        3                     -    Occurred             
+        default bin illegal_cmd[295]                        3                     -    Occurred             
+        default bin illegal_cmd[296]                        3                     -    Occurred             
+        default bin illegal_cmd[297]                        3                     -    Occurred             
+        default bin illegal_cmd[298]                        3                     -    Occurred             
+        default bin illegal_cmd[299]                        3                     -    Occurred             
+        default bin illegal_cmd[300]                        3                     -    Occurred             
+        default bin illegal_cmd[301]                        3                     -    Occurred             
+        default bin illegal_cmd[302]                        3                     -    Occurred             
+        default bin illegal_cmd[303]                        3                     -    Occurred             
+        default bin illegal_cmd[304]                        3                     -    Occurred             
+        default bin illegal_cmd[305]                        3                     -    Occurred             
+        default bin illegal_cmd[306]                        3                     -    Occurred             
+        default bin illegal_cmd[307]                        3                     -    Occurred             
+        default bin illegal_cmd[308]                        3                     -    Occurred             
+        default bin illegal_cmd[309]                        3                     -    Occurred             
+        default bin illegal_cmd[310]                        3                     -    Occurred             
+        default bin illegal_cmd[311]                        3                     -    Occurred             
+        default bin illegal_cmd[312]                        3                     -    Occurred             
+        default bin illegal_cmd[313]                        3                     -    Occurred             
+        default bin illegal_cmd[314]                        3                     -    Occurred             
+        default bin illegal_cmd[315]                        3                     -    Occurred             
+        default bin illegal_cmd[316]                        3                     -    Occurred             
+        default bin illegal_cmd[317]                        3                     -    Occurred             
+        default bin illegal_cmd[318]                        3                     -    Occurred             
+        default bin illegal_cmd[319]                        3                     -    Occurred             
+        default bin illegal_cmd[320]                      363                     -    Occurred             
+        default bin illegal_cmd[321]                        3                     -    Occurred             
+        default bin illegal_cmd[322]                        3                     -    Occurred             
+        default bin illegal_cmd[323]                        3                     -    Occurred             
+        default bin illegal_cmd[324]                        3                     -    Occurred             
+        default bin illegal_cmd[325]                        3                     -    Occurred             
+        default bin illegal_cmd[326]                        3                     -    Occurred             
+        default bin illegal_cmd[327]                        3                     -    Occurred             
+        default bin illegal_cmd[328]                        3                     -    Occurred             
+        default bin illegal_cmd[329]                        3                     -    Occurred             
+        default bin illegal_cmd[330]                        3                     -    Occurred             
+        default bin illegal_cmd[331]                        3                     -    Occurred             
+        default bin illegal_cmd[332]                        3                     -    Occurred             
+        default bin illegal_cmd[333]                        3                     -    Occurred             
+        default bin illegal_cmd[334]                        3                     -    Occurred             
+        default bin illegal_cmd[335]                        3                     -    Occurred             
+        default bin illegal_cmd[336]                        3                     -    Occurred             
+        default bin illegal_cmd[337]                        3                     -    Occurred             
+        default bin illegal_cmd[338]                        3                     -    Occurred             
+        default bin illegal_cmd[339]                        3                     -    Occurred             
+        default bin illegal_cmd[340]                        3                     -    Occurred             
+        default bin illegal_cmd[341]                        3                     -    Occurred             
+        default bin illegal_cmd[342]                        3                     -    Occurred             
+        default bin illegal_cmd[343]                        3                     -    Occurred             
+        default bin illegal_cmd[344]                        3                     -    Occurred             
+        default bin illegal_cmd[345]                        3                     -    Occurred             
+        default bin illegal_cmd[346]                        3                     -    Occurred             
+        default bin illegal_cmd[347]                        3                     -    Occurred             
+        default bin illegal_cmd[348]                        3                     -    Occurred             
+        default bin illegal_cmd[349]                        3                     -    Occurred             
+        default bin illegal_cmd[350]                        3                     -    Occurred             
+        default bin illegal_cmd[351]                        3                     -    Occurred             
+        default bin illegal_cmd[352]                        3                     -    Occurred             
+        default bin illegal_cmd[353]                        3                     -    Occurred             
+        default bin illegal_cmd[354]                        3                     -    Occurred             
+        default bin illegal_cmd[355]                        3                     -    Occurred             
+        default bin illegal_cmd[356]                        3                     -    Occurred             
+        default bin illegal_cmd[357]                        3                     -    Occurred             
+        default bin illegal_cmd[358]                        3                     -    Occurred             
+        default bin illegal_cmd[359]                        3                     -    Occurred             
+        default bin illegal_cmd[360]                        3                     -    Occurred             
+        default bin illegal_cmd[361]                        3                     -    Occurred             
+        default bin illegal_cmd[362]                        3                     -    Occurred             
+        default bin illegal_cmd[363]                        3                     -    Occurred             
+        default bin illegal_cmd[364]                        3                     -    Occurred             
+        default bin illegal_cmd[365]                        3                     -    Occurred             
+        default bin illegal_cmd[366]                        3                     -    Occurred             
+        default bin illegal_cmd[367]                        3                     -    Occurred             
+        default bin illegal_cmd[368]                        3                     -    Occurred             
+        default bin illegal_cmd[369]                        3                     -    Occurred             
+        default bin illegal_cmd[370]                        3                     -    Occurred             
+        default bin illegal_cmd[371]                        3                     -    Occurred             
+        default bin illegal_cmd[372]                        3                     -    Occurred             
+        default bin illegal_cmd[373]                        3                     -    Occurred             
+        default bin illegal_cmd[374]                        3                     -    Occurred             
+        default bin illegal_cmd[375]                        3                     -    Occurred             
+        default bin illegal_cmd[376]                        3                     -    Occurred             
+        default bin illegal_cmd[377]                        3                     -    Occurred             
+        default bin illegal_cmd[378]                        3                     -    Occurred             
+        default bin illegal_cmd[379]                        3                     -    Occurred             
+        default bin illegal_cmd[380]                        3                     -    Occurred             
+        default bin illegal_cmd[381]                        3                     -    Occurred             
+        default bin illegal_cmd[382]                        3                     -    Occurred             
+        default bin illegal_cmd[383]                        3                     -    Occurred             
+        default bin illegal_cmd[384]                        3                     -    Occurred             
+        default bin illegal_cmd[385]                        3                     -    Occurred             
+        default bin illegal_cmd[386]                        3                     -    Occurred             
+        default bin illegal_cmd[387]                        3                     -    Occurred             
+        default bin illegal_cmd[388]                        3                     -    Occurred             
+        default bin illegal_cmd[389]                        3                     -    Occurred             
+        default bin illegal_cmd[390]                        3                     -    Occurred             
+        default bin illegal_cmd[391]                        3                     -    Occurred             
+        default bin illegal_cmd[392]                        3                     -    Occurred             
+        default bin illegal_cmd[393]                        3                     -    Occurred             
+        default bin illegal_cmd[394]                        3                     -    Occurred             
+        default bin illegal_cmd[395]                        3                     -    Occurred             
+        default bin illegal_cmd[396]                        3                     -    Occurred             
+        default bin illegal_cmd[397]                        3                     -    Occurred             
+        default bin illegal_cmd[398]                        3                     -    Occurred             
+        default bin illegal_cmd[399]                        3                     -    Occurred             
+        default bin illegal_cmd[400]                        3                     -    Occurred             
+        default bin illegal_cmd[401]                        3                     -    Occurred             
+        default bin illegal_cmd[402]                        3                     -    Occurred             
+        default bin illegal_cmd[403]                        3                     -    Occurred             
+        default bin illegal_cmd[404]                        3                     -    Occurred             
+        default bin illegal_cmd[405]                        3                     -    Occurred             
+        default bin illegal_cmd[406]                        3                     -    Occurred             
+        default bin illegal_cmd[407]                        3                     -    Occurred             
+        default bin illegal_cmd[408]                        3                     -    Occurred             
+        default bin illegal_cmd[409]                        3                     -    Occurred             
+        default bin illegal_cmd[410]                        3                     -    Occurred             
+        default bin illegal_cmd[411]                        3                     -    Occurred             
+        default bin illegal_cmd[412]                        3                     -    Occurred             
+        default bin illegal_cmd[413]                        3                     -    Occurred             
+        default bin illegal_cmd[414]                        3                     -    Occurred             
+        default bin illegal_cmd[415]                        3                     -    Occurred             
+        default bin illegal_cmd[416]                        3                     -    Occurred             
+        default bin illegal_cmd[417]                        3                     -    Occurred             
+        default bin illegal_cmd[418]                        3                     -    Occurred             
+        default bin illegal_cmd[419]                        3                     -    Occurred             
+        default bin illegal_cmd[420]                        3                     -    Occurred             
+        default bin illegal_cmd[421]                        3                     -    Occurred             
+        default bin illegal_cmd[422]                        3                     -    Occurred             
+        default bin illegal_cmd[423]                        3                     -    Occurred             
+        default bin illegal_cmd[424]                        3                     -    Occurred             
+        default bin illegal_cmd[425]                        3                     -    Occurred             
+        default bin illegal_cmd[426]                        3                     -    Occurred             
+        default bin illegal_cmd[427]                        3                     -    Occurred             
+        default bin illegal_cmd[428]                        3                     -    Occurred             
+        default bin illegal_cmd[429]                        3                     -    Occurred             
+        default bin illegal_cmd[430]                        3                     -    Occurred             
+        default bin illegal_cmd[431]                        3                     -    Occurred             
+        default bin illegal_cmd[432]                        3                     -    Occurred             
+        default bin illegal_cmd[433]                        3                     -    Occurred             
+        default bin illegal_cmd[434]                        3                     -    Occurred             
+        default bin illegal_cmd[435]                        3                     -    Occurred             
+        default bin illegal_cmd[436]                        3                     -    Occurred             
+        default bin illegal_cmd[437]                        3                     -    Occurred             
+        default bin illegal_cmd[438]                        3                     -    Occurred             
+        default bin illegal_cmd[439]                        3                     -    Occurred             
+        default bin illegal_cmd[440]                        3                     -    Occurred             
+        default bin illegal_cmd[441]                        3                     -    Occurred             
+        default bin illegal_cmd[442]                        3                     -    Occurred             
+        default bin illegal_cmd[443]                        3                     -    Occurred             
+        default bin illegal_cmd[444]                        3                     -    Occurred             
+        default bin illegal_cmd[445]                        3                     -    Occurred             
+        default bin illegal_cmd[446]                        3                     -    Occurred             
+        default bin illegal_cmd[447]                        3                     -    Occurred             
+        default bin illegal_cmd[448]                        3                     -    Occurred             
+        default bin illegal_cmd[449]                        3                     -    Occurred             
+        default bin illegal_cmd[450]                        3                     -    Occurred             
+        default bin illegal_cmd[451]                        3                     -    Occurred             
+        default bin illegal_cmd[452]                        3                     -    Occurred             
+        default bin illegal_cmd[453]                        3                     -    Occurred             
+        default bin illegal_cmd[454]                        3                     -    Occurred             
+        default bin illegal_cmd[455]                        3                     -    Occurred             
+        default bin illegal_cmd[456]                        3                     -    Occurred             
+        default bin illegal_cmd[457]                        3                     -    Occurred             
+        default bin illegal_cmd[458]                        3                     -    Occurred             
+        default bin illegal_cmd[459]                        3                     -    Occurred             
+        default bin illegal_cmd[460]                        3                     -    Occurred             
+        default bin illegal_cmd[461]                        3                     -    Occurred             
+        default bin illegal_cmd[462]                        3                     -    Occurred             
+        default bin illegal_cmd[463]                        3                     -    Occurred             
+        default bin illegal_cmd[464]                        3                     -    Occurred             
+        default bin illegal_cmd[465]                        3                     -    Occurred             
+        default bin illegal_cmd[466]                        3                     -    Occurred             
+        default bin illegal_cmd[467]                        3                     -    Occurred             
+        default bin illegal_cmd[468]                        3                     -    Occurred             
+        default bin illegal_cmd[469]                        3                     -    Occurred             
+        default bin illegal_cmd[470]                        3                     -    Occurred             
+        default bin illegal_cmd[471]                        3                     -    Occurred             
+        default bin illegal_cmd[472]                        3                     -    Occurred             
+        default bin illegal_cmd[473]                        3                     -    Occurred             
+        default bin illegal_cmd[474]                        3                     -    Occurred             
+        default bin illegal_cmd[475]                        3                     -    Occurred             
+        default bin illegal_cmd[476]                        3                     -    Occurred             
+        default bin illegal_cmd[477]                        3                     -    Occurred             
+        default bin illegal_cmd[478]                        3                     -    Occurred             
+        default bin illegal_cmd[479]                        3                     -    Occurred             
+        default bin illegal_cmd[480]                        3                     -    Occurred             
+        default bin illegal_cmd[3537733]                    6                     -    Occurred             
+        default bin illegal_cmd[10104896]                   6                     -    Occurred             
+        default bin illegal_cmd[17714244]                   6                     -    Occurred             
+        default bin illegal_cmd[37196707]                   6                     -    Occurred             
+        default bin illegal_cmd[39391716]                   6                     -    Occurred             
+        default bin illegal_cmd[130305794]                  6                     -    Occurred             
+        default bin illegal_cmd[154504941]                  6                     -    Occurred             
+        default bin illegal_cmd[186538821]                  6                     -    Occurred             
+        default bin illegal_cmd[198420189]                  6                     -    Occurred             
+        default bin illegal_cmd[252242505]                  6                     -    Occurred             
+        default bin illegal_cmd[279194195]                  6                     -    Occurred             
+        default bin illegal_cmd[299444864]                  6                     -    Occurred             
+        default bin illegal_cmd[307822711]                  6                     -    Occurred             
+        default bin illegal_cmd[313805365]                  6                     -    Occurred             
+        default bin illegal_cmd[330773713]                  6                     -    Occurred             
+        default bin illegal_cmd[384557532]                  6                     -    Occurred             
+        default bin illegal_cmd[396733401]                  6                     -    Occurred             
+        default bin illegal_cmd[402540559]                  6                     -    Occurred             
+        default bin illegal_cmd[406062071]                  6                     -    Occurred             
+        default bin illegal_cmd[425106200]                  6                     -    Occurred             
+        default bin illegal_cmd[476928898]                  6                     -    Occurred             
+        default bin illegal_cmd[483132086]                  6                     -    Occurred             
+        default bin illegal_cmd[516195952]                  6                     -    Occurred             
+        default bin illegal_cmd[540860330]                  6                     -    Occurred             
+        default bin illegal_cmd[630724935]                  5                     -    Occurred             
+        default bin illegal_cmd[768385030]                  6                     -    Occurred             
+        default bin illegal_cmd[778481263]                  6                     -    Occurred             
+        default bin illegal_cmd[846695450]                  6                     -    Occurred             
+        default bin illegal_cmd[865623878]                  6                     -    Occurred             
+        default bin illegal_cmd[941297796]                  6                     -    Occurred             
+        default bin illegal_cmd[987854959]                  6                     -    Occurred             
+        default bin illegal_cmd[1069055028]                 5                     -    Occurred             
+        default bin illegal_cmd[1073078878]                 6                     -    Occurred             
+        default bin illegal_cmd[1085908830]                 6                     -    Occurred             
+        default bin illegal_cmd[1127945130]                 6                     -    Occurred             
+        default bin illegal_cmd[1228133268]                 6                     -    Occurred             
+        default bin illegal_cmd[1258535789]                 6                     -    Occurred             
+        default bin illegal_cmd[1314309306]                 6                     -    Occurred             
+        default bin illegal_cmd[1370433151]                 6                     -    Occurred             
+        default bin illegal_cmd[1400556665]                 6                     -    Occurred             
+        default bin illegal_cmd[1463566145]                 6                     -    Occurred             
+        default bin illegal_cmd[1535450822]                 6                     -    Occurred             
+        default bin illegal_cmd[1589006022]                 6                     -    Occurred             
+        default bin illegal_cmd[1630550655]                 6                     -    Occurred             
+        default bin illegal_cmd[1647987552]                 6                     -    Occurred             
+        default bin illegal_cmd[1654586787]                 6                     -    Occurred             
+        default bin illegal_cmd[1708677259]                 6                     -    Occurred             
+        default bin illegal_cmd[1742136206]                 6                     -    Occurred             
+        default bin illegal_cmd[1785006386]                 6                     -    Occurred             
+        default bin illegal_cmd[1946329089]                 6                     -    Occurred             
+        default bin illegal_cmd[1992044206]                 6                     -    Occurred             
+        default bin illegal_cmd[2105531959]                 6                     -    Occurred             
+        default bin illegal_cmd[2114051835]                 6                     -    Occurred             
+        default bin illegal_cmd[2161197738]                 6                     -    Occurred             
+        default bin illegal_cmd[2187926949]                 6                     -    Occurred             
+        default bin illegal_cmd[2188209131]                 6                     -    Occurred             
+        default bin illegal_cmd[2190875984]                 6                     -    Occurred             
+        default bin illegal_cmd[2201879158]                 6                     -    Occurred             
+        default bin illegal_cmd[2233830779]                 6                     -    Occurred             
+        default bin illegal_cmd[2318618690]                 6                     -    Occurred             
+        default bin illegal_cmd[2330313780]                 6                     -    Occurred             
+        default bin illegal_cmd[2452783317]                 6                     -    Occurred             
+        default bin illegal_cmd[2521788642]                 6                     -    Occurred             
+        default bin illegal_cmd[2579220179]                 6                     -    Occurred             
+        default bin illegal_cmd[2604118203]                 6                     -    Occurred             
+        default bin illegal_cmd[2609032334]                 6                     -    Occurred             
+        default bin illegal_cmd[2660900880]                 6                     -    Occurred             
+        default bin illegal_cmd[2688917409]                 6                     -    Occurred             
+        default bin illegal_cmd[2738567950]                 6                     -    Occurred             
+        default bin illegal_cmd[2856549250]                 6                     -    Occurred             
+        default bin illegal_cmd[2878539474]                 6                     -    Occurred             
+        default bin illegal_cmd[2889098307]                 6                     -    Occurred             
+        default bin illegal_cmd[2892437990]                 6                     -    Occurred             
+        default bin illegal_cmd[2894604766]                 6                     -    Occurred             
+        default bin illegal_cmd[2944540504]                 6                     -    Occurred             
+        default bin illegal_cmd[2982087793]                 6                     -    Occurred             
+        default bin illegal_cmd[3102982953]                 6                     -    Occurred             
+        default bin illegal_cmd[3154548230]                 6                     -    Occurred             
+        default bin illegal_cmd[3168028279]                 6                     -    Occurred             
+        default bin illegal_cmd[3171548036]                 6                     -    Occurred             
+        default bin illegal_cmd[3195328997]                 6                     -    Occurred             
+        default bin illegal_cmd[3196477401]                 6                     -    Occurred             
+        default bin illegal_cmd[3214078959]                 6                     -    Occurred             
+        default bin illegal_cmd[3237826189]                 6                     -    Occurred             
+        default bin illegal_cmd[3246508144]                 6                     -    Occurred             
+        default bin illegal_cmd[3250789843]                 6                     -    Occurred             
+        default bin illegal_cmd[3258404861]                 6                     -    Occurred             
+        default bin illegal_cmd[3278350517]                 6                     -    Occurred             
+        default bin illegal_cmd[3289300499]                 6                     -    Occurred             
+        default bin illegal_cmd[3353431265]                 6                     -    Occurred             
+        default bin illegal_cmd[3461604892]                 6                     -    Occurred             
+        default bin illegal_cmd[3507574583]                 6                     -    Occurred             
+        default bin illegal_cmd[3599760298]                 6                     -    Occurred             
+        default bin illegal_cmd[3600647647]                 6                     -    Occurred             
+        default bin illegal_cmd[3618177108]                 6                     -    Occurred             
+        default bin illegal_cmd[3627136262]                 6                     -    Occurred             
+        default bin illegal_cmd[3666960203]                 6                     -    Occurred             
+        default bin illegal_cmd[3777784715]                 6                     -    Occurred             
+        default bin illegal_cmd[3812830509]                 6                     -    Occurred             
+        default bin illegal_cmd[3817836966]                 6                     -    Occurred             
+        default bin illegal_cmd[3825545456]                 6                     -    Occurred             
+        default bin illegal_cmd[3827363114]                 6                     -    Occurred             
+        default bin illegal_cmd[3835142700]                 6                     -    Occurred             
+        default bin illegal_cmd[3913225614]                 6                     -    Occurred             
+        default bin illegal_cmd[3982517083]                 6                     -    Occurred             
+        default bin illegal_cmd[4004881374]                 6                     -    Occurred             
+        default bin illegal_cmd[4039896543]                 6                     -    Occurred             
+        default bin illegal_cmd[4093761401]                 6                     -    Occurred             
+        default bin illegal_cmd[4165847472]                 6                     -    Occurred             
+        default bin illegal_cmd[4177941111]                 6                     -    Occurred             
+        default bin illegal_cmd[4223930746]                 6                     -    Occurred             
+        default bin illegal_cmd[4227282315]                 6                     -    Occurred             
+        default bin illegal_cmd[4270756266]                 6                     -    Occurred             
+        default bin illegal_cmd[4281460054]                 6                     -    Occurred             
+        default bin illegal_cmd[4290201915]                 6                     -    Occurred             
+    Coverpoint modes                                  100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin standby                                      3287          1          -    Covered              
+        bin playing                                    375545          1          -    Covered              
+    Cross command_modes                                75.00%        100          -    Uncovered            
+        covered/total bins:                                 9         12          -                      
+        missing/total bins:                                 3         12          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <irqack_cmd,playing>                   249363          1          -    Covered              
+            bin <stop_cmd,playing>                          6          1          -    Covered              
+            bin <start_cmd,playing>                    125096          1          -    Covered              
+            bin <cfg_cmd,standby>                          33          1          -    Covered              
+            bin <clr_cmd,standby>                         377          1          -    Covered              
+            bin <irqack_cmd,standby>                       21          1          -    Covered              
+            bin <level_cmd,standby>                        33          1          -    Covered              
+            bin <stop_cmd,standby>                         71          1          -    Covered              
+            bin <start_cmd,standby>                        27          1          -    Covered              
+            bin <cfg_cmd,playing>                           0          1          1    ZERO                 
+            bin <clr_cmd,playing>                           0          1          1    ZERO                 
+            bin <level_cmd,playing>                         0          1          1    ZERO                 
+
 Directive Coverage:
-    Directives                     192       191         1    99.47%
+    Directives                     217       215         2    99.07%
 
 DIRECTIVE COVERAGE:
 --------------------------------------------------------------------------------------------
@@ -841,179 +1703,254 @@ Name                                     Design Design   Lang File(Line)      Hi
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_index_range 
                                          control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(49)
                                                                               378811 Covered   
-/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_write 
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbwrite_on 
                                          control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(59)
+                                                                               955 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbwrite_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(69)
+                                                                              377856 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbread_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(79)
+                                                                               463 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbread_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(89)
+                                                                              378348 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(99)
                                                                                232 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_play 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(69)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(109)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_standby 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(79)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(119)
                                                                                  2 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(89)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(129)
                                                                               378568 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_reg_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(99)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(139)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_reg_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(109)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(149)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_dsp_regs_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(119)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(159)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_write 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(129)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(170)
                                                                                361 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_failed_write 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(139)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(180)
                                                                                  0 ZERO      
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(149)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(190)
                                                                               378438 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_inc 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(159)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(200)
                                                                                355 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_loop 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(169)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(210)
                                                                                  6 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(179)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(220)
                                                                               378438 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(189)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(230)
                                                                                  6 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_1 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(199)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(240)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_2 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(209)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(250)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(219)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(260)
                                                                               378197 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_1 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(229)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(270)
                                                                                 60 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_2 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(239)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(280)
                                                                                177 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_1 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(249)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(290)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_2 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(259)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(300)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(270)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(311)
                                                                               378558 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(280)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(321)
                                                                               2434 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_of 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(290)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(331)
                                                                               376377 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(300)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(341)
                                                                               5556 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(310)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(351)
                                                                               373255 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(320)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(361)
                                                                               376377 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(330)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(371)
                                                                               2434 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rdata_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(383)
+                                                                               361 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rdata_r_failed_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(393)
+                                                                                 0 ZERO      
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rdata_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(403)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rhead_r_inc 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(413)
+                                                                               355 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rhead_r_loop 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(423)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rhead_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(433)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(443)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_off_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(453)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_off_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(463)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(473)
+                                                                              378197 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_inc_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(483)
+                                                                                60 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_inc_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(493)
+                                                                               177 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_loop_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(503)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_loop_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(513)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(524)
+                                                                              378558 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rempty_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(534)
+                                                                              2449 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rempty_of 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(544)
+                                                                              376362 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfull_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(554)
+                                                                              5541 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfull_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(564)
+                                                                              373270 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfifo_output_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(574)
+                                                                              376362 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfifo_output_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(584)
+                                                                              2449 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rbank 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(340)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(597)
                                                                                908 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_lfifo 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(350)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(607)
                                                                                964 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rfifo 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(360)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(617)
                                                                                964 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(370)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(627)
                                                                               375975 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_rise 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(380)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(637)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_fall 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(390)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(647)
                                                                                  2 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(400)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(657)
                                                                               378795 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_out_state 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(410)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(667)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(420)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(677)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(430)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(687)
                                                                               378810 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(440)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(697)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(450)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(707)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(460)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(717)
                                                                               378810 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(470)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(727)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(480)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(737)
                                                                               378808 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(490)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(747)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(500)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(757)
                                                                               378808 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(510)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(767)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(520)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(777)
                                                                               378810 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(530)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(787)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(540)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(797)
                                                                               378808 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(550)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(807)
                                                                               3266 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_of 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(560)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(817)
                                                                               375545 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(570)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(827)
                                                                               375544 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(580)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(837)
                                                                               3256 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_rise 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(590)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(847)
                                                                                 69 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_stop 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(600)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(857)
                                                                                  2 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_irqack 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(610)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(867)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(620)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(877)
                                                                               378726 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(630)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(887)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/cf_dsp_regs_drv 
                                          control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
@@ -1333,6 +2270,20 @@ Name                                     Design Design   Lang File(Line)      Hi
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[0]/cf_dsp_regs_drv 
                                          control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
                                                                                  2 Covered   
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       2         2         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File input/control_unit_svamod.sv
+    457             1                          1     
+    458             1                          1     
 Toggle Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
@@ -1460,122 +2411,130 @@ Branch totals: 2 hits of 2 branches = 100.00%
 ------------------------------------CASE Branch------------------------------------
     110                                       21     Count coming in to CASE
     111             1                          1     
-    113             1                          1     
+    112             1                          1     
+    113             1                          6     
     114             1                          6     
-    115             1                          6     
-    116             1                          1     
+    115             1                          1     
+    116             1                          3     
     117             1                          3     
-    118             1                          3     
 Branch totals: 7 hits of 7 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
     111                                        1     Count coming in to IF
     111             2                          1     
-    112             1                    ***0***     
+                                         ***0***     All False Count
 Branch totals: 1 hit of 2 branches = 50.00%
 
 ------------------------------------IF Branch------------------------------------
-    125                                      310     Count coming in to IF
-    125             1                         22     
-    127             1                        288     
+    124                                      310     Count coming in to IF
+    124             1                         22     
+    126             1                        288     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    128                                      288     Count coming in to IF
-    128             1                        268     
-    130             1                         10     
-                                              10     All False Count
+    127                                      288     Count coming in to IF
+    127             1                          6     
+    129             1                         10     
+                                             272     All False Count
 Branch totals: 3 hits of 3 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    137                                     1239     Count coming in to IF
-    137             1                         22     
-    143             1                       1217     
+    136                                     1239     Count coming in to IF
+    136             1                         23     
+    142             1                       1216     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    159                                     5884     Count coming in to IF
-    159             1                        717     
-    170             1                        241     
-    180             1                          2     
-                                            4924     All False Count
-Branch totals: 4 hits of 4 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    161                                      717     Count coming in to IF
-    161             1                         12     
-    164             1                        705     
+    158                                     5883     Count coming in to IF
+    158             1                        717     
+                                            5166     All False Count
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    171                                      241     Count coming in to IF
-    171             1                          4     
-    174             1                        237     
+    160                                      717     Count coming in to IF
+    160             1                         12     
+    163             1                        705     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    190                                      607     Count coming in to IF
-    190             1                         69     
-    190             2                        538     
+    169                                     5883     Count coming in to IF
+    169             1                        241     
+                                            5642     All False Count
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    194                                     1239     Count coming in to IF
-    194             1                         22     
-    201             1                       1217     
+    170                                      241     Count coming in to IF
+    170             1                          4     
+    173             1                        237     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    217                                     5884     Count coming in to IF
-    217             1                        717     
-    228             1                        241     
-    238             1                          2     
-                                            4924     All False Count
-Branch totals: 4 hits of 4 branches = 100.00%
-
-------------------------------------IF Branch------------------------------------
-    219                                      717     Count coming in to IF
-    219             1                         12     
-    222             1                        705     
+    182                                      606     Count coming in to IF
+    182             1                         68     
+    182             2                        538     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    229                                      241     Count coming in to IF
-    229             1                          4     
-    232             1                        237     
+    186                                     1239     Count coming in to IF
+    186             1                         23     
+    192             1                       1216     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    248                                      607     Count coming in to IF
-    248             1                         69     
-    248             2                        538     
+    208                                     5883     Count coming in to IF
+    208             1                        717     
+                                            5166     All False Count
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    252                                     4907     Count coming in to IF
-    252             1                       1900     
-    261             1                       3007     
+    210                                      717     Count coming in to IF
+    210             1                         12     
+    213             1                        705     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 ------------------------------------IF Branch------------------------------------
-    253                                     1900     Count coming in to IF
-    253             1                        684     
-    255             1                        607     
-    257             1                        609     
-    259             1                    ***0***     
+    219                                     5883     Count coming in to IF
+    219             1                        241     
+                                            5642     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    220                                      241     Count coming in to IF
+    220             1                          4     
+    223             1                        237     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    232                                      606     Count coming in to IF
+    232             1                         68     
+    232             2                        538     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    236                                     4907     Count coming in to IF
+    236             1                       1900     
+    245             1                       3007     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    237                                     1900     Count coming in to IF
+    237             1                        684     
+    239             1                        607     
+    241             1                        609     
+    243             1                    ***0***     
 Branch totals: 3 hits of 4 branches = 75.00%
 
 ------------------------------------IF Branch------------------------------------
-    274                                      375     Count coming in to IF
-    274             1                        371     
-    274             2                          4     
+    259                                      375     Count coming in to IF
+    259             1                        371     
+    259             2                          4     
 Branch totals: 2 hits of 2 branches = 100.00%
 
 
 Condition Coverage:
     Enabled Coverage              Bins   Covered    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Conditions                      30        28         2    93.33%
+    Conditions                      37        35         2    94.59%
 
 ================================Condition Details================================
 
@@ -1591,67 +2550,78 @@ Line       109 Item    1  (apbwrite && (rindex == 0))
 Condition totals: 2 of 2 input terms covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       128 Item    1  ((~play_r || stop) || irqack)
+Line       127 Item    1  (play_r && (stop || irqack))
 Condition totals: 3 of 3 input terms covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       130 Item    1  (lempty && rempty)
-Condition totals: 1 of 2 input terms covered = 50.00%
+Line       129 Item    1  ((play_r && lempty) && rempty)
+Condition totals: 2 of 3 input terms covered = 66.66%
 
   Input Term   Covered  Reason for no coverage   Hint
  -----------  --------  -----------------------  --------------
+      play_r         Y
       lempty         Y
       rempty         N  '_0' not hit             Hit '_0'
 
      Rows:       Hits  FEC Target            Non-masking condition(s)      
  ---------  ---------  --------------------  -------------------------     
-  Row   1:          1  lempty_0              -                             
-  Row   2:          1  lempty_1              rempty                        
-  Row   3:    ***0***  rempty_0              lempty                        
-  Row   4:          1  rempty_1              lempty                        
+  Row   1:          1  play_r_0              -                             
+  Row   2:          1  play_r_1              (rempty && lempty)            
+  Row   3:          1  lempty_0              play_r                        
+  Row   4:          1  lempty_1              (rempty && play_r)            
+  Row   5:    ***0***  rempty_0              (play_r && lempty)            
+  Row   6:          1  rempty_1              (play_r && lempty)            
 
 ----------------Focused Condition View-------------------
-Line       159 Item    1  ((apbwrite && (rindex == 110)) && ~lfull)
+Line       136 Item    1  (~rst_n || clr)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       158 Item    1  ((apbwrite && (rindex == 110)) && ~lfull)
 Condition totals: 3 of 3 input terms covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       161 Item    1  (lhead_r == (60 - 1))
+Line       160 Item    1  (lhead_r == (60 - 1))
 Condition totals: 1 of 1 input term covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       170 Item    1  ((apbread || (play_r && req_r)) && ~lempty)
-Condition totals: 4 of 4 input terms covered = 100.00%
+Line       169 Item    1  (((play_r && req_r) && ~lempty) || ((apbread && (rindex == 110)) && ~lempty))
+Condition totals: 5 of 5 input terms covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       171 Item    1  (ltail_r == (60 - 1))
+Line       170 Item    1  (ltail_r == (60 - 1))
 Condition totals: 1 of 1 input term covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       217 Item    1  ((apbwrite && (rindex == 111)) && ~rfull)
+Line       186 Item    1  (~rst_n || clr)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       208 Item    1  ((apbwrite && (rindex == 111)) && ~rfull)
 Condition totals: 3 of 3 input terms covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       219 Item    1  (rhead_r == (60 - 1))
+Line       210 Item    1  (rhead_r == (60 - 1))
 Condition totals: 1 of 1 input term covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       228 Item    1  ((apbread || (play_r && req_r)) && ~rempty)
-Condition totals: 4 of 4 input terms covered = 100.00%
+Line       219 Item    1  (((play_r && req_r) && ~rempty) || ((apbread && (rindex == 111)) && ~rempty))
+Condition totals: 5 of 5 input terms covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       229 Item    1  (rtail_r == (60 - 1))
+Line       220 Item    1  (rtail_r == (60 - 1))
 Condition totals: 1 of 1 input term covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       253 Item    1  (rindex < 110)
+Line       237 Item    1  (rindex < 110)
 Condition totals: 1 of 1 input term covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       255 Item    1  (rindex == 110)
+Line       239 Item    1  (rindex == 110)
 Condition totals: 1 of 1 input term covered = 100.00%
 
 ----------------Focused Condition View-------------------
-Line       257 Item    1  (rindex == 111)
+Line       241 Item    1  (rindex == 111)
 Condition totals: 0 of 1 input term covered = 0.00%
 
        Input Term   Covered  Reason for no coverage   Hint
@@ -1683,30 +2653,30 @@ Line       78 Item    1  ((PSEL && PENABLE) && ~PWRITE)
 Expression totals: 3 of 3 input terms covered = 100.00%
 
 ----------------Focused Expression View-----------------
-Line       188 Item    1  ((lhead_r == ltail_r) && ~llooped_r)
+Line       180 Item    1  ((lhead_r == ltail_r) && ~llooped_r)
 Expression totals: 2 of 2 input terms covered = 100.00%
 
 ----------------Focused Expression View-----------------
-Line       189 Item    1  ((lhead_r == ltail_r) && llooped_r)
+Line       181 Item    1  ((lhead_r == ltail_r) && llooped_r)
 Expression totals: 2 of 2 input terms covered = 100.00%
 
 ----------------Focused Expression View-----------------
-Line       246 Item    1  ((rhead_r == rtail_r) && ~rlooped_r)
+Line       230 Item    1  ((rhead_r == rtail_r) && ~rlooped_r)
 Expression totals: 2 of 2 input terms covered = 100.00%
 
 ----------------Focused Expression View-----------------
-Line       247 Item    1  ((rhead_r == rtail_r) && rlooped_r)
+Line       231 Item    1  ((rhead_r == rtail_r) && rlooped_r)
 Expression totals: 2 of 2 input terms covered = 100.00%
 
 ----------------Focused Expression View-----------------
-Line       274 Item    1  (play_r? req_r: 1'b0)
+Line       259 Item    1  (play_r? req_r: 1'b0)
 Expression totals: 2 of 2 input terms covered = 100.00%
 
 
 Statement Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Statements                     101        99         2    98.01%
+    Statements                      94        93         1    98.93%
 
 ================================Statement Details================================
 
@@ -1741,81 +2711,74 @@ Statement Coverage for instance /control_unit_tb/DUT_INSTANCE --
     106             1                       4624     
     107             1                       4624     
     111             1                          1     
-    112             1                    ***0***     
-    113             1                          1     
+    112             1                          1     
+    113             1                          6     
     114             1                          6     
-    115             1                          6     
-    116             1                          1     
-    117             1                          3     
-    119             1                          3     
-    124             1                        310     
-    126             1                         22     
-    129             1                        268     
-    131             1                         10     
-    136             1                       1239     
-    138             1                         22     
-    139             1                         22     
-    140             1                         22     
-    141             1                         22     
-    144             1                       1217     
-    145             1                       1217     
-    146             1                       1217     
-    147             1                       1217     
-    151             1                       5884     
-    153             1                       5884     
-    154             1                       5884     
-    155             1                       5884     
-    156             1                       5884     
-    160             1                        717     
+    115             1                          1     
+    116             1                          3     
+    118             1                          3     
+    123             1                        310     
+    125             1                         22     
+    128             1                          6     
+    130             1                         10     
+    135             1                       1239     
+    137             1                         23     
+    138             1                         23     
+    139             1                         23     
+    140             1                         23     
+    143             1                       1216     
+    144             1                       1216     
+    145             1                       1216     
+    146             1                       1216     
+    150             1                       5883     
+    152             1                       5883     
+    153             1                       5883     
+    154             1                       5883     
+    155             1                       5883     
+    159             1                        717     
+    161             1                         12     
     162             1                         12     
-    163             1                         12     
-    165             1                        705     
+    164             1                        705     
+    171             1                          4     
     172             1                          4     
-    173             1                          4     
-    175             1                        237     
-    181             1                          2     
-    182             1                          2     
-    183             1                          2     
-    188             1                        606     
-    189             1                        606     
-    190             1                        608     
-    193             1                       1239     
-    196             1                         22     
-    197             1                         22     
-    198             1                         22     
-    199             1                         22     
-    202             1                       1217     
-    203             1                       1217     
-    204             1                       1217     
-    205             1                       1217     
-    209             1                       5884     
-    211             1                       5884     
-    212             1                       5884     
-    213             1                       5884     
-    214             1                       5884     
-    218             1                        717     
-    220             1                         12     
-    221             1                         12     
-    223             1                        705     
-    230             1                          4     
-    231             1                          4     
-    233             1                        237     
-    239             1                          2     
-    240             1                          2     
-    241             1                          2     
-    246             1                        606     
-    247             1                        606     
-    248             1                        608     
-    251             1                       4907     
-    254             1                        684     
-    256             1                        607     
-    258             1                        609     
-    260             1                    ***0***     
-    262             1                       3007     
-    271             1                          5     
-    272             1                          5     
-    273             1                        238     
-    274             1                        376     
+    174             1                        237     
+    180             1                        606     
+    181             1                        606     
+    182             1                        607     
+    185             1                       1239     
+    187             1                         23     
+    188             1                         23     
+    189             1                         23     
+    190             1                         23     
+    193             1                       1216     
+    194             1                       1216     
+    195             1                       1216     
+    196             1                       1216     
+    200             1                       5883     
+    202             1                       5883     
+    203             1                       5883     
+    204             1                       5883     
+    205             1                       5883     
+    209             1                        717     
+    211             1                         12     
+    212             1                         12     
+    214             1                        705     
+    221             1                          4     
+    222             1                          4     
+    224             1                        237     
+    230             1                        606     
+    231             1                        606     
+    232             1                        607     
+    235             1                       4907     
+    238             1                        684     
+    240             1                        607     
+    242             1                        609     
+    244             1                    ***0***     
+    246             1                       3007     
+    256             1                          5     
+    257             1                          5     
+    258             1                        238     
+    259             1                        376     
 Toggle Coverage:
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
@@ -1878,6 +2841,8 @@ Untoggled Node Count =         68
 
 Toggle Coverage      =      57.32% (548 of 956 bins)
 
+
+TOTAL COVERGROUP COVERAGE: 95.83%  COVERGROUP TYPES: 2
 
 DIRECTIVE COVERAGE:
 --------------------------------------------------------------------------------------------
@@ -1968,179 +2933,254 @@ Name                                     Design Design   Lang File(Line)      Hi
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_index_range 
                                          control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(49)
                                                                               378811 Covered   
-/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_write 
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbwrite_on 
                                          control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(59)
+                                                                               955 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbwrite_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(69)
+                                                                              377856 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbread_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(79)
+                                                                               463 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_apbread_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(89)
+                                                                              378348 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(99)
                                                                                232 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_play 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(69)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(109)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_status_reg_standby 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(79)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(119)
                                                                                  2 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rbank_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(89)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(129)
                                                                               378568 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_reg_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(99)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(139)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_reg_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(109)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(149)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_dsp_regs_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(119)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(159)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_write 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(129)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(170)
                                                                                361 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_failed_write 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(139)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(180)
                                                                                  0 ZERO      
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ldata_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(149)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(190)
                                                                               378438 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_inc 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(159)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(200)
                                                                                355 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_loop 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(169)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(210)
                                                                                  6 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lhead_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(179)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(220)
                                                                               378438 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(189)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(230)
                                                                                  6 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_1 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(199)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(240)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_off_2 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(209)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(250)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_llooped_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(219)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(260)
                                                                               378197 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_1 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(229)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(270)
                                                                                 60 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_inc_2 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(239)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(280)
                                                                                177 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_1 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(249)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(290)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_loop_2 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(259)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(300)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_ltail_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(270)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(311)
                                                                               378558 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(280)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(321)
                                                                               2434 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lempty_of 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(290)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(331)
                                                                               376377 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(300)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(341)
                                                                               5556 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfull_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(310)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(351)
                                                                               373255 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(320)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(361)
                                                                               376377 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_lfifo_output_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(330)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(371)
                                                                               2434 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rdata_r_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(383)
+                                                                               361 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rdata_r_failed_write 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(393)
+                                                                                 0 ZERO      
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rdata_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(403)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rhead_r_inc 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(413)
+                                                                               355 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rhead_r_loop 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(423)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rhead_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(433)
+                                                                              378438 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(443)
+                                                                                 6 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_off_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(453)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_off_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(463)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rlooped_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(473)
+                                                                              378197 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_inc_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(483)
+                                                                                60 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_inc_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(493)
+                                                                               177 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_loop_1 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(503)
+                                                                                 1 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_loop_2 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(513)
+                                                                                 3 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rtail_r_stable 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(524)
+                                                                              378558 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rempty_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(534)
+                                                                              2449 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rempty_of 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(544)
+                                                                              376362 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfull_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(554)
+                                                                              5541 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfull_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(564)
+                                                                              373270 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfifo_output_on 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(574)
+                                                                              376362 Covered   
+/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_rfifo_output_off 
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(584)
+                                                                              2449 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rbank 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(340)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(597)
                                                                                908 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_lfifo 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(350)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(607)
                                                                                964 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_rfifo 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(360)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(617)
                                                                                964 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_prdata_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(370)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(627)
                                                                               375975 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_rise 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(380)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(637)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_fall 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(390)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(647)
                                                                                  2 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(400)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(657)
                                                                               378795 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_play_out_state 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(410)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(667)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(420)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(677)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(430)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(687)
                                                                               378810 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_clr_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(440)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(697)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(450)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(707)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_cfg_out_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(460)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(717)
                                                                               378810 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(470)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(727)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_start_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(480)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(737)
                                                                               378808 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(490)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(747)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_stop_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(500)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(757)
                                                                               378808 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(510)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(767)
                                                                                  1 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_level_out_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(520)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(777)
                                                                               378810 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(530)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(787)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irqack_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(540)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(797)
                                                                               378808 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(550)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(807)
                                                                               3266 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_tick_out_of 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(560)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(817)
                                                                               375545 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_on 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(570)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(827)
                                                                               375544 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_req_r_off 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(580)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(837)
                                                                               3256 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_rise 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(590)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(847)
                                                                                 69 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_stop 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(600)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(857)
                                                                                  2 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_fall_irqack 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(610)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(867)
                                                                                  3 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_r_stable 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(620)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(877)
                                                                               378726 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/cr_irq_out 
-                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(630)
+                                         control_unit_svamod Verilog  SVA  input/control_unit_wba.svh(887)
                                                                               378811 Covered   
 /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/genblk1[105]/cf_dsp_regs_drv 
                                          control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
@@ -2461,9 +3501,9 @@ Name                                     Design Design   Lang File(Line)      Hi
                                          control_unit_svamod Verilog  SVA  input/control_unit_svamod.sv(403)
                                                                                  2 Covered   
 
-TOTAL DIRECTIVE COVERAGE: 99.47%  COVERS: 192
+TOTAL DIRECTIVE COVERAGE: 99.07%  COVERS: 217
 
-TOTAL ASSERTION COVERAGE: 99.19%  ASSERTIONS: 248
+TOTAL ASSERTION COVERAGE: 98.90%  ASSERTIONS: 273
 
-Total Coverage By Instance (filtered view): 91.52%
+Total Coverage By Instance (filtered view): 92.25%
 

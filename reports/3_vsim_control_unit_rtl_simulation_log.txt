@@ -13,8 +13,8 @@
 # // and may not be used in any way not expressly authorized by SISW.
 # //
 # do scripts/vsim_rtlsim.tcl
-# 1738676959
-# Script start time: 15:49:19
+# 1739539638
+# Script start time: 15:27:18
 # 0
 # 1
 # 1
@@ -36,26 +36,26 @@
 # -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/control_unit_rtl.dbg
 # 1
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:19 on Feb 04,2025
+# Start time: 15:27:18 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/apb_pkg.sv 
 # -- Compiling package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:49:19 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:18 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:19 on Feb 04,2025
+# Start time: 15:27:18 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/audioport_pkg.sv 
 # -- Compiling package audioport_pkg
 # -- Importing package apb_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:49:20 on Feb 04,2025, Elapsed time: 0:00:01
+# End time: 15:27:18 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:20 on Feb 04,2025
+# Start time: 15:27:18 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/audioport_util_pkg.sv 
 # -- Compiling package audioport_util_pkg
 # -- Importing package apb_pkg
@@ -63,10 +63,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:49:20 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:19 on Feb 14,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:20 on Feb 04,2025
+# Start time: 15:27:19 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/control_unit.sv 
 # -- Compiling package control_unit_sv_unit
 # -- Importing package audioport_pkg
@@ -75,10 +75,10 @@
 # 
 # Top level modules:
 # 	control_unit
-# End time: 15:49:20 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:19 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:20 on Feb 04,2025
+# Start time: 15:27:19 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/control_unit_svamod.sv 
 # -- Compiling package control_unit_svamod_sv_unit
 # -- Importing package audioport_pkg
@@ -88,10 +88,10 @@
 # 
 # Top level modules:
 # 	control_unit_svamod
-# End time: 15:49:20 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:19 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0, Suppressed Warnings: 6
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:20 on Feb 04,2025
+# Start time: 15:27:19 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/apb_if.sv 
 # -- Compiling package apb_if_sv_unit
 # -- Importing package audioport_pkg
@@ -100,10 +100,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:49:20 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:19 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:20 on Feb 04,2025
+# Start time: 15:27:19 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/irq_out_if.sv 
 # -- Compiling package irq_out_if_sv_unit
 # -- Importing package audioport_pkg
@@ -112,10 +112,10 @@
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:49:21 on Feb 04,2025, Elapsed time: 0:00:01
+# End time: 15:27:19 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:21 on Feb 04,2025
+# Start time: 15:27:19 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/control_unit_test.sv 
 # -- Compiling package control_unit_test_sv_unit
 # -- Importing package audioport_pkg
@@ -125,10 +125,10 @@
 # 
 # Top level modules:
 # 	control_unit_test
-# End time: 15:49:21 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:20 on Feb 14,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:21 on Feb 04,2025
+# Start time: 15:27:20 on Feb 14,2025
 # vlog -reportprogress 300 -suppress 13314 -suppress 13233 "+define+RTL_SIM" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_control_unit" "+define+DESIGN_NAME_MACRO=control_unit" "+incdir+input" -sv -work work input/control_unit_tb.sv 
 # -- Compiling package control_unit_tb_sv_unit
 # -- Importing package apb_pkg
@@ -138,10 +138,10 @@
 # 
 # Top level modules:
 # 	control_unit_tb
-# End time: 15:49:21 on Feb 04,2025, Elapsed time: 0:00:00
+# End time: 15:27:20 on Feb 14,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
-# Start time: 15:49:21 on Feb 04,2025
+# Start time: 15:27:20 on Feb 14,2025
 # vopt -reportprogress 300 -suppress 10587 -suppress 13408 "+acc" "+cover=bcxefs" -coverfec -debugdb -noincr -designfile output/control_unit_rtl.bin work.control_unit_tb -o control_unit_rtl_vopt 
 # 
 # Top level modules:
@@ -167,28 +167,28 @@
 # -- Optimizing module control_unit_svamod(fast)
 # -- Processing module control_unit_svamod(fast) for debug
 # -- Optimizing program control_unit_test(fast)
+# -- Optimizing interface apb_if(fast__1)
 # -- Optimizing module control_unit(fast)
 # -- Processing module control_unit(fast) for debug
-# -- Optimizing interface apb_if(fast__1)
 # -- Optimizing module control_unit_tb(fast)
 # -- Processing module control_unit_tb(fast) for debug
 # -- Optimizing interface irq_out_if(fast__1)
 # -- Optimizing interface irq_out_if(fast)
 # -- Optimizing interface apb_if(fast)
 # viscom:
-# VISCOM: Start time: 15:49:22 on Feb 04,2025
+# VISCOM: Start time: 15:27:20 on Feb 14,2025
 # 
 # VISCOM: QuestaSim /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/VisualizerRls/bin/viscom 2024.3_2 at 2024.11 Nov 25 2024
 # VISCOM: Writing output/control_unit_rtl.bin
 # VISCOM: Done writing output/control_unit_rtl.bin
-# VISCOM: End time: 15:49:22 on Feb 04,2025, Elapsed time: 0:00:00 (Process Size : 317MB, Peak Process Size : 317MB)
+# VISCOM: End time: 15:27:21 on Feb 14,2025, Elapsed time: 0:00:01 (Process Size : 317MB, Peak Process Size : 317MB)
 # 
 # 
 # Optimized design name is control_unit_rtl_vopt
-# End time: 15:49:24 on Feb 04,2025, Elapsed time: 0:00:03
+# End time: 15:27:22 on Feb 14,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0, Suppressed Warnings: 4
 # vsim control_unit_rtl_vopt -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/control_unit_rtl.dbg 
-# Start time: 15:49:24 on Feb 04,2025
+# Start time: 15:27:23 on Feb 14,2025
 # Loading sv_std.std
 # Loading work.apb_pkg(fast)
 # Loading work.audioport_pkg(fast)
@@ -208,6 +208,8 @@
 # ** Note: (vsim-8900) Creating design debug database output/control_unit_rtl.dbg.
 # 1
 # sim_coverage
+# ** Warning: (vsim-8521) The number of coverpoint bins is greater than the limit 'MaxSVCoverpointBinsInst=1048576' (defined in modelsim.ini) for the coverpoint 'addresses' of covergroup instance '\/control_unit_tb/DUT_INSTANCE/CHECKER_MODULE/rbwrites_cg '.
+#    Time: 0 ps  Iteration: 0  Instance: /control_unit_tb/DUT_INSTANCE/CHECKER_MODULE
 # ** Info: apb_test
 #    Time: 50 ns  Scope: control_unit_tb.TEST.apb_test File: input/control_unit_test_tasks.svh Line: 20
 # ** Info: address_decoding_test
@@ -237,12 +239,11 @@
 # Break in Module control_unit_test at input/control_unit_test.sv line 84
 # ** Note: (vsim-19063) Please note that '-recursive' option's functionality is changed. For more information, please refer 
 # to the reference manual.
-# ** Note: (vsim-17388) No matching coverage data found.
 # file22
-# 1738676990
-# Script end time: 15:49:50
+# 1739539673
+# Script end time: 15:27:53
 # .main_pane.msgviewer.interior.cs.body.tree
 quit
 # Saving coverage database on exit...
-# End time: 15:49:55 on Feb 04,2025, Elapsed time: 0:00:31
-# Errors: 0, Warnings: 0
+# End time: 15:29:40 on Feb 14,2025, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 1

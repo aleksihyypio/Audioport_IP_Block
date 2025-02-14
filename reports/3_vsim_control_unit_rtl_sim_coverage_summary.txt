@@ -6,8 +6,12 @@ Coverage Report Summary Data by instance
 =================================================================================
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Assertions                     248       246         2    99.19%
-    Directives                     192       191         1    99.47%
+    Assertions                     273       270         3    98.90%
+    Covergroups                      2        na        na    95.83%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins         25        22         3    88.00%
+    Directives                     217       215         2    99.07%
+    Statements                       2         2         0   100.00%
     Toggles                        904       496       408    54.86%
 
 =================================================================================
@@ -17,15 +21,17 @@ Coverage Report Summary Data by instance
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
     Branches                        64        62         2    96.87%
-    Conditions                      30        28         2    93.33%
+    Conditions                      37        35         2    94.59%
     Expressions                     16        16         0   100.00%
-    Statements                     101        99         2    98.01%
+    Statements                      94        93         1    98.93%
     Toggles                        956       548       408    57.32%
 
 
-TOTAL DIRECTIVE COVERAGE: 99.47%  COVERS: 192
+TOTAL COVERGROUP COVERAGE: 95.83%  COVERGROUP TYPES: 2
 
-TOTAL ASSERTION COVERAGE: 99.19%  ASSERTIONS: 248
+TOTAL DIRECTIVE COVERAGE: 99.07%  COVERS: 217
 
-Total Coverage By Instance (filtered view): 91.52%
+TOTAL ASSERTION COVERAGE: 98.90%  ASSERTIONS: 273
+
+Total Coverage By Instance (filtered view): 92.25%
 

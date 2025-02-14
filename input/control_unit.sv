@@ -28,7 +28,7 @@ module control_unit
         output logic 				play_out
     );
 
-    // Internal signals
+    // Intergenal signals
     logic [$clog2(AUDIOPORT_REGISTERS+2)-1:0] rindex;
     logic apbwrite;
     logic apbread;
@@ -79,7 +79,7 @@ module control_unit
 
     // Play Register
     always_ff @(posedge clk or negedge rst_n) begin : play_reg
-        if (!rst_n)
+        if (rst_n == '0)
             play_r <= '0;
         else if (start)
             play_r <= '1;
@@ -89,7 +89,7 @@ module control_unit
 
     // Req Register
     always_ff @(posedge clk or negedge rst_n) begin : req_reg
-        if (!rst_n)
+        if (rst_n == '0)
             req_r <= '0;
         else if (play_r)
             req_r <= req_in;
@@ -109,7 +109,6 @@ module control_unit
         if (apbwrite && rindex == CMD_REG_INDEX) 
             case (PWDATA)
                 CMD_CLR:   if (!play_r) clr = '1;
-			   else clr = '0;
                 CMD_CFG:   cfg_out = '1;
                 CMD_START: start = '1;
                 CMD_STOP:  stop = '1;
@@ -125,63 +124,56 @@ module control_unit
         if (rst_n == '0)
             irq_r <= '0;
         else begin
-            if (!play_r || stop || irqack)
+            if (play_r && (stop || irqack))
                 irq_r <= '0;
-            else if (lempty && rempty)
+            else if (play_r && lempty && rempty)
                 irq_r <= '1;
         end
     end : irq_req
 
     // Left Channel FIFO Implementation (Style 2)
     always_ff @(posedge clk or negedge rst_n) begin : left_fifo_registers
-        if (rst_n == '0) begin
+        if (rst_n == '0 || clr) begin
             ldata_r <= '0;
             lhead_r <= '0;
             ltail_r <= '0;
             llooped_r <= '0;
-	end
-        else begin
-            ldata_r <= ldata_ns;
-            lhead_r <= lhead_ns;
-            ltail_r <= ltail_ns;
-            llooped_r <= llooped_ns;
-	end
+	end   
+    else begin
+        ldata_r <= ldata_ns;
+        lhead_r <= lhead_ns;
+        ltail_r <= ltail_ns;
+        llooped_r <= llooped_ns;
+    end
     end : left_fifo_registers
 
     always_comb begin : left_fifo_next_state
-     // Default assignments
-     ldata_ns = ldata_r;
-     lhead_ns = lhead_r;
-     ltail_ns = ltail_r;
-     llooped_ns = llooped_r;
-
-     // Write to FIFO
-     if (apbwrite && rindex == LEFT_FIFO_INDEX && !lfull) begin
+    // Default assignments
+    ldata_ns = ldata_r;
+    lhead_ns = lhead_r;
+    ltail_ns = ltail_r;
+    llooped_ns = llooped_r;
+    
+    // Write to FIFO
+    if (apbwrite && rindex == LEFT_FIFO_INDEX && !lfull) begin
         ldata_ns[lhead_r] = PWDATA[23:0];
         if (lhead_r == AUDIO_FIFO_SIZE - 1) begin
             lhead_ns = '0;
-            llooped_ns = ~llooped_r;
+            llooped_ns = '1; // Set llooped_r when write pointer wraps
         end else begin
             lhead_ns = lhead_r + 1;
         end
      end
-
-     // Read from FIFO
-     else if ((apbread || (play_r && req_r)) && !lempty) begin
+    
+    // Read from FIFO
+    if ((play_r && req_r && !lempty) || (apbread && rindex == LEFT_FIFO_INDEX && !lempty)) begin
         if (ltail_r == AUDIO_FIFO_SIZE - 1) begin
             ltail_ns = '0;
-            llooped_ns = ~llooped_r;
+            llooped_ns = '0; // Clear llooped_r when read pointer catches up
         end else begin
             ltail_ns = ltail_r + 1;
         end
      end
-
-     // Clear FIFO
-     else if (clr) begin
-            lhead_ns = '0;
-            ltail_ns = '0;
-            llooped_ns = '0;
-        end
     end : left_fifo_next_state
 
     // Left FIFO Status Logic
@@ -191,55 +183,47 @@ module control_unit
 
     // Right Channel FIFO Implementation (Style 2)
     always_ff @(posedge clk or negedge rst_n) begin : right_fifo_registers
-        if (rst_n == '0) 
-	 begin
+        if (rst_n == '0 || clr) begin
             rdata_r <= '0;
             rhead_r <= '0;
             rtail_r <= '0;
             rlooped_r <= '0;
-         end 
-	else begin
-            rdata_r <= rdata_ns;
-            rhead_r <= rhead_ns;
-            rtail_r <= rtail_ns;
-            rlooped_r <= rlooped_ns;
-         end
+	end
+    else begin
+        rdata_r <= rdata_ns;
+        rhead_r <= rhead_ns;
+        rtail_r <= rtail_ns;
+        rlooped_r <= rlooped_ns;
+    end
     end : right_fifo_registers
 
     always_comb begin : right_fifo_next_state
-        // Default assignments
-        rdata_ns = rdata_r;
-        rhead_ns = rhead_r;
-        rtail_ns = rtail_r;
-        rlooped_ns = rlooped_r;
+    // Default assignments
+    rdata_ns = rdata_r;
+    rhead_ns = rhead_r;
+    rtail_ns = rtail_r;
+    rlooped_ns = rlooped_r;
 
-        // Write to FIFO
-        if (apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull) begin
-            rdata_ns[rhead_r] = PWDATA[23:0];
-            if (rhead_r == AUDIO_FIFO_SIZE - 1) begin
-                rhead_ns = '0;
-                rlooped_ns = ~rlooped_r;
-            end else begin
-                rhead_ns = rhead_r + 1;
-            end
-        end
-
-        // Read from FIFO
-        else if ((apbread || (play_r && req_r)) && !rempty) begin
-            if (rtail_r == AUDIO_FIFO_SIZE - 1) begin
-                rtail_ns = '0;
-                rlooped_ns = ~rlooped_r;
-            end else begin
-                rtail_ns = rtail_r + 1;
-            end
-        end
-
-        // Clear FIFO
-        else if (clr) begin
+    // Write to FIFO
+    if (apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull) begin
+        rdata_ns[rhead_r] = PWDATA[23:0];
+        if (rhead_r == AUDIO_FIFO_SIZE - 1) begin
             rhead_ns = '0;
-            rtail_ns = '0;
-            rlooped_ns = '0;
+            rlooped_ns = '1; // Set rlooped_r when write pointer wraps
+        end else begin
+            rhead_ns = rhead_r + 1;
         end
+     end
+
+    // Read from FIFO
+    if ((play_r && req_r && !rempty) || (apbread && rindex == RIGHT_FIFO_INDEX && !rempty)) begin
+        if (rtail_r == AUDIO_FIFO_SIZE - 1) begin
+            rtail_ns = '0;
+            rlooped_ns = '0; 
+        end else begin
+            rtail_ns = rtail_r + 1;
+        end
+     end
     end : right_fifo_next_state
 
     // Right FIFO Status Logic
@@ -258,8 +242,9 @@ module control_unit
                 PRDATA = {8'b0, rfifo};
             else
                 PRDATA = '0;
-        end else
-            PRDATA = '0;
+	end else begin
+	 PRDATA = '0;
+	end
     end : prdata_driving
 
     // Output Assignments

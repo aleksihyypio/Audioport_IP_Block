@@ -1,8 +1,8 @@
    // PSLVERR : r_pslverr
 
    property r_pslverr;
-      @(posedge clk ) disable iff (rst_n == '0)
-	!PSLVERR;
+     @(posedge clk ) disable iff (rst_n == '0)
+       !PSLVERR;
    endproperty
 
    ar_pslverr: assert property(r_pslverr) else assert_error("ar_pslverr");
@@ -47,6 +47,46 @@
 
    ar_index_range: assert property(r_index_range) else assert_error("ar_index_range");
    cr_index_range: cover property(r_index_range);
+
+   // apbwrite : r_apbwrite_on
+
+    property r_apbwrite_on;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(PSEL && PENABLE && PREADY && PWRITE) |-> apbwrite;
+   endproperty
+
+   ar_apbwrite_on: assert property(r_apbwrite_on) else assert_error("ar_apbwrite_on");
+   cr_apbwrite_on: cover property(r_apbwrite_on);
+
+   // apbwrite : r_apbwrite_off
+
+    property r_apbwrite_off;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!(PSEL && PENABLE && PREADY && PWRITE) |-> !apbwrite;
+   endproperty
+
+   ar_apbwrite_off: assert property(r_apbwrite_off) else assert_error("ar_apbwrite_off");
+   cr_apbwrite_off: cover property(r_apbwrite_off);
+
+   // apbread : r_apbread_on
+
+    property r_apbread_on;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(PSEL && PENABLE && PREADY && !PWRITE) |-> apbread;
+   endproperty
+
+   ar_apbread_on: assert property(r_apbread_on) else assert_error("ar_apbread_on");
+   cr_apbread_on: cover property(r_apbread_on);
+
+   // apbread : r_apbread_off
+
+    property r_apbread_off;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!(PSEL && PENABLE && PREADY && !PWRITE) |-> !apbread;
+   endproperty
+
+   ar_apbread_off: assert property(r_apbread_off) else assert_error("ar_apbread_off");
+   cr_apbread_off: cover property(r_apbread_off);
 
    // rbank_r : r_rbank_r_write
 
@@ -118,6 +158,7 @@
    ar_dsp_regs_out: assert property(r_dsp_regs_out) else assert_error("ar_dsp_regs_out");
    cr_dsp_regs_out: cover property(r_dsp_regs_out);
 
+////////////////////////////
    // ldata_r : r_ldata_r_write
 
    property r_ldata_r_write;
@@ -328,6 +369,222 @@
 
    ar_lfifo_output_off: assert property(r_lfifo_output_off) else assert_error("ar_lfifo_output_off");
    cr_lfifo_output_off: cover property(r_lfifo_output_off);
+
+///////////////
+
+   // rdata_r : r_rdata_r_write
+
+   property r_rdata_r_write;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull) |=> rdata_r[$past(rhead_r)] == $past(PWDATA[23:0]);
+   endproperty
+
+   ar_rdata_r_write: assert property(r_rdata_r_write) else assert_error("ar_rdata_r_write");
+   cr_rdata_r_write: cover property(r_rdata_r_write);
+
+   // rdata_r : r_rdata_r_failed_write
+
+   property r_rdata_r_failed_write;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbwrite && rindex == RIGHT_FIFO_INDEX && rfull) |=> $stable(rdata_r[$past(rhead_r)]);
+   endproperty
+
+   ar_rdata_r_failed_write: assert property(r_rdata_r_failed_write) else assert_error("ar_rdata_r_failed_write");
+   cr_rdata_r_failed_write: cover property(r_rdata_r_failed_write);
+
+   // rdata_r : r_rdata_r_stable
+
+   property r_rdata_r_stable;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!(apbwrite && rindex == RIGHT_FIFO_INDEX) && !clr |=> $stable(rdata_r);
+   endproperty
+
+   ar_rdata_r_stable: assert property(r_rdata_r_stable) else assert_error("ar_rdata_r_stable");
+   cr_rdata_r_stable: cover property(r_rdata_r_stable);
+
+   // rhead_r : r_rhead_r_inc
+
+   property r_rhead_r_inc;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull && rhead_r != (AUDIO_FIFO_SIZE-1)) |=> rhead_r == $past(rhead_r) + 1;
+   endproperty
+
+   ar_rhead_r_inc: assert property(r_rhead_r_inc) else assert_error("ar_rhead_r_inc");
+   cr_rhead_r_inc: cover property(r_rhead_r_inc);
+
+   // rhead_r : r_rhead_r_loop
+
+   property r_rhead_r_loop;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull && rhead_r == (AUDIO_FIFO_SIZE-1)) |=> rhead_r == 0;
+   endproperty
+
+   ar_rhead_r_loop: assert property(r_rhead_r_loop) else assert_error("ar_rhead_r_loop");
+   cr_rhead_r_loop: cover property(r_rhead_r_loop);
+
+   // rhead_r : r_rhead_r_stable
+
+   property r_rhead_r_stable;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(!(apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull) && !clr) |=> $stable(rhead_r);
+   endproperty
+
+   ar_rhead_r_stable: assert property(r_rhead_r_stable) else assert_error("ar_rhead_r_stable");
+   cr_rhead_r_stable: cover property(r_rhead_r_stable);
+
+   // rlooped_r : r_rlooped_r_on
+
+   property r_rlooped_r_on;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull && rhead_r == (AUDIO_FIFO_SIZE-1)) |=> rlooped_r;
+   endproperty
+
+   ar_rlooped_r_on: assert property(r_rlooped_r_on) else assert_error("ar_rlooped_r_on");
+   cr_rlooped_r_on: cover property(r_rlooped_r_on);
+
+   // rlooped_r : r_rlooped_r_off_1
+
+   property r_rlooped_r_off_1;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbread && rindex == RIGHT_FIFO_INDEX && !rempty && rtail_r == (AUDIO_FIFO_SIZE-1)) |=> !rlooped_r;
+   endproperty
+
+   ar_rlooped_r_off_1: assert property(r_rlooped_r_off_1) else assert_error("ar_rlooped_r_off_1");
+   cr_rlooped_r_off_1: cover property(r_rlooped_r_off_1);
+
+   // rlooped_r : r_rlooped_r_off_2
+
+   property r_rlooped_r_off_2;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(play_r && req_r && !rempty && rtail_r == (AUDIO_FIFO_SIZE-1)) |=> !rlooped_r;
+   endproperty
+
+   ar_rlooped_r_off_2: assert property(r_rlooped_r_off_2) else assert_error("ar_rlooped_r_off_2");
+   cr_rlooped_r_off_2: cover property(r_rlooped_r_off_2);
+
+   // rlooped_r : r_rlooped_r_stable
+
+   property r_rlooped_r_stable;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!(apbwrite && rindex == RIGHT_FIFO_INDEX && !rfull) && !(apbread && rindex == RIGHT_FIFO_INDEX && !rempty) && !(play_r && req_r && !rempty) && !clr |=> $stable(rlooped_r);
+   endproperty
+
+   ar_rlooped_r_stable: assert property(r_rlooped_r_stable) else assert_error("ar_rlooped_r_stable");
+   cr_rlooped_r_stable: cover property(r_rlooped_r_stable);
+
+   // rtail_r : r_rtail_r_inc_1
+
+   property r_rtail_r_inc_1;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbread && rindex == RIGHT_FIFO_INDEX && !rempty && rtail_r != (AUDIO_FIFO_SIZE-1)) |=> rtail_r == $past(rtail_r) + 1;
+   endproperty
+
+   ar_rtail_r_inc_1: assert property(r_rtail_r_inc_1) else assert_error("ar_rtail_r_inc_1");
+   cr_rtail_r_inc_1: cover property(r_rtail_r_inc_1);
+
+   // rtail_r : r_rtail_r_inc_2
+
+   property r_rtail_r_inc_2;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(play_r && req_r && !rempty && rtail_r != (AUDIO_FIFO_SIZE-1)) |=> rtail_r == $past(rtail_r) + 1;
+   endproperty
+
+   ar_rtail_r_inc_2: assert property(r_rtail_r_inc_2) else assert_error("ar_rtail_r_inc_2");
+   cr_rtail_r_inc_2: cover property(r_rtail_r_inc_2);
+
+   // rtail_r : r_rtail_r_loop_1
+
+   property r_rtail_r_loop_1;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(apbread && rindex == RIGHT_FIFO_INDEX && !rempty && rtail_r == (AUDIO_FIFO_SIZE-1)) |=> rtail_r == 0;
+   endproperty
+
+   ar_rtail_r_loop_1: assert property(r_rtail_r_loop_1) else assert_error("ar_rtail_r_loop_1");
+   cr_rtail_r_loop_1: cover property(r_rtail_r_loop_1);
+
+   // rtail_r : r_rtail_r_loop_2
+
+   property r_rtail_r_loop_2;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(play_r && req_r && !rempty && rtail_r == (AUDIO_FIFO_SIZE-1)) |=> rtail_r == 0;
+   endproperty
+
+   ar_rtail_r_loop_2: assert property(r_rtail_r_loop_2) else assert_error("ar_rtail_r_loop_2");
+   cr_rtail_r_loop_2: cover property(r_rtail_r_loop_2);
+
+   // rtail_r : r_rtail_r_stable
+
+   property r_rtail_r_stable;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!(apbread && rindex == RIGHT_FIFO_INDEX && !rempty) &&
+	 !(play_r && req_r && !rempty) && !clr |=> $stable(rtail_r);
+   endproperty
+
+   ar_rtail_r_stable: assert property(r_rtail_r_stable) else assert_error("ar_rtail_r_stable");
+   cr_rtail_r_stable: cover property(r_rtail_r_stable);
+
+   // rempty : r_rempty_on
+
+   property r_rempty_on;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(rhead_r == rtail_r) && !rlooped_r |-> rempty;
+   endproperty
+
+   ar_rempty_on: assert property(r_rempty_on) else assert_error("ar_rempty_on");
+   cr_rempty_on: cover property(r_rempty_on);
+
+   // rempty : r_rempty_of
+
+   property r_rempty_of;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!( (rhead_r == rtail_r) && !rlooped_r) |-> !rempty;
+   endproperty
+
+   ar_rempty_of: assert property(r_rempty_of) else assert_error("ar_rempty_of");
+   cr_rempty_of: cover property(r_rempty_of);
+
+   // rfull : r_rfull_on
+
+   property r_rfull_on;
+      @(posedge clk ) disable iff (rst_n == '0)
+	(rhead_r == rtail_r) && rlooped_r |-> rfull;
+   endproperty
+
+   ar_rfull_on: assert property(r_rfull_on) else assert_error("ar_rfull_on");
+   cr_rfull_on: cover property(r_rfull_on);
+
+   // rfull : r_rfull_off
+
+   property r_rfull_off;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!( (rhead_r == rtail_r) && rlooped_r) |-> !rfull;
+   endproperty
+
+   ar_rfull_off: assert property(r_rfull_off) else assert_error("ar_rfull_off");
+   cr_rfull_off: cover property(r_rfull_off);
+
+   // rfifo : r_rfifo_output_on
+
+   property r_rfifo_output_on;
+      @(posedge clk ) disable iff (rst_n == '0)
+	!rempty |-> rfifo == rdata_r[rtail_r];
+   endproperty
+
+   ar_rfifo_output_on: assert property(r_rfifo_output_on) else assert_error("ar_rfifo_output_on");
+   cr_rfifo_output_on: cover property(r_rfifo_output_on);
+
+   // rfifo : r_rfifo_output_off
+
+   property r_rfifo_output_off;
+      @(posedge clk ) disable iff (rst_n == '0)
+	rempty |-> rfifo == 0;
+   endproperty
+
+   ar_rfifo_output_off: assert property(r_rfifo_output_off) else assert_error("ar_rfifo_output_off");
+   cr_rfifo_output_off: cover property(r_rfifo_output_off);
+
+///////////////
+
 
    // PRDATA : r_prdata_rbank
 
