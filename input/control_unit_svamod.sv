@@ -322,7 +322,7 @@ module control_unit_svamod
 
    property f_fifo_drain;
     @(posedge clk) disable iff (rst_n == 0)
-     $rose(tick_out) ##1 (!(PWRITE && (PADDR == LEFT_FIFO_ADDRESS || PADDR == RIGHT_FIFO_ADDRESS))) throughout tick_out [-> (AUDIO_FIFO_SIZE - 1)]
+     $rose(tick_out) ##1 ((!(PWRITE && (PADDR == LEFT_FIFO_ADDRESS || PADDR == RIGHT_FIFO_ADDRESS))) throughout tick_out [-> (AUDIO_FIFO_SIZE - 1)])
      |=> (audio0_out == '0 && audio1_out == '0);
    endproperty
    

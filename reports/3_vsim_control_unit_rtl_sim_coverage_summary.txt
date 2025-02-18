@@ -20,10 +20,10 @@ Coverage Report Summary Data by instance
 =================================================================================
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
-    Branches                        64        62         2    96.87%
-    Conditions                      37        35         2    94.59%
+    Branches                        68        66         2    97.05%
+    Conditions                      31        29         2    93.54%
     Expressions                     16        16         0   100.00%
-    Statements                      94        93         1    98.93%
+    Statements                     102       102         0   100.00%
     Toggles                        956       548       408    57.32%
 
 
@@ -33,5 +33,5 @@ TOTAL DIRECTIVE COVERAGE: 99.07%  COVERS: 217
 
 TOTAL ASSERTION COVERAGE: 98.90%  ASSERTIONS: 273
 
-Total Coverage By Instance (filtered view): 92.25%
+Total Coverage By Instance (filtered view): 92.27%
 

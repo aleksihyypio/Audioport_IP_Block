@@ -45,12 +45,12 @@ module control_unit
     logic clr;
 
     // APB3 Protocol Assumptions
-    assign PSLVERR = '0;  // No errors, always '0
-    assign PREADY = '1;   // Always ready, zero wait states
+    assign PSLVERR = 1'b0;  // No errors, always '0
+    assign PREADY = 1'b1;   // Always ready, zero wait states
 
     // Register bank implementation (Style 1)
     always_ff @(posedge clk or negedge rst_n) begin : register_bank
-        if (rst_n == '0)
+        if (!rst_n)
             rbank_r <= '0;
         else begin
             // APB write to register bank
@@ -79,72 +79,71 @@ module control_unit
 
     // Play Register
     always_ff @(posedge clk or negedge rst_n) begin : play_reg
-        if (rst_n == '0)
-            play_r <= '0;
+        if (!rst_n)
+            play_r <= 1'b0;
         else if (start)
-            play_r <= '1;
+            play_r <= 1'b1;
         else if (stop)
-            play_r <= '0;
+            play_r <= 1'b0;
     end : play_reg
 
     // Req Register
     always_ff @(posedge clk or negedge rst_n) begin : req_reg
-        if (rst_n == '0)
-            req_r <= '0;
+        if (!rst_n)
+            req_r <= 1'b0;
         else if (play_r)
             req_r <= req_in;
         else
-            req_r <= '0;
+            req_r <= 1'b0;
     end : req_reg
 
     // Command Decoder
     always_comb begin : command_decoder
-        start = '0;
-        stop = '0;
-        cfg_out = '0;
-        level_out = '0;
-        irqack = '0;
-        clr = '0;
+        start = 1'b0;
+        stop = 1'b0;
+        cfg_out = 1'b0;
+        level_out = 1'b0;
+        irqack = 1'b0;
+        clr = 1'b0;
 
         if (apbwrite && rindex == CMD_REG_INDEX) 
             case (PWDATA)
-                CMD_CLR:   if (!play_r) clr = '1;
-                CMD_CFG:   cfg_out = '1;
-                CMD_START: start = '1;
-                CMD_STOP:  stop = '1;
-                CMD_LEVEL: level_out = '1;
-                CMD_IRQACK: irqack = '1;
+                CMD_CLR:   if (!play_r) clr = 1'b1;
+                CMD_CFG:   cfg_out = 1'b1;
+                CMD_START: start = 1'b1;
+                CMD_STOP:  stop = 1'b1;
+                CMD_LEVEL: level_out = 1'b1;
+                CMD_IRQACK: irqack = 1'b1;
 		default: 
-		{clr, cfg_out, start, stop, level_out, irqack} = {'0, '0, '0, '0, '0, '0};
+		{clr, cfg_out, start, stop, level_out, irqack} = {1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0};
 	    endcase
     end : command_decoder
 
-    // Interrupt Request Logic
-    always_ff @(posedge clk or negedge rst_n) begin : irq_req
-        if (rst_n == '0)
-            irq_r <= '0;
-        else begin
-            if (play_r && (stop || irqack))
-                irq_r <= '0;
-            else if (play_r && lempty && rempty)
-                irq_r <= '1;
-        end
-    end : irq_req
+    always_ff @(posedge clk or negedge rst_n) begin
+     if (!rst_n)
+        irq_r <= 1'b0;
+     else if (!play_r)
+        irq_r <= 1'b0;
+     else if (stop || irqack)
+        irq_r <= 1'b0; 
+     else if (lempty && rempty)
+        irq_r <= 1'b1;  
+    end
 
     // Left Channel FIFO Implementation (Style 2)
     always_ff @(posedge clk or negedge rst_n) begin : left_fifo_registers
-        if (rst_n == '0 || clr) begin
+     if (!rst_n) begin
             ldata_r <= '0;
             lhead_r <= '0;
             ltail_r <= '0;
             llooped_r <= '0;
-	end   
-    else begin
+     end  
+     else begin
         ldata_r <= ldata_ns;
         lhead_r <= lhead_ns;
         ltail_r <= ltail_ns;
         llooped_r <= llooped_ns;
-    end
+     end
     end : left_fifo_registers
 
     always_comb begin : left_fifo_next_state
@@ -174,6 +173,15 @@ module control_unit
             ltail_ns = ltail_r + 1;
         end
      end
+
+    // Clear FIFO
+    if (clr) begin
+      ldata_ns = '0;
+      lhead_ns = '0;
+      ltail_ns = '0;
+      llooped_ns = '0;
+    end
+
     end : left_fifo_next_state
 
     // Left FIFO Status Logic
@@ -183,13 +191,13 @@ module control_unit
 
     // Right Channel FIFO Implementation (Style 2)
     always_ff @(posedge clk or negedge rst_n) begin : right_fifo_registers
-        if (rst_n == '0 || clr) begin
-            rdata_r <= '0;
-            rhead_r <= '0;
-            rtail_r <= '0;
-            rlooped_r <= '0;
-	end
-    else begin
+     if (!rst_n) begin
+        rdata_r <= '0;
+        rhead_r <= '0;
+        rtail_r <= '0;
+        rlooped_r <= '0;
+     end
+     else begin
         rdata_r <= rdata_ns;
         rhead_r <= rhead_ns;
         rtail_r <= rtail_ns;
@@ -224,6 +232,15 @@ module control_unit
             rtail_ns = rtail_r + 1;
         end
      end
+
+    // Clear FIFO
+    if (clr) begin
+      rdata_ns = '0;
+      rhead_ns = '0;
+      rtail_ns = '0;
+      rlooped_ns = '0;
+    end
+
     end : right_fifo_next_state
 
     // Right FIFO Status Logic
@@ -233,17 +250,15 @@ module control_unit
 
     // PRDATA Driving Logic
     always_comb begin : prdata_driving
-        if (PSEL == '1) begin
+	// Default
+	PRDATA = '0;
+        if (PSEL) begin
             if (rindex < AUDIOPORT_REGISTERS)
                 PRDATA = rbank_r[rindex];
             else if (rindex == LEFT_FIFO_INDEX)
                 PRDATA = {8'b0, lfifo};
             else if (rindex == RIGHT_FIFO_INDEX)
                 PRDATA = {8'b0, rfifo};
-            else
-                PRDATA = '0;
-	end else begin
-	 PRDATA = '0;
 	end
     end : prdata_driving
 

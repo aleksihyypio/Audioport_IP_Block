@@ -21,16 +21,16 @@ Recursive Coverage Report Summary Data by instance
     Enabled Coverage              Bins      Hits    Misses  Coverage
     ----------------              ----      ----    ------  --------
     Assertions                     273       270         3    98.90%
-    Branches                        64        62         2    96.87%
-    Conditions                      37        35         2    94.59%
+    Branches                        68        66         2    97.05%
+    Conditions                      31        29         2    93.54%
     Covergroups                      2        na        na    95.83%
         Coverpoints/Crosses          4        na        na        na
             Covergroup Bins         25        22         3    88.00%
     Directives                     217       215         2    99.07%
     Expressions                     16        16         0   100.00%
-    Statements                      96        95         1    98.95%
+    Statements                     104       104         0   100.00%
     Toggles                       1700       914       786    53.76%
 
 
-Total Coverage By Instance (filtered view): 92.25%
+Total Coverage By Instance (filtered view): 92.27%
 
