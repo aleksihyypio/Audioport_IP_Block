@@ -28,7 +28,7 @@ module control_unit
         output logic 				play_out
     );
 
-    // Intergenal signals
+    // Internal signals
     logic [$clog2(AUDIOPORT_REGISTERS+2)-1:0] rindex;
     logic apbwrite;
     logic apbread;

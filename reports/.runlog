@@ -1051,3 +1051,4 @@ S control_unit vsim_rtlsim   1739889626
 E control_unit vsim_rtlsim   1739889673
 S control_unit dc_rtlsyn   1739889693
 E control_unit dc_rtlsyn   1739890331
+S i2s_unit vsim_mixedsim   1739894218

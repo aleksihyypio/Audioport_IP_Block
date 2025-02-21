@@ -14,8 +14,8 @@ set AUDIO_FIFO_SIZE   60.0
 
 #set DESIGN_NAME "tlm_audioport"
 #set DESIGN_NAME "audioport"
-set DESIGN_NAME "control_unit"
-#set DESIGN_NAME "i2s_unit"
+#set DESIGN_NAME "control_unit"
+set DESIGN_NAME "i2s_unit"
 #set DESIGN_NAME "cdc_unit"
 #set DESIGN_NAME "dsp_unit"
 

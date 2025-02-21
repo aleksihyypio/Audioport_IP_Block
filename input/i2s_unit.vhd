@@ -37,7 +37,28 @@ end i2s_unit;
 
 architecture RTL of i2s_unit is
 
+   -- **Registers**
+   signal mode_reg		: std_logic;				-- 1-bit mode register (0: standby, 1: play)
+   signal audio_data_reg	: std_logic_vector(47 downto 0); 	-- 48-bit input data register
+   signal shift_reg		: std_logic_vector(47 downto 0);	-- 48-bit shift register
+   signal counter_reg		: unsigned(8 downto 0);			-- 9-biot counter for waveforms
+
+   -- **Combinational Signals**
+   signal next_mode_logic	: std_logic;				-- Next state of mode_reg
+   signal audio_data_logic	: std_logic;				-- Load audio_data_reg
+   signal req_out_logic		: std_logic;				-- Data request logic
+   signal sck_out_logic		: std_logic;				-- Serial clock output logic
+   signal ws_out_logic		: std_logic;				-- Word select output logic
+   signal shift_logic		: std_logic;				-- Shift enable for shift_reg
+   signal counter_logic		: std_logic;				-- Counter reset signal
+
 begin
+
+   -- **Combinational Logic and Output Assignments**
+   req_out <= req_out_logic;						-- Direct connection to output
+   sck_out <= sck_out_logic;						-- Direct connection to output
+   ws_out  <= ws_out_logic;						-- Direct connection to output
+   sdo_out <= shift_reg(47);						-- Direct connection to output
 
       
   
