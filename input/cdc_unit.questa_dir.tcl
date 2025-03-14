@@ -17,6 +17,7 @@ netlist reset mrst_n -async -group mrst_n -active_low
 # Analysis is done in normal mode
 netlist constant test_mode_in 1'b0
 
+if { $EDA_TOOL == "Questa-CDC" } {
 # Assign ports to clock domains
 netlist port domain -clock clk \
     test_mode_in play_in tick_in audio0_in audio1_in req_out rst_n
@@ -28,7 +29,7 @@ netlist port resetdomain -reset rst_n \
     play_in tick_in audio0_in audio1_in req_out
 netlist port resetdomain -reset mrst_nt \
     play_out tick_out audio0_out audio1_out req_in
-
+}
 #########################################################################################
 # Clock Domain Crossing Check Settings
 #########################################################################################
