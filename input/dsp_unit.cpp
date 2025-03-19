@@ -46,7 +46,6 @@ void dsp_unit::dsp_proc()
 
     scheduled_region:
       {
-	
 	// 4.
 	if (clr_in_v)
 	  {
@@ -57,18 +56,26 @@ void dsp_unit::dsp_proc()
 	   }
 	   audio0_out_v = 0;
 	   audio1_out_v = 0;
-	   tick_out.write(0);
+	   fir0_output = 0;
+	   fir1_output = 0;
 	  }      
 	else if (tick_in_v)
 	  {
+		level0_clamped = ( level0_v > sc_uint<16>(0x7FFF)) ? sc_uint<16>(0x7FFF) : level0_v;
+		level1_clamped = ( level1_v > sc_uint<16>(0x7FFF)) ? sc_uint<16>(0x7FFF) : level1_v;
+		level0_signed = level0_clamped.to_int();
+		level1_signed = level1_clamped.to_int();
 	    if (filter_cfg_v == DSP_FILTER_OFF)	  
 	      {
-		audio0_out_v = audio0_in_v;
-		audio1_out_v = audio1_in_v; 	      
+		scaled_audio0 = (audio0_in_v * level0_signed) >> 15;
+		scaled_audio1 = (audio1_in_v * level1_signed) >> 15;
+
+		audio0_out_v = scaled_audio0;
+		audio1_out_v = scaled_audio1;	      
 	      }
 	    else
 	      {
-		for (int i = FILTER_TAPS -1; i > 0; --i)
+		SHIFT_LOOP: for (int i = FILTER_TAPS - 1; i > 0; --i)
 		{
 		  data0_r[i] = data0_r[i - 1];
 		  data1_r[i] = data1_r[i - 1];
@@ -76,38 +83,25 @@ void dsp_unit::dsp_proc()
 		data0_r[0] = audio0_in_v;
 		data1_r[0] = audio1_in_v;
 
-		sc_int<DATABITS> fir0_output = 0;
-		for (int i = 0; i < FILTER_TAPS; ++i)
+		FILTER_LOOP: for (int i = 0; i < FILTER_TAPS; ++i)
 		{
 		   fir0_output += dsp_regs_r[i].read() * data0_r[i];
+		   fir1_output += dsp_regs_r[FILTER_TAPS + i].read() * data1_r[i];
 		}
 		fir0_output = fir0_output >> 31;
-
-		sc_int<DATABITS> fir1_output = 0;
-		for (int i = FILTER_TAPS; i < 2 * FILTER_TAPS; ++i)
-		{
-		   fir1_output += dsp_regs_r[i].read() * data1_r[i - FILTER_TAPS];
-		}
 		fir1_output = fir1_output >> 31;
 
-		audio0_out_v = (fir0_output >> 8) & 0xFFFFFF;
-		audio1_out_v = (fir1_output >> 8) & 0xFFFFFF;
-		
+		scaled_fir0 = (fir0_output * level0_signed) >> 15;
+		scaled_fir1 = (fir1_output * level1_signed) >> 15;
+
+	        audio0_out_v = scaled_fir0;
+	        audio1_out_v = scaled_fir1;
 	      }
-	    sc_fixed<17,2> scale0 = (level0_v > 32767) ? 1.0 : sc_fixed<17,2>(level0_v) / 32768;
-	    sc_fixed<17,2> scale1 = (level1_v > 32767) ? 1.0 : sc_fixed<17,2>(level1_v) / 32768;
-            if (scale0 > 1.0) scale0 = 1.0;
-            if (scale1 > 1.0) scale1 = 1.0;
-	    audio0_out_v = audio0_in_v * scale0;
-            audio1_out_v = audio1_in_v * scale1;
 	  }
-     
       }
-      
       // 5.
       write_outputs(audio0_out_v, audio1_out_v);
     }
-  
 }
 
 

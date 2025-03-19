@@ -52,13 +52,17 @@ SC_MODULE(dsp_unit) {
     sc_signal < bool >        filter_r;
     sc_int    < DATABITS >    data0_r[FILTER_TAPS];
     sc_int    < DATABITS >    data1_r[FILTER_TAPS];
-    sc_fixed  <17,2>	      scale0;
-    sc_fixed  <17,2>	      scale1;
-    sc_int    <DATABITS>      fir0_output;
-    sc_int    <DATABITS>      fir1_output;
     //To do: Declare member variables you need here
-
-    
+    sc_uint   <16>	      level0_clamped;
+    sc_uint   <16>	      level1_clamped;
+    sc_int    <16>	      level0_signed;
+    sc_int    <16>	      level1_signed;
+    sc_int    <40>	      scaled_audio0;
+    sc_int    <40>	      scaled_audio1;
+    sc_int    <56>            fir0_output;
+    sc_int    <56>            fir1_output;
+    sc_int    <40>	      scaled_fir0;
+    sc_int    <40>	      scaled_fir1;
 };
 
 
