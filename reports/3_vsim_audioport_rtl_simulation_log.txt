@@ -1,12 +1,3 @@
-# VISUALIZERROOT = '/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/VisualizerRls'
-# USER = 'ahyypio20'
-# Siemens software version 2024.3_2 (Build on Nov 25 2024)
-# Unpublished work. Copyright 2025 Siemens
-
-# vsim -f audioport_viz_rtl_args.f -do scripts/viz_rtlrun.tcl -l reports/3_vsim_audioport_rtl_simulation_log.txt
-# vsim audioport_rtl_vopt -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -qwavedb=+livesim+signal+class+transaction+assertion+locals+systemc+wavefile=results/audioport_rtl_qwave.db -visualizer=results/audioport_rtl_designfile.bin "+no_session" "+UVM_TESTNAME=apb_test" 
-# Start time: 15:18:06 on Apr 08,2025
-# Loading Siemens Visualizer shared object '/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/bin/../linux_x86_64/VisualizerRls/bin/libqvisualizer.so'
 # //  Questa Sim-64
 # //  Version 2024.3_2 linux_x86_64 Nov 25 2024
 # //
@@ -21,6 +12,510 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+# do scripts/vsim_rtlsim.tcl
+# 1745585479
+# Script start time: 15:51:19
+# 0
+# 1
+# 1
+# -all
+# QuestaSim
+# 0
+# 1
+# output/audioport_rtl.dbg
+# output/audioport_rtl.bin
+# output/audioport_rtl.db
+# audioport_rtl_vopt
+# output/audioport_questasim_work
+#  -lint -fsmdebug -fsmverbose b -fsmmultitrans +cover=bcxefs -coverfec  +define+design_top_is_audioport +define+DESIGN_NAME_MACRO=audioport  +incdir+input  -sv -work work
+#  -lint -fsmdebug -fsmverbose b -fsmmultitrans +cover=bcxefs -coverfec -mixedsvvh  -work work
+#  -suppress 10587 -suppress 13408 +acc +cover=bcxefs -coverfec -debugdb -noincr -designfile output/audioport_rtl.bin
+#  -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/audioport_rtl.dbg
+# +UVM_TESTNAME=control_unit_uvm_test
+# +define+apb_test_classes +define+control_unit_uvm_test_classes -suppress 13314 -suppress 13233 +define+RTL_SIM +define+UVM_TESTBENCH -lint -fsmdebug -fsmverbose b -fsmmultitrans +cover=bcxefs -coverfec  +define+design_top_is_audioport +define+DESIGN_NAME_MACRO=audioport  +incdir+input  -sv -work work
+# -2008 -lint -fsmdebug -fsmverbose b -fsmmultitrans +cover=bcxefs -coverfec -mixedsvvh  -work work
+# -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/audioport_rtl.dbg +UVM_TESTNAME=control_unit_uvm_test
+# 1
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:19 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/apb_pkg.sv 
+# -- Compiling package apb_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:19 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:19 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_pkg.sv 
+# -- Compiling package audioport_pkg
+# -- Importing package apb_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:19 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:19 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_util_pkg.sv 
+# -- Compiling package audioport_util_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:20 on Apr 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:20 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/control_unit.sv 
+# -- Compiling package control_unit_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 15:51:20 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:20 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work results/dsp_unit_hls_rtl.v 
+# -- Compiling module mgc_out_dreg_v2
+# -- Compiling module ccs_in_v1
+# -- Compiling module ccs_sync_out_vld_v1
+# -- Compiling module dsp_unit_read_inputs_core
+# -- Compiling module dsp_unit_read_inputs
+# -- Compiling module dsp_unit_write_outputs_core
+# -- Compiling module dsp_unit_write_outputs
+# -- Compiling module dsp_unit_regs_proc
+# -- Compiling module dsp_unit_dsp_proc_dsp_proc_fsm
+# -- Compiling module dsp_unit_dsp_proc_staller
+# -- Compiling module dsp_unit_dsp_proc_write_outputs_mioi_write_outputs_mio_wait_ctrl
+# -- Compiling module dsp_unit_dsp_proc_read_inputs_mioi_read_inputs_mio_wait_ctrl
+# -- Compiling module dsp_unit_dsp_proc_write_outputs_mioi
+# -- Compiling module dsp_unit_dsp_proc_read_inputs_mioi
+# -- Compiling module dsp_unit_dsp_proc
+# -- Compiling module dsp_unit_rtl
+# 
+# Top level modules:
+# 	dsp_unit_rtl
+# End time: 15:51:20 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:20 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/dsp_unit.sv 
+# -- Compiling package dsp_unit_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling module dsp_unit
+# 
+# Top level modules:
+# 	dsp_unit
+# End time: 15:51:20 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:20 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/cdc_unit.sv 
+# -- Compiling package cdc_unit_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling module cdc_unit
+# 
+# Top level modules:
+# 	cdc_unit
+# End time: 15:51:20 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:20 on Apr 25,2025
+# vcom -reportprogress 300 -2008 -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec -mixedsvvh -work work input/i2s_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity i2s_unit
+# -- Compiling architecture RTL of i2s_unit
+# End time: 15:51:21 on Apr 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:21 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport.sv 
+# -- Compiling package audioport_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling module audioport
+# 
+# Top level modules:
+# 	audioport
+# End time: 15:51:21 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:21 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/control_unit_svamod.sv 
+# -- Compiling package control_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module control_unit_svamod
+# 
+# Top level modules:
+# 	control_unit_svamod
+# End time: 15:51:21 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0, Suppressed Warnings: 6
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:21 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/dsp_unit_svamod.sv 
+# -- Compiling package dsp_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module dsp_unit_svamod
+# 
+# Top level modules:
+# 	dsp_unit_svamod
+# End time: 15:51:21 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:21 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/cdc_unit_svamod.sv 
+# -- Compiling package cdc_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module cdc_unit_svamod
+# 
+# Top level modules:
+# 	cdc_unit_svamod
+# End time: 15:51:21 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:21 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/i2s_unit_svamod.sv 
+# -- Compiling package i2s_unit_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module i2s_unit_svamod
+# 
+# Top level modules:
+# 	i2s_unit_svamod
+# End time: 15:51:22 on Apr 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:22 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_svamod.sv 
+# -- Compiling package audioport_svamod_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Importing package audioport_util_pkg
+# -- Compiling module audioport_svamod
+# 
+# Top level modules:
+# 	audioport_svamod
+# End time: 15:51:22 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:22 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/apb_if.sv 
+# -- Compiling package apb_if_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling interface apb_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:22 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:22 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/irq_out_if.sv 
+# -- Compiling package irq_out_if_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling interface irq_out_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:22 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:22 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/i2s_if.sv 
+# -- Compiling package i2s_if_sv_unit
+# -- Importing package audioport_pkg
+# -- Importing package apb_pkg
+# -- Compiling interface i2s_if
+# -- Compiling module i2s_if_tb
+# 
+# Top level modules:
+# 	i2s_if_tb
+# End time: 15:51:22 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:22 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/uvm/apb_env_pkg.sv 
+# -- Compiling package apb_env_pkg
+# ** Note: (vlog-2286) input/uvm/apb_env_pkg.sv(6): Using implicit +incdir+/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:23 on Apr 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:23 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/uvm/control_unit_env_pkg.sv 
+# -- Compiling package control_unit_env_pkg
+# ** Note: (vlog-2286) input/uvm/control_unit_env_pkg.sv(5): Using implicit +incdir+/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package apb_pkg
+# -- Importing package apb_env_pkg
+# -- Importing package audioport_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:23 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:23 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/uvm/audioport_env_pkg.sv 
+# -- Compiling package audioport_env_pkg
+# ** Note: (vlog-2286) input/uvm/audioport_env_pkg.sv(5): Using implicit +incdir+/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# -- Importing package audioport_util_pkg
+# -- Importing package apb_env_pkg
+# -- Importing package control_unit_env_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:24 on Apr 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:24 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/uvm/audioport_uvm_tests_pkg.sv 
+# -- Compiling package audioport_uvm_tests_pkg
+# ** Note: (vlog-2286) input/uvm/audioport_uvm_tests_pkg.sv(5): Using implicit +incdir+/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# -- Importing package audioport_util_pkg
+# -- Importing package apb_env_pkg
+# -- Importing package control_unit_env_pkg
+# -- Importing package audioport_env_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 15:51:24 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:24 on Apr 25,2025
+# vlog -reportprogress 300 "+define+apb_test_classes" "+define+control_unit_uvm_test_classes" -suppress 13314 -suppress 13233 "+define+RTL_SIM" "+define+UVM_TESTBENCH" -lint -fsmdebug -fsmverbose b -fsmmultitrans "+cover=bcxefs" -coverfec "+define+design_top_is_audioport" "+define+DESIGN_NAME_MACRO=audioport" "+incdir+input" -sv -work work input/audioport_tb.sv 
+# ** Note: (vlog-2286) input/audioport_tb.sv(11): Using implicit +incdir+/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package audioport_tb_sv_unit
+# -- Importing package apb_pkg
+# -- Importing package audioport_pkg
+# -- Importing package audioport_util_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package audioport_uvm_tests_pkg
+# -- Importing package apb_env_pkg
+# -- Importing package control_unit_env_pkg
+# -- Importing package audioport_env_pkg
+# -- Compiling module audioport_tb
+# 
+# Top level modules:
+# 	audioport_tb
+# End time: 15:51:25 on Apr 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 2024.3_2 Compiler 2024.11 Nov 25 2024
+# Start time: 15:51:25 on Apr 25,2025
+# vopt -reportprogress 300 -suppress 10587 -suppress 13408 "+acc" "+cover=bcxefs" -coverfec -debugdb -noincr -designfile output/audioport_rtl.bin work.audioport_tb -o audioport_rtl_vopt 
+# 
+# Top level modules:
+# 	audioport_tb
+# 
+# Analyzing design...
+# -- Loading module audioport_tb
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface apb_if
+# -- Loading interface irq_out_if
+# -- Loading interface i2s_if
+# -- Loading module audioport
+# -- Loading module control_unit
+# -- Loading module dsp_unit
+# -- Loading module dsp_unit_rtl
+# -- Loading module dsp_unit_dsp_proc
+# -- Loading module dsp_unit_dsp_proc_read_inputs_mioi
+# -- Loading module dsp_unit_read_inputs
+# -- Loading module dsp_unit_read_inputs_core
+# -- Loading module mgc_out_dreg_v2
+# -- Loading module ccs_in_v1
+# -- Loading module ccs_sync_out_vld_v1
+# -- Loading module dsp_unit_dsp_proc_read_inputs_mioi_read_inputs_mio_wait_ctrl
+# -- Loading module dsp_unit_dsp_proc_write_outputs_mioi
+# -- Loading module dsp_unit_write_outputs
+# -- Loading module dsp_unit_write_outputs_core
+# -- Loading module dsp_unit_dsp_proc_write_outputs_mioi_write_outputs_mio_wait_ctrl
+# -- Loading module dsp_unit_dsp_proc_staller
+# -- Loading module dsp_unit_dsp_proc_dsp_proc_fsm
+# -- Loading module dsp_unit_regs_proc
+# -- Loading module cdc_unit
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity i2s_unit
+# -- Loading architecture RTL of i2s_unit
+# -- Loading module audioport_svamod
+# -- Loading module cdc_unit_svamod
+# -- Loading module dsp_unit_svamod
+# -- Loading module control_unit_svamod
+# -- Loading module i2s_unit_svamod
+# -- Loading package vl_types
+# Optimizing 66 design-units (inlining 0/40 module instances, 0/1 architecture instances):
+# -- Optimizing architecture RTL of i2s_unit
+# -- Processing architecture RTL of i2s_unit for debug
+# -- Optimizing package apb_pkg(fast)
+# -- Optimizing package apb_if_sv_unit(fast)
+# -- Optimizing package irq_out_if_sv_unit(fast)
+# -- Optimizing package i2s_if_sv_unit(fast)
+# -- Optimizing package audioport_tb_sv_unit(fast)
+# -- Optimizing package audioport_sv_unit(fast)
+# -- Optimizing package control_unit_sv_unit(fast)
+# -- Optimizing package dsp_unit_sv_unit(fast)
+# -- Optimizing package cdc_unit_sv_unit(fast)
+# -- Optimizing package audioport_svamod_sv_unit(fast)
+# -- Optimizing package cdc_unit_svamod_sv_unit(fast)
+# -- Optimizing package dsp_unit_svamod_sv_unit(fast)
+# -- Optimizing package control_unit_svamod_sv_unit(fast)
+# -- Optimizing package i2s_unit_svamod_sv_unit(fast)
+# -- Optimizing module dsp_unit_write_outputs_core(fast)
+# -- Processing module dsp_unit_write_outputs_core(fast) for debug
+# -- Optimizing interface irq_out_if(fast__2)
+# -- Optimizing module dsp_unit_read_inputs(fast)
+# -- Processing module dsp_unit_read_inputs(fast) for debug
+# -- Optimizing module dsp_unit_dsp_proc_write_outputs_mioi(fast)
+# -- Processing module dsp_unit_dsp_proc_write_outputs_mioi(fast) for debug
+# -- Optimizing module dsp_unit(fast)
+# -- Processing module dsp_unit(fast) for debug
+# -- Optimizing module dsp_unit_write_outputs(fast)
+# -- Processing module dsp_unit_write_outputs(fast) for debug
+# -- Optimizing module dsp_unit_dsp_proc_read_inputs_mioi_read_inputs_mio_wait_ctrl(fast)
+# -- Processing module dsp_unit_dsp_proc_read_inputs_mioi_read_inputs_mio_wait_ctrl(fast) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast)
+# -- Processing module mgc_out_dreg_v2(fast) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast__1)
+# -- Processing module mgc_out_dreg_v2(fast__1) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast__2)
+# -- Processing module mgc_out_dreg_v2(fast__2) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast__3)
+# -- Processing module mgc_out_dreg_v2(fast__3) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast__4)
+# -- Processing module mgc_out_dreg_v2(fast__4) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast__5)
+# -- Processing module mgc_out_dreg_v2(fast__5) for debug
+# -- Optimizing module mgc_out_dreg_v2(fast__6)
+# -- Processing module mgc_out_dreg_v2(fast__6) for debug
+# -- Optimizing module ccs_in_v1(fast)
+# -- Processing module ccs_in_v1(fast) for debug
+# -- Optimizing module ccs_in_v1(fast__1)
+# -- Processing module ccs_in_v1(fast__1) for debug
+# -- Optimizing module ccs_in_v1(fast__2)
+# -- Processing module ccs_in_v1(fast__2) for debug
+# -- Optimizing module ccs_in_v1(fast__3)
+# -- Processing module ccs_in_v1(fast__3) for debug
+# -- Optimizing module dsp_unit_dsp_proc_write_outputs_mioi_write_outputs_mio_wait_ctrl(fast)
+# -- Processing module dsp_unit_dsp_proc_write_outputs_mioi_write_outputs_mio_wait_ctrl(fast) for debug
+# -- Optimizing module ccs_sync_out_vld_v1(fast)
+# -- Processing module ccs_sync_out_vld_v1(fast) for debug
+# -- Optimizing module dsp_unit_dsp_proc_staller(fast)
+# -- Processing module dsp_unit_dsp_proc_staller(fast) for debug
+# -- Optimizing interface i2s_if(fast)
+# -- Optimizing interface irq_out_if(fast)
+# -- Optimizing interface apb_if(fast)
+# -- Optimizing package audioport_pkg(fast)
+# -- Optimizing package audioport_util_pkg(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package apb_env_pkg(fast)
+# -- Optimizing package control_unit_env_pkg(fast)
+# -- Optimizing package audioport_env_pkg(fast)
+# -- Optimizing package audioport_uvm_tests_pkg(fast)
+# -- Optimizing module control_unit_svamod(fast)
+# -- Processing module control_unit_svamod(fast) for debug
+# -- Optimizing module dsp_unit_dsp_proc(fast)
+# -- Processing module dsp_unit_dsp_proc(fast) for debug
+# -- Optimizing module audioport_svamod(fast)
+# -- Processing module audioport_svamod(fast) for debug
+# -- Optimizing module i2s_unit_svamod(fast)
+# -- Processing module i2s_unit_svamod(fast) for debug
+# -- Optimizing module cdc_unit_svamod(fast)
+# -- Processing module cdc_unit_svamod(fast) for debug
+# -- Optimizing module dsp_unit_regs_proc(fast)
+# -- Processing module dsp_unit_regs_proc(fast) for debug
+# -- Optimizing module dsp_unit_svamod(fast)
+# -- Processing module dsp_unit_svamod(fast) for debug
+# -- Optimizing module control_unit(fast)
+# -- Processing module control_unit(fast) for debug
+# -- Optimizing interface apb_if(fast__2)
+# -- Optimizing module cdc_unit(fast)
+# -- Processing module cdc_unit(fast) for debug
+# ** Note: (vopt-1947)   FSM RECOGNITION INFO
+# 	Fsm recognized in : cdc_unit(fast)
+# 	Current State Variable : tx_state : input/cdc_unit.sv(45)
+# 	Next State Variable : tx_next_state : input/cdc_unit.sv(45)
+# 	Clock : clk
+# 	Reset States are: { TX_IDLE }
+# 	State Set is : { TX_IDLE , TX_REQ , TX_ACK }
+# ** Note: (vopt-143) Recognized 1 FSM in module "cdc_unit(fast)".
+# -- Optimizing module dsp_unit_rtl(fast)
+# -- Processing module dsp_unit_rtl(fast) for debug
+# -- Optimizing module audioport_tb(fast)
+# -- Processing module audioport_tb(fast) for debug
+# -- Optimizing module dsp_unit_dsp_proc_dsp_proc_fsm(fast)
+# -- Processing module dsp_unit_dsp_proc_dsp_proc_fsm(fast) for debug
+# ** Note: (vopt-1947)   FSM RECOGNITION INFO
+# 	Fsm recognized in : dsp_unit_dsp_proc_dsp_proc_fsm(fast)
+# 	Current State Variable : state_var : results/dsp_unit_hls_rtl.v(915)
+# 	Next State Variable : state_var_NS : results/dsp_unit_hls_rtl.v(916)
+# 	Clock : clk
+# 	Reset States are: { dsp_proc_rlp_C_0 }
+# 	State Set is : { PROCESS_LOOP_C_0 , PROCESS_LOOP_C_1 , SHIFT_LOOP_C_0 , PROCESS_LOOP_C_2 , FILTER_LOOP_C_0 , PROCESS_LOOP_C_3 , dsp_proc_rlp_C_0 }
+# ** Note: (vopt-143) Recognized 1 FSM in module "dsp_unit_dsp_proc_dsp_proc_fsm(fast)".
+# -- Optimizing module audioport(fast)
+# -- Processing module audioport(fast) for debug
+# -- Optimizing module dsp_unit_read_inputs_core(fast)
+# -- Processing module dsp_unit_read_inputs_core(fast) for debug
+# -- Optimizing interface i2s_if(fast__2)
+# -- Optimizing module dsp_unit_dsp_proc_read_inputs_mioi(fast)
+# -- Processing module dsp_unit_dsp_proc_read_inputs_mioi(fast) for debug
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# viscom:
+# VISCOM: Start time: 15:51:27 on Apr 25,2025
+# 
+# VISCOM: QuestaSim /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/VisualizerRls/bin/viscom 2024.3_2 at 2024.11 Nov 25 2024
+# VISCOM: Writing output/audioport_rtl.bin
+# VISCOM: Warning at line: 165 file: /homedir01/ahyypio20/DT3_2025/project/workdir/input/dsp_unit_svamod.sv
+#          Unresolved expression cg_dsp_modes_inst.sample found in module dsp_unit_svamod__fast
+# VISCOM: Warning at line: 141 file: /homedir01/ahyypio20/DT3_2025/project/workdir/input/audioport_svamod.sv
+#          skipping unsupported binary expression
+# 
+# VISCOM: Warning at line: 176 file: /homedir01/ahyypio20/DT3_2025/project/workdir/input/audioport_svamod.sv
+#          skipping unsupported binary expression
+# 
+# VISCOM: Warning at line: 201 file: /homedir01/ahyypio20/DT3_2025/project/workdir/input/audioport_svamod.sv
+#          Unresolved expression cg_active_config_inst.sample found in module audioport_svamod__fast
+# VISCOM: Done writing output/audioport_rtl.bin
+# VISCOM: End time: 15:51:29 on Apr 25,2025, Elapsed time: 0:00:02 (Process Size : 335MB, Peak Process Size : 336MB)
+# 
+# 
+# Optimized design name is audioport_rtl_vopt
+# End time: 15:51:32 on Apr 25,2025, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0, Suppressed Warnings: 5
+# vsim audioport_rtl_vopt -fsmdebug -assertdebug -msgmode both -classdebug -uvmcontrol=all -coverage -debugDB=output/audioport_rtl.dbg "+UVM_TESTNAME=control_unit_uvm_test" 
+# Start time: 15:51:32 on Apr 25,2025
 # Loading sv_std.std
 # Loading work.i2s_if(fast)
 # Loading work.irq_out_if(fast)
@@ -93,38 +588,9 @@
 # Loading work.i2s_unit_svamod_sv_unit(fast)
 # Loading work.i2s_unit_svamod(fast)
 # Loading /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
-
-# 15:18:08: Loading design data...
-# 15:18:08: Loaded  design units
-# 15:18:08: Loaded  design hierarchy
-# Warning: The wave file cannot be loaded because either the simulation has not yet logged any data, or qwavedb logging has not been enabled.
-# Warning: The wave file cannot be loaded because either the simulation has not yet logged any data, or qwavedb logging has not been enabled.
-# The Message Viewer cannot be opened without a wave file open.
-# Warning: The wave file cannot be loaded because either the simulation has not yet logged any data, or qwavedb logging has not been enabled.
-# 	 Class Filter File used = /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/bin/../linux_x86_64/VisualizerRls/bin/../config/uvmclassfilter.txt
-# do scripts/viz_rtlrun.tcl
-# 0
+# ** Note: (vsim-8900) Creating design debug database output/audioport_rtl.dbg.
 # 1
-# 1
-# -all
-# QuestaSim
-# 1
-# 0
-# 1
-# sim_coverage_apb_test
-# 1
-#  wave file name = results/audioport_rtl_qwave.db
-# qwavedb_dumpvars: Initiating qwavedb class logging
-# 
-# 	Loading class filter file '/sw/rhel8/siemens/questa_sim-2024.3_2/questasim/bin/../linux_x86_64/VisualizerRls/bin/../config/uvmclassfilter.txt'
-# 
-# qwavedb_dumpvars: Done initiating qwavedb class logging
-# qwavedb_dumpvars: Initiating qwavedb waveform capturing
-# 
-# Info: Enabling parallel (multi-threaded) wave dumping.
-# 
-# qwavedb_dumpvars: Done initiating qwavedb waveform capturing
-# 
+# sim_coverage_control_unit_uvm_test
 # ----------------------------------------------------------------
 # UVM-1.1d
 # (C) 2007-2013 Mentor Graphics Corporation
@@ -146,11 +612,10 @@
 #       (Specify +UVM_NO_RELNOTES to turn off this notice)
 # 
 # ** Warning: (vsim-8521) The number of coverpoint bins is greater than the limit 'MaxSVCoverpointBinsInst=1048576' (defined in modelsim.ini) for the coverpoint 'addresses' of covergroup instance '\/audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE/rbwrites_cg '.
-#    Time: 0 ps  Iteration: 0  Instance: .audioport_tb.DUT_INSTANCE.control_unit_1.CHECKER_MODULE
+#    Time: 0 ps  Iteration: 0  Instance: /audioport_tb/DUT_INSTANCE/control_unit_1/CHECKER_MODULE
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(all)
-# UVM_INFO @ 0: reporter [RNTST] Running test apb_test...
-# UVM_INFO input/uvm/apb_agent.svh(33) @ 0: uvm_test_top.m_env.m_agent [] apb_agent configured    with analyzer component.
+# UVM_INFO @ 0: reporter [RNTST] Running test control_unit_uvm_test...
 # **************************************************************************
 # * Questa UVM Transaction Recording Turned ON.                            *
 # * recording_detail has been set.                                         *
@@ -158,59 +623,35 @@
 # * uvm_config_db#(int)            ::set(null, "", "recording_detail", 0); *
 # * uvm_config_db#(uvm_bitstream_t)::set(null, "", "recording_detail", 0); *
 # **************************************************************************
-# UVM_INFO input/uvm/apb_sequence.svh(23) @ 0: uvm_test_top.m_env.m_agent.m_sequencer@@seq [] apb_sequence configured to run for         200 test cycles
-# 15:18:10: Loading waveform header...
-# 15:18:10: Loaded  waveform header
-# UVM_INFO @ 23065000: uvm_test_top [apb_test] apb_test finished.
-# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 23065000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer] =========================== apb_analyzer REPORT =============================================
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer] DUT: Individual addresses accessed:       87 writes,     59 reads
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer]      Total accesses:                     160 writes,    197 reads
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer]      Coverage:                        100.00% write, 100.00% read 
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer]      Read data:                          197 valid,       0 invalid
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer] Accesses to other APB addresses:         209 writes,    196 reads
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_analyzer [apb_analyzer] =============================================================================================
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_driver [apb_driver] =========================== apb_driver REPORT =============================================
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_driver [apb_driver] DUT:          160 writes,    197 reads generated
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_driver [apb_driver]                 0 failed,      0 failed
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_driver [apb_driver] Other APB:    209 writes,    196 reads generated
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_driver [apb_driver]                 0 failed,      0 failed
-# UVM_INFO @ 23065000: uvm_test_top.m_env.m_agent.m_driver [apb_driver] ===========================================================================================
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/uvm_root/uvm_test_top/m_env/m_control_unit_agent/m_sequencer/seq'.
+# Executing ONERROR command at macro ./scripts/vsim_rtlsim.tcl line 161
+# ** Fatal: (SIGSEGV) Bad handle or reference.
+#    Time: 210 ns  Iteration: 2  Process: /uvm_pkg::uvm_task_phase::execute/#FORK#137(#ublk#215181159#137)_7feff24551b File: /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_sqr_connections.svh
+# Fatal error in Task uvm_pkg/uvm_sqr_if_base::get_next_item at /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_sqr_ifs.svh line 58
 # 
-# --- UVM Report Summary ---
+# HDL call sequence:
+# Stopped at /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/tlm1/uvm_sqr_ifs.svh 45 Task uvm_pkg/uvm_sqr_if_base::get_next_item
+# called from  input/uvm/apb_driver.svh 43 Task apb_env_pkg/apb_driver::run_phase
+# called from  /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_common_phases.svh 245 Task uvm_pkg/uvm_run_phase::exec_task
+# called from  /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_task_phase.svh 150 Function uvm_pkg/uvm_task_phase::execute
 # 
-# ** Report counts by severity
-# UVM_INFO :   20
-# UVM_WARNING :    0
-# UVM_ERROR :    0
-# UVM_FATAL :    0
-# ** Report counts by id
-# []     2
-# [Questa UVM]     2
-# [RNTST]     1
-# [TEST_DONE]     1
-# [apb_analyzer]     7
-# [apb_driver]     6
-# [apb_test]     1
-# ** Note: $finish    : /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 23065 ns  Iteration: 62  Instance: .audioport_tb
-# Stopped at /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
-# 1
-# Break in Task uvm_root::run_test at /sw/rhel8/siemens/questa_sim-2024.3_2/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
-# ** Note: (vsim-19063) Please note that '-recursive' option's functionality is changed. For more information, please refer 
-# to the reference manual.
-# file37
-# To log simulation messages, try -qwavedb=+msg and re-run the simulation.
-# ::basicWindow::msgviewer0
-
-# Window layout 'Default' saved in file: /homedir01/ahyypio20/.visualizer/layout.xml
-# Saving coverage database on exit...
-# Disable bg thread...
-# qwavedb_dumpvars : Simulation ending at [0 23065000] 0
-# End time: 16:01:15 on Apr 08,2025, Elapsed time: 0:43:09
-# Errors: 0, Warnings: 1
-# Start  : Tue 08 Apr 2025 03:18:02 PM EEST
-# End    : Tue 08 Apr 2025 04:01:15 PM EEST
-# VMSize : 2675736 kB
-# VMPeak : 2815412 kB
-# MaxRSS : 292572 kB
+# Executing ONERROR command at macro ./scripts/vsim_rtlsim.tcl line 174
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# file120
+# 1745585502
+# Script end time: 15:51:42
+# .main_pane.msgviewer.interior.cs.body.tree
+quit
+# End time: 15:52:24 on Apr 25,2025, Elapsed time: 0:00:52
+# Errors: 1, Warnings: 1

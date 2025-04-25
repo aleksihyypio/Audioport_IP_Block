@@ -17,19 +17,23 @@ netlist reset cdc_unit_1.mrst_n -async -group mrst_n -active_low
 # Analysis is done in normal mode
 netlist constant test_mode_in 1'b0
 
-# Assign ports to clock domains
-netlist port domain -clock clk \
-    PSEL PENABLE PWRITE PADDR PWDATA PRDATA PREADY PSLVERR \
-    irq_out scan_en_in test_mode_in rst_n
-netlist port domain -clock mclk \
-    ws_out sck_out sdo_out
+if { $EDA_TOOL == "Questa-CDC" } {
 
-# Assign ports to reset domains
-netlist port resetdomain -reset rst_n \
-    PSEL PENABLE PWRITE PADDR PWDATA PRDATA PREADY PSLVERR \
-    irq_out scan_en_in test_mode_in
-netlist port resetdomain -reset cdc_unit1.mrst_n \
-    ws_out sck_out sdo_out
+    # Assign ports to clock domains
+    netlist port domain -clock clk \
+	PSEL PENABLE PWRITE PADDR PWDATA PRDATA PREADY PSLVERR \
+	irq_out scan_en_in test_mode_in rst_n
+    netlist port domain -clock mclk \
+	ws_out sck_out sdo_out
+
+    # Assign ports to reset domains
+    netlist port resetdomain -reset rst_n \
+	PSEL PENABLE PWRITE PADDR PWDATA PRDATA PREADY PSLVERR \
+	irq_out scan_en_in test_mode_in
+    netlist port resetdomain -reset cdc_unit1.mrst_n \
+	ws_out sck_out sdo_out
+
+}
 
 #########################################################################################
 # Clock Domain Crossing Check Settings
